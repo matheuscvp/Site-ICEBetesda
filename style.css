@@ -1,0 +1,27 @@
+*{
+    margin:0; 
+    padding: 0; ;
+}
+
+.rodape{
+    align-items: center;
+    background-color: #021138;
+    height: 20ch;
+}
+
+.tabela_rodape{
+    margin:auto;
+}
+
+.logo{
+    width: 315px;
+    margin: 15px;
+}
+
+.nav{
+    width: 33.33%;
+    text-align: center;
+    color: aliceblue;
+    font-size: large;
+    font-weight: bold;
+}
