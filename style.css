@@ -1,27 +1,68 @@
 *{
     margin:0; 
-    padding: 0; ;
+    padding: 0; 
 }
 
-.rodape{
-    align-items: center;
+footer{
+    width: 100%;
+    height:300px;
     background-color: #021138;
-    height: 20ch;
+   
 }
-
-.tabela_rodape{
-    margin:auto;
-}
-
 .logo{
-    width: 315px;
-    margin: 15px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+.icon_local{
+    width: 50px;
+}
+.icon_tel{
+    width: 35px;
+}
+.icon_email{
+    width: 35px;
 }
 
-.nav{
-    width: 33.33%;
-    text-align: center;
-    color: aliceblue;
-    font-size: large;
-    font-weight: bold;
+
+.localizacao{
+    align-items: center;
+    justify-content: center;
+    color: #A8A8A8;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+
+}
+.contato{
+    align-items: center;
+    justify-content: center;
+    color: #A8A8A8;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+
+}
+
+.localizacao, .contato, .div_logo{
+    display: inline-block;
+    margin-left: 10% ;
+    
+}
+
+.titulo{
+    font-size: xx-large;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight:bolder;
+    line-height: normal;
+    padding-left: 30px;
+    padding-top: 50px;
+    
 }
