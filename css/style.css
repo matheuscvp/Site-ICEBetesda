@@ -48,7 +48,7 @@ ul li.logo{
     margin: 0px 100px 0px 10px;
 }
 
-a:hover{
+li.t a:hover{
     background-position: right bottom ;
     background: url(../imagens/barra.png) no-repeat bottom;
 }
