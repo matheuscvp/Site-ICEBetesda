@@ -15,6 +15,9 @@
 .fundo{
     background-color: #021138;
     background-image: url(../imagens/Fundo.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 ul{
