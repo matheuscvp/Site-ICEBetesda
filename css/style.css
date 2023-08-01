@@ -15,6 +15,7 @@
 .fundo{
     background-color: #021138;
     background-image: url(../imagens/Fundo.png);
+    opacity: 0.8;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -29,7 +30,6 @@ ul{
 }
 
 ul li{
-   
     float: left;
 }
 
