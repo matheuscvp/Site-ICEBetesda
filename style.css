@@ -50,7 +50,7 @@ footer{
 }
 .div_logo, .localizacao,.contato{
     padding: 25px;
-    margin-left: 3%;
+    margin-left: 5%;
 }
 .titulo{
     font-size: xx-large;
@@ -64,6 +64,10 @@ footer{
     padding-top: 50px;
     padding-bottom: 30px;
     
+}
+
+.numeros_pastores{
+    text-align: right;
 }
 
 @media screen and (max-width:750px){
