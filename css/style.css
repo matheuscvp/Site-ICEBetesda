@@ -92,6 +92,7 @@ ul{
     margin:10px;
     padding: 0;
     float:left;
+    /*position: fixed;*/
 }
 
 ul li{
@@ -218,3 +219,4 @@ footer{
         padding-top: 0%;
     }
 }
+
