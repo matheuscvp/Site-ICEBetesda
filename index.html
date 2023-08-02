@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel= "stylesheet" type = "text/css"href="css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+        <link rel="stylesheet" href="eventos.js">
+        <title>Página principal Betesda</title>
+    </head>
+    <body id="home">
+        <nav>
+            <div class="fundo-nav" id="nav-bar">
+                <ul id="navegação">
+                    <li class="logo"><img  src="imagens/BRANCA_Betesda-Logotipo.png" ></li>
+                    <li class="inicio nav"><a href="">Ínicio</a></li>
+                    <li class="sobre nos nav"><a href="">Sobre nós</a></li>
+                    <li class="eventos nav"><a href="">Eventos</a></li>
+                    <li class="pg nav"><a href="">Pg's</a></li>
+                    <li class="galeria nav"><a href="">Galeria</a></li>
+                    <li class="colabore nav"><a href="">Colabore</a></li>
+                    <li class="inst-fcb" id="insta"><a href="https://www.instagram.com/icebetesda/"><img src="imagens/logo_insta.png"></a></li>
+                    <li class="inst-fcb"><a href="https://www.facebook.com/icebetesda/"><img src="imagens/logo_face.png"></a></li>
+                    <li class="yout"><a href="https://www.youtube.com/@ICEBetesda/about"><img src="imagens/logo_yout.png"></a></li>
+                </ul>
+
+                <div class="titulo-nav">
+                    <h1>BEM-VINDO</h1>
+                    <h1>A BETESDA</h1>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="home-text">
+            <p>
+                Bem-vindo à Igreja Cristã Evangélica Betesda!
+                <br><br>
+                Sinta-se em casa em nosso espaço de fé e amor. 
+                <br>
+                Juntos, vamos crescer na presença de Deus e compartilhar o amor de Cristo.
+                <br><br>
+                Seja abençoado em nossa comunidade!
+                <br>
+                A Igreja Cristã Evangélica Betesda.
+
+            </p>
+        </div>
+        <div>
+            <div class="fundo-eventos">
+                <div class="eventos-ima">
+                    <h2>PROXIMOS EVENTOS</h2>
+                </div>
+            </div>
+            <div id="carrosel">
+                <div class="galery">
+                    <div class="container" id="eventos"></div>
+                    <script> 
+                        let divEventos= document.querySelector
+                        ("#eventos")
+                    
+                        fetch("dados.json").then((response)=>{
+                            response.json().then((dados)=>{
+                                dados.evento.map((evento)=>{
+                                    divEventos.innerHTML += 
+                                    `<div class="evento">
+                                        <div class="div_img"><img src="${evento.img}" class="evento_img"></div>
+                                             <div class="info_evento">
+                                            <span>${evento.data}</span> <br>
+                                             ${evento.nome} 
+                                        </div>
+                                        <br> 
+                                    </div>`
+                                })
+                            })
+                        })
+                    </script>
+                    <button class="prev-button control">&#10094;</button>
+                    <button class="next-button control">&#10095;</button>
+                </div>
+            </div>
+        </div>
+        
+
+        <footer>
+            <div class="div_logo">
+                <h1><img src="imagens/BRANCA_Vertical Betesda Logotipo.png" class="logo"></h1>
+            </div>
+                <div class="localizacao">
+                    <table>
+                        <tr>
+                            <td colspan="2" class="titulo">Localização</td>
+                        </tr>
+                        <tr>
+                            <td><img src="imagens/localizacao branca.png" class="icon_local"></td>
+                            <td><p>
+                                QS 122 Conjunto 9<br>
+                                Samambaia Sul, Brasília/DF</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+    
+                    </table>
+                </div> 
+    
+                <div class="contato">
+                    <table  >
+                        <tr>
+                            <td colspan="2" class="titulo">Contato</td>
+                        </tr>
+                        <tr class="numeros_pastores">
+                            <td><img src="imagens/telefone branco_.png" class="icon_tel"></td>
+                            <td><p>Pr.Gilvane - (61)xxxxx-xxxx<br>
+                                   Pr.Tiago   - (61)xxxxx-xxxx</p></td>
+                        </tr>
+                        <tr class="numeros_pastores">
+                        <td><img src="imagens/o-email branco.png" class="icon_email"></td>
+                        <td>betesdaice@gmail.com</td>
+                    </tr>
+    
+                    </table>
+                </div> 
+    
+         </footer>
+    </body>
+    </html>
+       
+        
+    </body>
+</html>
