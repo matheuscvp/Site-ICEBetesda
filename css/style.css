@@ -11,7 +11,6 @@
     font-family:'Montserrat';
     font-size: 16px;
     font-weight: bold;
-    position:fixed;
     top: 0;
     left: 0;
  
@@ -90,7 +89,7 @@ ul{
     margin:10px;
     padding: 0;
     float:left;
-    /*position: fixed;*/
+    position: fixed;
 }
 
 ul li{
@@ -154,7 +153,6 @@ ul li.yout {
     display:flex;
     flex-direction:initial;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     background-color: #313131;
     flex-flow: row nowrap;
@@ -276,7 +274,11 @@ span{
       
         display: flex;
         flex-direction: column;
-       
+        flex-direction:initial;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #313131;
      
     }
 
