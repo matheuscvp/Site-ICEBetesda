@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,6 @@
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=PT Sans Narrow' rel='stylesheet'>
-        <link rel="stylesheet" href="eventos.js">
         <title>Página principal Betesda</title>
     </head>
     <body id="home">
@@ -17,7 +16,7 @@
                     <li class="logo"><img  src="imagens/BRANCA_Betesda-Logotipo.png" ></li>
                     <li class="inicio nav"><a href="">Ínicio</a></li>
                     <li class="sobre nos nav"><a href="">Sobre nós</a></li>
-                    <li class="eventos nav"><a href="">Eventos</a></li>
+                    <li class="eventos nav"><a href="#pag_evento">Eventos</a></li>
                     <li class="pg nav"><a href="">Pg's</a></li>
                     <li class="galeria nav"><a href="">Galeria</a></li>
                     <li class="colabore nav"><a href="">Colabore</a></li>
@@ -48,7 +47,7 @@
 
             </p>
         </div>
-        <div>
+        <section id="pag_evento">
             <div class="fundo-eventos">
                 <div class="eventos-ima">
                     <h2>PROXIMOS EVENTOS</h2>
@@ -57,31 +56,12 @@
             <div id="carrosel">
                 <div class="galery">
                     <div class="container" id="eventos"></div>
-                    <script> 
-                        let divEventos= document.querySelector
-                        ("#eventos")
                     
-                        fetch("dados.json").then((response)=>{
-                            response.json().then((dados)=>{
-                                dados.evento.map((evento)=>{
-                                    divEventos.innerHTML += 
-                                    `<div class="evento">
-                                        <div class="div_img"><img src="${evento.img}" class="evento_img"></div>
-                                             <div class="info_evento">
-                                             ${evento.nome}<br>
-                                             <span>${evento.data}</span>
-                                        </div>
-                                        <br> 
-                                    </div>`
-                                })
-                            })
-                        })
-                    </script>
                     <button class="prev-button control">&#10094;</button>
                     <button class="next-button control">&#10095;</button>
                 </div>
             </div>
-        </div>
+        </section>
 
         <footer>
             <div class="div_logo">
@@ -127,6 +107,28 @@
          </footer>
     </body>
     </html>
+
+
+    <script> 
+        let divEventos= document.querySelector
+        ("#eventos")
+    
+        fetch("dados.json").then((response)=>{
+            response.json().then((dados)=>{
+                dados.evento.map((evento)=>{
+                    divEventos.innerHTML += 
+                    `<div class="evento">
+                        <div class="div_img"><img src="${evento.img}" class="evento_img"></div>
+                             <div class="info_evento">
+                             ${evento.nome}<br>
+                             <span>${evento.data}</span>
+                        </div>
+                        <br> 
+                    </div>`
+                })
+            })
+        })
+    </script>
        
         
     </body>
