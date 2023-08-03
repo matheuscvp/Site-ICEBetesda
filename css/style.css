@@ -11,6 +11,8 @@
     font-family:'Montserrat';
     font-size: 16px;
     font-weight: bold;
+    top: 0;
+    left: 0;
  
 }
 
@@ -22,7 +24,30 @@
     font-size: 16px;
     font-weight: bold;
     color: aliceblue;
-    
+}
+
+.home-text2{
+   
+    text-align: center;
+    background-color: #313131;
+    font-family:'Montserrat';
+    font-size: 16px;
+    color:  orange;
+}
+
+.home-text2 p{
+    padding: 20%;
+    height: 150px;
+}
+
+.home-text2 p span{
+    text-align: center;
+    display:block;
+    margin: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #FFF;
+    letter-spacing: 2px;
 }
 
 .home-text p{
@@ -157,9 +182,7 @@ ul li.yout {
     display:flex;
     flex-direction:initial;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    background-color: #313131;
     flex-flow: row nowrap;
     gap: 15px;
 }
@@ -279,7 +302,11 @@ span{
       
         display: flex;
         flex-direction: column;
-       
+        flex-direction:initial;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #313131;
      
     }
 
@@ -337,7 +364,6 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 
 .logo_b{
@@ -430,4 +456,17 @@ footer{
         padding-top: 0%;
     }
 }
+
+
+.cultos-online{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #FFF;
+    letter-spacing: 1px;
+    font-family:'Montserrat';
+    background-color: #313131;
+}
+
+
 
