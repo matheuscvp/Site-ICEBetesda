@@ -110,6 +110,8 @@
 
 
     <script> 
+
+
         let divEventos= document.querySelector
         ("#eventos")
     
@@ -128,6 +130,13 @@
                 })
             })
         })
+
+        const menu = document.querySelector('ul'); 
+        function activeScroll(){
+            menu.classList.toggle('ativo', scrollY>0);
+        }
+        window.addEventListener('scroll', activeScroll); 
+
     </script>
        
         

@@ -11,7 +11,6 @@
     font-family:'Montserrat';
     font-size: 16px;
     font-weight: bold;
-    
  
 }
 
@@ -52,6 +51,7 @@
     letter-spacing: 0px;
     width: 34%;
     font-family:'Roboto Condensed';
+    z-index: 0;
 }
 
 .fundo-eventos{
@@ -85,10 +85,11 @@
 
 ul{
     list-style-type: none;
-    margin:10px;
-    padding: 0;
+    width: 100%;
+    padding-top: 25px;
     float:left;
     position: fixed;
+    z-index: 1;
 }
 
 ul li{
@@ -120,6 +121,10 @@ li.nav a:hover{
 
 ul li.inst-fcb{
     margin: 30px 10px;
+}
+
+ul.ativo{
+    background-color: #021138;
 }
 
 .inst-fcb img{
