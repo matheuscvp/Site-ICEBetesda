@@ -149,6 +149,7 @@ ul li.nav a{
     padding-right: 65%;
     padding-top: 30px;
     padding-bottom: 35px;
+  
 
 }
 
@@ -203,6 +204,11 @@ ul li.yout {
         overflow-x: hidden;
     }
 
+    .logo img{
+        padding-left: 35px;
+        width: 40%;
+    }
+
     ul li{
     float: none;
     
@@ -224,7 +230,7 @@ ul li.yout {
         transform: translateX(100%);
         transition: transform 0.3s ease-in; 
         display: none;
-        z-index: 100;
+
     }
 
     #navegação.active{
@@ -232,21 +238,23 @@ ul li.yout {
         transform: translateX(0);
         display: flex;
         position: fixed;
+        
     }
     
     .mobile_menu div{
         display: block;
-        z-index: 2;
+      
+        
     }
     .mobile_menu{
         cursor: pointer;
-        z-index: 55;
+        z-index: 57;
         position: fixed;
         left: 50%;
         display: block;
         padding-left: 22%;
         padding-right: 23%;
-        padding-bottom: 5%; 
+        padding-bottom: 8%; 
         padding-top: 7%;
         
         
@@ -255,8 +263,22 @@ ul li.yout {
 
     .mobile_menu.active{
         background-color: #021138;
+        z-index: 54;
     }
-
+    .titulo-nav{
+        clear: both;
+        color: aliceblue;
+        font-size: 250%;
+        font-weight: bold;
+        font-weight: 600;
+        position: relative;
+        top: 60%;
+        left: 60%;
+        letter-spacing: -5px;
+        width: 30%;
+        font-family:'Roboto Condensed';
+        z-index: 0;
+    }
     
 
 }
@@ -279,6 +301,7 @@ ul li.yout {
     align-items: center;
     flex-flow: row nowrap;
     gap: 15px;
+    z-index: 1;
 }
 
 .evento {
