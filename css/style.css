@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    
 }
 
 /*nav-bar*/
@@ -518,6 +517,7 @@ footer{
     padding-top:30px;
     padding-bottom:25px;
     background-color: black;
+    margin: auto;
 }
 
 .culto_img {
@@ -528,10 +528,9 @@ footer{
 
 .info_culto {
     margin: auto;
-    flex-grow: 1; 
     width: 380px;
     height:auto;
-    margin-top: -3px;
+    margin-top: 0px;
     background-color: transparent;
     color: orange;
     font-size: 50%;
@@ -541,7 +540,6 @@ footer{
     justify-content: center;
     text-align: left;
     align-items: right;
-    border-radius: 0px 0px 10px 10px;
     letter-spacing: 3px;   
 }
 
@@ -551,6 +549,11 @@ footer{
     font-family:PT Sans Narrow;
     text-align: left;
     font-weight: none;
+}
+
+.culto_img:hover{
+    background-color: #313235;
+    opacity: 0.5;
 }
 
 
