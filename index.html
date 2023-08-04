@@ -177,33 +177,6 @@
                 })
             })
         })
-
-    
-       
-
-
-
-
-
-        let divCultos= document.querySelector
-        ("#cultos")
-    
-        fetch("dadoscult.json").then((response)=>{
-            response.json().then((dadoscult)=>{
-                dadoscult.culto.map((culto)=>{
-                    divCultos.innerHTML += 
-                    `<div class="culto">
-                       
-                        <div class="parte-preta"><div class="culto_img"><a href="${culto.link}"><img src="${culto.img}" class="culto_img"></a></div></div>
-                        <div class="info_culto"> ${culto.titulo}<br><h5>${culto.data}</h5></div>
-                        </div>
-                        <br> 
-                    </div>`
-                })
-            })
-        })
-
-
     </script>
        
         
