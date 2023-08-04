@@ -76,13 +76,13 @@
 
             </p>
         </div>
-
-        <section id="últimos-cultos">
-            <div class="cultos-online">
-               
+        <section class="cultos-i">
+            <h2>Cultos</h2>
+            <div id="últimos-cultos" class="cultos-section">
+                <div class="cultos-online" id="cultos"></div>
             </div>
         </section>
-   
+       
         <footer>
             <div class="div_logo">
                 <h1><img src="imagens/BRANCA_Vertical Betesda Logotipo.png" class="logo"></h1>
@@ -156,6 +156,27 @@
             menu.classList.toggle('ativo', scrollY>0);
         }
         window.addEventListener('scroll', activeScroll); 
+
+
+
+        let divCultos= document.querySelector
+        ("#cultos")
+    
+        fetch("dadoscult.json").then((response)=>{
+            response.json().then((dadoscult)=>{
+                dadoscult.culto.map((culto)=>{
+                    divCultos.innerHTML += 
+                    `<div class="culto">
+                       
+                        <div class="parte-preta"><div class="culto_img"><a href="${culto.link}"><img src="${culto.img}" class="culto_img"></a></div></div>
+                        <div class="info_culto"> ${culto.titulo}<br><h5>${culto.data}</h5></div>
+                        </div>
+                        <br> 
+                    </div>`
+                })
+            })
+        })
+
 
     </script>
        

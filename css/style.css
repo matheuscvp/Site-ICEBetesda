@@ -457,16 +457,95 @@ footer{
     }
 }
 
-
-.cultos-online{
+.cultos-i h2{
+    width: 100%;
+    background-color: #313131;
     text-align: center;
+    font-family:'Montserrat';
     font-size: 36px;
     font-weight: bold;
+    color: #FFF;
+    letter-spacing: 2px;
+
+}
+
+.cultos-section{
+    display: flex;
+    flex-direction: row;
+    font-size: 36px;
+    font-weight: bold;
+    width:100%;
+    height: auto;
     color: #FFF;
     letter-spacing: 1px;
     font-family:'Montserrat';
     background-color: #313131;
 }
 
+.cultos-online{
+    display: flex;
+    flex-direction: row;
+    font-size: 36px;
+    font-weight: bold;
+    width:90%;
+    height: auto;
+    color: #FFF;
+    letter-spacing: 1px;
+    font-family:'Montserrat';
+    background-color: #313131;
+    margin: auto;
+    
+}
+
+
+.culto{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content:center;
+    margin: 3ch 0;
+}
+
+.parte-preta{
+    width: 380px;
+    height: 700%;
+    padding-top:30px;
+    padding-bottom:25px;
+    background-color: black;
+}
+
+.culto_img {
+    max-width: 380px;
+    height: 100%;
+    margin: auto;
+}
+
+.info_culto {
+    margin: auto;
+    flex-grow: 1; 
+    width: 380px;
+    height:auto;
+    margin-top: -3px;
+    background-color: transparent;
+    color: orange;
+    font-size: 50%;
+    font-family:PT Sans Narrow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: right;
+    border-radius: 0px 0px 10px 10px;
+    letter-spacing: 3px;   
+}
+
+.culto h5{
+    color:rgb(238, 237, 236); 
+    font-size: 60%;
+    font-family:PT Sans Narrow;
+    text-align: left;
+    font-weight: none;
+}
 
 
