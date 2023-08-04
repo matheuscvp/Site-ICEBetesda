@@ -452,6 +452,7 @@ footer{
 .numeros_pastores{
     text-align: right;
 }
+
 /* rodape responsivo  */
 @media screen and (max-width:750px){
     footer{
@@ -554,6 +555,23 @@ footer{
 .culto_img:hover{
     background-color: #313235;
     opacity: 0.5;
+}
+
+@media screen and (max-width:1100px){
+
+    .cultos-online{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .culto{
+        margin: 0;
+    }
+
+    .cultos-i h2{
+        padding: 20%  0;
+    }
 }
 
 
