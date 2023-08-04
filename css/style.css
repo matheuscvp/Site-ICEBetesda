@@ -3,7 +3,6 @@
 *{
     margin: 0;
     padding: 0;
-    overflow-y:hidden;
 }
 
 /*nav-bar*/
@@ -147,13 +146,13 @@ ul li.nav a{
     position: fixed;
     background-color:transparent;
     padding-left: 12%;
-    padding-right: 150px;
+    padding-right: 65%;
     padding-top: 30px;
     padding-bottom: 35px;
 
 }
 
-.logo img.ativo{
+ .logo img.ativo{
     background-color: #021138;
 }
 
@@ -224,10 +223,15 @@ ul li.yout {
         justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.3s ease-in; 
+        display: none;
+        z-index: 100;
     }
 
     #navegação.active{
+        
         transform: translateX(0);
+        display: flex;
+        position: fixed;
     }
     
     .mobile_menu div{
@@ -236,12 +240,21 @@ ul li.yout {
     }
     .mobile_menu{
         cursor: pointer;
-        margin-top: 50px;
         z-index: 55;
         position: fixed;
-        left: 80%;
-        top: -1%;
+        left: 50%;
         display: block;
+        padding-left: 22%;
+        padding-right: 23%;
+        padding-bottom: 5%; 
+        padding-top: 7%;
+        
+        
+
+    }
+
+    .mobile_menu.active{
+        background-color: #021138;
     }
 
     
