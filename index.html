@@ -12,23 +12,32 @@
     <body id="home">
         <nav>
             <div class="fundo-nav" id="nav-bar">
+            <div class="nav_cor">
+                <a class="logo" href="index.html"><img  src="imagens/BRANCA_Betesda-Logotipo.png" ></a>
                 <ul id="navegação">
-                    <li class="logo"><a href="index.html"><img  src="imagens/BRANCA_Betesda-Logotipo.png" ></a></li>
-                    <li class="inicio nav"><a href="">Ínicio</a></li>
-                    <li class="sobre nos nav"><a href="">Sobre nós</a></li>
-                    <li class="eventos nav"><a href="#pag_evento">Eventos</a></li>
-                    <li class="pg nav"><a href="">Pg's</a></li>
-                    <li class="galeria nav"><a href="">Galeria</a></li>
-                    <li class="colabore nav"><a href="">Colabore</a></li>
-                    <li class="inst-fcb" id="insta"><a href="https://www.instagram.com/icebetesda/"><img src="imagens/logo_insta.png"></a></li>
-                    <li class="inst-fcb"><a href="https://www.facebook.com/icebetesda/"><img src="imagens/logo_face.png"></a></li>
-                    <li class="yout"><a href="https://www.youtube.com/@ICEBetesda/about"><img src="imagens/logo_yout.png"></a></li>
+                    <li class="inicio nav" id="nav_sumindo"><a href="">Ínicio</a></li>
+                    <li class="sobre nos nav" id="nav_sumindo"><a href="">Sobre nós</a></li>
+                    <li class="eventos nav" id="nav_sumindo"><a href="#pag_evento">Eventos</a></li>
+                    <li class="pg nav" id="nav_sumindo"><a href="">Pg's</a></li>
+                    <li class="galeria nav" id="nav_sumindo"><a href="">Galeria</a></li>
+                    <li class="colabore nav" id="nav_sumindo"><a href="">Colabore</a></li>
+                    <li class="inst-fcb"  id="nav_sumindo"><a href="https://www.instagram.com/icebetesda/"><img src="imagens/logo_insta.png"></a></li>
+                    <li class="inst-fcb" id="nav_sumindo"><a href="https://www.facebook.com/icebetesda/"><img src="imagens/logo_face.png"></a></li>
+                    <li class="yout" id="nav_sumindo"><a href="https://www.youtube.com/@ICEBetesda/about"><img src="imagens/logo_yout.png"></a></li>
                 </ul>
 
-                <div class="titulo-nav">
+
+                <div class="mobile_menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+
+                <!--<div class="titulo-nav">
                     <h1>BEM-VINDO</h1>
                     <h1>A BETESDA</h1>
-                </div>
+                </div>-->
 
             </div>
         </nav>
@@ -127,11 +136,11 @@
          </footer>
     </body>
     </html>
+    <script src="menu_mobile.js"></script>
+    <script src="muda_cor_nav.js"></script>
 
 
     <script> 
-
-
         let divEventos= document.querySelector
         ("#eventos")
     
@@ -151,11 +160,28 @@
             })
         })
 
-        const menu = document.querySelector('ul'); 
-        function activeScroll(){
-            menu.classList.toggle('ativo', scrollY>0);
-        }
-        window.addEventListener('scroll', activeScroll); 
+        let divCultos= document.querySelector
+        ("#cultos")
+    
+        fetch("dadoscult.json").then((response)=>{
+            response.json().then((dadoscult)=>{
+                dadoscult.culto.map((culto)=>{
+                    divCultos.innerHTML += 
+                    `<div class="culto">
+                       
+                        <div class="parte-preta"><div class="culto_img"><a href="${culto.link}"><img src="${culto.img}" class="culto_img"></a></div></div>
+                        <div class="info_culto"> ${culto.titulo}<br><h5>${culto.data}</h5></div>
+                        </div>
+                        <br> 
+                    </div>`
+                })
+            })
+        })
+
+    
+       
+
+
 
 
 
