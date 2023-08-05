@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const mobileMenu = document.querySelector(".mobile_menu");
   const navigation = document.getElementById("navegação");
-  const logo = document.querySelector(".logo");
+  const logo = document.querySelector(".logo img");
   const navItems = navigation.querySelectorAll("li.nav");
 
   navItems.forEach(item => {

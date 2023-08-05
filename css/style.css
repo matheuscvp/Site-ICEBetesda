@@ -121,7 +121,6 @@ ul{
     z-index: 1;
     position: fixed;
 
-
 }
 
 ul li{
@@ -208,7 +207,6 @@ ul li.yout {
     margin: 8px;
     background:white;
     display: none;
-
 }
 
 /* resposividade nav-bar*/
@@ -219,10 +217,17 @@ ul li.yout {
     }
 
     .logo img{
-        margin-left: 80px;
-        width: 40%;
-        z-index:1;
+        width: 200px;
     }
+
+    .red-div{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: 60%;
+      
+    }
+
 
     ul li{
         clear: both;
@@ -230,12 +235,12 @@ ul li.yout {
 
     ul li.nav a{
         display: flex;
-
     }
 
-    #navegação{
-        position: absolute;
-        width:10vw;
+    #navegação .opc
+    {
+        position: relative;
+        width:30%;
         height:100vh; 
         background: #021138;
         flex-direction: column;
@@ -244,43 +249,39 @@ ul li.yout {
         transition: transform 0.3s ease-in; 
         display: none;
         z-index: 5;
-        padding-top: 10%;
-        border: 1px solid red;
+        padding-top: 5%;
+        left:70%; 
     }
 
-    #navegação.active{
-        
+    #navegação.active .opc
+    {
         transform: translateX(0);
         display: flex;
-        position: absolute;
-        top: 15%;   
+        position: fixed;
+        top: 8%;   
 
     }
     
     .mobile_menu div{
         display: block;
-
     }
 
     .mobile_menu{
         cursor: pointer;
         z-index: 60;
-        position: absolute;
+        position: fixed;
+        width: 30%;
         left: 50%;
         display: block;
-        padding-left: 22%;
-        padding-right: 23%;
-        padding-bottom: 0%; 
-        padding-top: 7%;
-
-
+        padding-left: 13%;
+        padding-right: auto;
+        padding-top: 35px;
+        left:70%;
     }
 
     .mobile_menu.active{
         background-color: #021138;
         z-index: 54;
-        
-
     }
 
     .titulo-nav{
