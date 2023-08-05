@@ -1,5 +1,5 @@
 const menu = document.querySelector('ul');
-const logo = document.querySelector('.logo img');
+const logo = document.querySelector('.logo');
 const navBar = document.querySelector('#nav-bar');
 const menuMobile = document.querySelector(".mobile_menu");
 
