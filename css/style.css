@@ -675,7 +675,7 @@ footer{
     flex-direction: column;
     width: 100%;
     justify-content:center;
-    margin: 3ch 0;
+    margin: 3ch 2px;
 }
 
 .parte-preta{
@@ -723,7 +723,7 @@ footer{
     opacity: 0.5;
 }
 
-@media screen and (max-width:1100px){
+@media screen and (max-width:1260px){
 
     .cultos-online{
         display: flex;
@@ -855,15 +855,13 @@ figure:hover figcaption{
     float: left;
     margin: 3.5% 2% 2% 3%;
     position: relative;
-    left: 39%;
-    
-
+    left: 38%;
 }
 
 .tiago{
     display: inline;
     position: relative;
-    left: 19%;
+    left: 20%;
 }
 
 
@@ -871,7 +869,10 @@ figure:hover figcaption{
 
     figure{
         clear: both;
+
         margin-top:60px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
