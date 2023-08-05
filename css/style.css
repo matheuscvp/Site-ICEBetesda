@@ -16,7 +16,7 @@
     font-weight: bold;
     top: 0;
     left: 0;
- 
+    
 }
 
 
@@ -65,6 +65,7 @@
 .home-text p{
     padding: 6%;
     height: 150px;
+   
 }
 
 
@@ -124,45 +125,49 @@ ul{
     padding-top: 25px;
     float:left;
     position: fixed;
+    right: 0px;
     z-index: 1;
+    padding-left:10%;
 }
 
 ul li{
-    float: left;
+    float:left;
 }
 
 ul li.nav a{
     display: block;
     margin: 20px 2em;
     line-height: 2em;
-   
     text-decoration: none;
     color:antiquewhite;
 }
 
-
-.logo img{
-    width: 200px;
-    position: fixed;
-    background-color:transparent;
-    padding-left: 12%;
-    padding-right: 65%;
-    padding-top: 30px;
-    padding-bottom: 35px;
-  
-
+.opc{
+    position: relative;
+    left: 8%;
 }
 
- .logo img.ativo{
+
+.red-div{
+    position: relative;
+    left: 12%;
+}
+
+.logo img{
+    position: relative;
+    width: 200px;
+    background-color:transparent;
+    padding-left: 18%;
+}
+
+.logo img.ativo{
     background-color: #021138;
 }
 
 
-
 li.nav a:hover{
     background-position: right bottom ;
-    border-bottom: 2px  solid white;
-    
+    border-bottom: 2px  solid white;  
 }
 
 ul li.inst-fcb{
@@ -215,8 +220,9 @@ ul li.yout {
     }
 
     ul li.nav a{
-    display: flex;
+        display: flex;
     }
+
     #navegação{
         position: absolute;
         right: 0;
@@ -229,7 +235,6 @@ ul li.yout {
         transition: transform 0.3s ease-in; 
         display: none;
         z-index: 60;
-
     }
 
     #navegação.active{
@@ -237,14 +242,13 @@ ul li.yout {
         transform: translateX(0);
         display: flex;
         position: fixed;
-        top: 15%;
-       
-        
+        top: 15%;   
     }
     
     .mobile_menu div{
         display: block;
     }
+
     .mobile_menu{
         cursor: pointer;
         z-index: 57;
@@ -255,8 +259,6 @@ ul li.yout {
         padding-right: 23%;
         padding-bottom: 23%; 
         padding-top: 7%;
-        
-        
 
     }
 
@@ -264,6 +266,7 @@ ul li.yout {
         background-color: #021138;
         z-index: 54;
     }
+
     .titulo-nav{
         clear: both;
         color: aliceblue;
@@ -281,6 +284,7 @@ ul li.yout {
     
 
 }
+
 @media screen and (max-width:800px) {
     .titulo-nav{
         clear: both;
@@ -296,6 +300,7 @@ ul li.yout {
         font-family:'Roboto Condensed';
         z-index: 0;
     }
+
     .eventos-ima{
         clear: both;
         color: aliceblue;
