@@ -750,8 +750,10 @@ footer{
 }
 
 .imag-p{
+    display: inline;
     position: relative;
     left: 27%;
+
 }
 
 figure{
@@ -844,7 +846,7 @@ figure:hover figcaption{
 }
 
 .redes{
-    width: 100%;
+    width: 80%;
     float: left;
     text-align: center;
 
@@ -854,9 +856,9 @@ figure:hover figcaption{
     width: 20px;
     place-self: end center;
     float: left;
-    margin: 3% 2% 2% 3%;
+    margin: 3.5% 2% 2% 3%;
     position: relative;
-    left: 30%;
+    left: 39%;
     
 
 }
@@ -864,8 +866,10 @@ figure:hover figcaption{
 .tiago{
     display: inline;
     position: relative;
-    left: 14%;
+    left: 19%;
 }
+
+
 
 
 
