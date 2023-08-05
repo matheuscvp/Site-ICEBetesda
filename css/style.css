@@ -157,6 +157,7 @@ ul li.nav a{
 .logo img{
     position: relative;
     width: 200px;
+    height: auto;
     background-color:transparent;
     padding-left: 9%;
 
@@ -182,11 +183,13 @@ ul.ativo{
 }
 
 .inst-fcb img{
+    width: 20px;
     height:20px;
 
 }
 
 .yout img{
+    width: 30px;
     height: 30px; 
 
 }
@@ -566,12 +569,15 @@ footer{
 }
 .icon_local{
     width: 50px;
+    height: auto;
 }
 .icon_tel{
     width: 35px;
+    height: auto;
 }
 .icon_email{
     width: 35px;
+    height: auto;
 }
 
 
