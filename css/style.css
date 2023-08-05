@@ -16,15 +16,7 @@
     font-weight: bold;
     top: 0;
     left: 0;
- 
 }
-
-
-#navegação{
-    margin-left: 30%;
-}
-
-
 
 
 .home-text{
@@ -35,21 +27,20 @@
     font-size: 16px;
     font-weight: bold;
     color: aliceblue;
+
 }
 
 .home-text2{
-   
     text-align: center;
     background-color: #D9D9D9;
     font-family:'Montserrat';
-    font-size: 16px;    
-    color:  rgb(255, 102, 0);
-    
+    font-size: 16px;     
 }
 
 .home-text2 p{
     padding: 20%;
     height: 150px;
+    color: orange;
 }
 
 .home-text2 p span{
@@ -65,6 +56,7 @@
 .home-text p{
     padding: 6%;
     height: 150px;
+   
 }
 
 
@@ -74,6 +66,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
 }
 
 .titulo-nav{
@@ -89,6 +82,7 @@
     width: 30%;
     font-family:'Roboto Condensed';
     z-index: 0;
+
 }
 
 .fundo-eventos{
@@ -122,47 +116,62 @@ ul{
     list-style-type: none;
     width: 100%;
     padding-top: 25px;
-    float:left;
-    position: fixed;
+    float:left; 
+    right: 0px;
     z-index: 1;
+    position: fixed;
+
+
 }
 
 ul li{
-    float: left;
+    float:left;
+
+
 }
 
 ul li.nav a{
     display: block;
     margin: 20px 2em;
     line-height: 2em;
-   
     text-decoration: none;
     color:antiquewhite;
+
 }
 
+.opc{
+    position: relative;
+    left: 8%;
+    width:90%;
+
+
+}
+
+
+.red-div{
+    position: relative;
+    left: 12%;
+    width:85%;
+
+}
 
 .logo img{
+    position: relative;
     width: 200px;
-    position: fixed;
     background-color:transparent;
-    padding-left: 12%;
-    padding-right: 65%;
-    padding-top: 30px;
-    padding-bottom: 35px;
-  
+    padding-left: 9%;
 
 }
 
- .logo img.ativo{
+.logo img.ativo{
     background-color: #021138;
-}
 
+}
 
 
 li.nav a:hover{
     background-position: right bottom ;
-    border-bottom: 2px  solid white;
-    
+    border-bottom: 2px  solid white;  
 }
 
 ul li.inst-fcb{
@@ -175,18 +184,22 @@ ul.ativo{
 
 .inst-fcb img{
     height:20px;
+
 }
 
 .yout img{
     height: 30px; 
+
 }
 
 ul li.yout {
     margin: 25px 10px 40px;
+
 }
 
 #insta{
     margin-left: 80px;
+
 }
 
 .mobile_menu div{
@@ -195,6 +208,7 @@ ul li.yout {
     margin: 8px;
     background:white;
     display: none;
+
 }
 
 /* resposividade nav-bar*/
@@ -205,22 +219,23 @@ ul li.yout {
     }
 
     .logo img{
-        padding-left: 25px;
+        margin-left: 80px;
         width: 40%;
+        z-index:1;
     }
 
     ul li{
-    float: none;
-    
+        clear: both;
     }
 
     ul li.nav a{
-    display: flex;
+        display: flex;
+
     }
+
     #navegação{
         position: absolute;
-        right: 0;
-        width: 50vw;
+        width:10vw;
         height:100vh; 
         background: #021138;
         flex-direction: column;
@@ -228,42 +243,46 @@ ul li.yout {
         transform: translateX(100%);
         transition: transform 0.3s ease-in; 
         display: none;
-        z-index: 60;
-
+        z-index: 5;
+        padding-top: 10%;
+        border: 1px solid red;
     }
 
     #navegação.active{
         
         transform: translateX(0);
         display: flex;
-        position: fixed;
-        top: 15%;
-       
-        
+        position: absolute;
+        top: 15%;   
+
     }
     
     .mobile_menu div{
         display: block;
+
     }
+
     .mobile_menu{
         cursor: pointer;
-        z-index: 57;
-        position: fixed;
+        z-index: 60;
+        position: absolute;
         left: 50%;
         display: block;
         padding-left: 22%;
         padding-right: 23%;
-        padding-bottom: 23%; 
+        padding-bottom: 0%; 
         padding-top: 7%;
-        
-        
+
 
     }
 
     .mobile_menu.active{
         background-color: #021138;
         z-index: 54;
+        
+
     }
+
     .titulo-nav{
         clear: both;
         color: aliceblue;
@@ -281,6 +300,7 @@ ul li.yout {
     
 
 }
+
 @media screen and (max-width:800px) {
     .titulo-nav{
         clear: both;
@@ -296,6 +316,7 @@ ul li.yout {
         font-family:'Roboto Condensed';
         z-index: 0;
     }
+
     .eventos-ima{
         clear: both;
         color: aliceblue;
@@ -314,10 +335,7 @@ ul li.yout {
         transform: translateX(0);
         display: flex;
         position: fixed;
-        top: 10%;
-        
-       
-        
+        top: 10%;  
     }
 }
 
@@ -540,8 +558,7 @@ footer{
     background-color: #021138;
     display: flex;
     justify-content: center;
-    align-items: center;
-   
+    align-items: center;   
 }
 .logo{
     width: 180px;
@@ -726,15 +743,19 @@ footer{
 #pastores{
     width:100%;
     background-color: #D9D9D9;
-    margin: auto;
-    padding: 20ch 0;
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    
+    padding: 20ch 0 0 0;
+    float: left;
+    display: inline;
+    margin-bottom: 0;
+}
+
+.imag-p{
+    position: relative;
+    left: 27%;
 }
 
 figure{
+    float: left;
    width: 20%;
    aspect-ratio: 1;
    margin-right: 7%; 
@@ -744,7 +765,8 @@ figure{
    box-sizing: border-box;
    position: relative;
    bottom: 3px;
-   filter: drop-shadow(0 0 20px rgb(0 0 0/50%));
+   filter: drop-shadow(0 0 20px rgb(0 0 0/50%));   
+
 }
 
 figure:before{
@@ -767,14 +789,23 @@ figcaption{
     width: calc(100% + 2px);
     font-size: min(32px, 5vmin);
     text-align: center;
+    font-size: 20px;
+    font-weight: none;
     font-family: PT Sans Narrow;
     place-self: end center;
-    color:white;
+    color:rgb(255, 255, 255);
     transform: perspective(500px) translateY(100%) rotateX(-90deg);
     backface-visibility: hidden;
     transform-origin: top;
-    background: #000;
-    transition: .5s;
+    background: #060a14;
+    transition:.5s;
+    opacity: 0.8; 
+    
+}
+
+figcaption span{
+    font-size: 14px;
+    color:orange;
 }
 
 figure:before{
@@ -794,6 +825,7 @@ img{
     filter: contrast(.8) brightness(.7);
     place-self: end center;
     transition: .5s;
+    
 }
 
 figure:hover img{
@@ -810,3 +842,31 @@ figure:hover::before{
 figure:hover figcaption{
     transform: perspective(500px)translateY(100%)rotateX(-30deg);
 }
+
+.redes{
+    width: 100%;
+    float: left;
+    text-align: center;
+
+}
+
+.redes img{
+    width: 20px;
+    place-self: end center;
+    float: left;
+    margin: 3% 2% 2% 3%;
+    position: relative;
+    left: 30%;
+    
+
+}
+
+.tiago{
+    display: inline;
+    position: relative;
+    left: 14%;
+}
+
+
+
+
