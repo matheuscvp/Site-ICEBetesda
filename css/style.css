@@ -755,12 +755,6 @@ footer{
     margin-bottom: 0;
 }
 
-.imag-p{
-    display: inline;
-    position: relative;
-    left: 26%;
-
-}
 
 figure{
     float: left;
@@ -806,7 +800,8 @@ figcaption{
     transform-origin: top;
     background: #060a14;
     transition:.5s;
-    opacity: 0.8;    
+    opacity: 0.8;   
+    letter-spacing: 2px; 
 }
 
 figcaption span{
@@ -815,7 +810,7 @@ figcaption span{
 }
 
 figure:before{
-    background-image:url(../imagens/pastor-gilvane.jpg);
+    background-image:url(../imagens/IMG_2308\ \(1\).jpg);
 }
 
 figure + figure::before{
@@ -848,11 +843,16 @@ figure:hover figcaption{
     transform: perspective(500px)translateY(100%)rotateX(-30deg);
 }
 
+.imag-p{
+    display: inline;
+    position: relative;
+    left: 26%;
+}
+
 .redes{
     width: 80%;
     float: left;
     text-align: center;
-
 }
 
 .redes img{
