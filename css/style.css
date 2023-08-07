@@ -895,7 +895,7 @@ figure:hover figcaption{
 
 .contribuir{
     text-align: center;
-    background-color: orange;
+    background-color: rgb(32, 32, 32);
     font-family:'Montserrat';
     font-size: 16px;   
 }
