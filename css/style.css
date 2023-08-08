@@ -355,7 +355,6 @@ ul li.yout {
     background-color:#313131;
     white-space: nowrap; 
     scroll-behavior: smooth;
-
 }
 
 .container{
@@ -767,10 +766,9 @@ footer{
 
 
 figure{
-    float: left;
    width: 270px;
    aspect-ratio: 1;
-   margin-right: 7%; 
+   margin: 0 20px;
    display: grid;
    grid-template-rows:100% ;
    cursor: pointer;
@@ -792,8 +790,6 @@ figure:before{
     filter:brightness(.9);
     transition: .5s;
 }
-
-
 
 figcaption{
     grid-area: 1/1;
@@ -854,43 +850,43 @@ figure:hover figcaption{
 }
 
 .imag-p{
-    display: inline;
-    position: relative;
-    left: 26%;
+    display: flex;
+    justify-content: center;
 }
 
 .redes{
-    width: 80%;
-    float: left;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
     padding-bottom: 10ch;
+    margin-top: 20px;
 }
 
 .redes img{
     width: 20px;
-    place-self: end center;
-    float: left;
-    margin: 3.5% 2% 2% 3%;
-    position: relative;
-    left: 38%;
+    margin: 20px;
+
 }
 
 .tiago{
-    display: inline;
-    position: relative;
-    left: 20%;
+    margin: 0 91.5px;
 }
+
+.gilvane{
+    margin: 0 91.5px;
+}
+
 
 
 @media screen and (max-width:1100px){
 
     figure{
-        clear: both;
+       display: flex;
 
-        margin-top:60px;
-        margin-left: auto;
-        margin-right: auto;
     }
+
 }
 
 

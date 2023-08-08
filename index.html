@@ -209,34 +209,34 @@
                     const maxItems = items.length;
 
                     controls.forEach(control => {
-                        control.addEventListener("click", e => {
-                            e.preventDefault();
-                            e.stopPropagation();
+                    control.addEventListener("click", e => {
+                        e.preventDefault();
+                        e.stopPropagation();
 
-                            const isLeft = e.target.classList.contains("prev-button");
+                        const isLeft = e.target.classList.contains("prev-button");
 
-                            if (isLeft) {
-                                currentItem -= 1;
-                                if (currentItem < 0) {
-                                    currentItem = maxItems - 1;
-                                }
-                            } else {
-                                currentItem += 1;
-                                if (currentItem >= maxItems) {
-                                    currentItem = 0;
-                                }
+                        if (isLeft) {
+                            currentItem -= 1;
+                            if (currentItem < 0) {
+                                currentItem = maxItems - 1;
                             }
+                        } else {
+                            currentItem += 1;
+                            if (currentItem >= maxItems) {
+                                currentItem = 0;
+                            }
+                        }
 
-                            const container = document.querySelector(".galery");
-                            const itemWidth = items[currentItem].offsetWidth; // Largura do item
-                            const scrollAmount = currentItem * itemWidth; // Quantidade de rolagem necessária
+                        const container = document.querySelector(".galery");
+                        const itemWidth = items[currentItem].offsetWidth; // Largura do item
+                        const scrollAmount = currentItem * itemWidth; // Quantidade de rolagem necessária
 
-                            container.scrollLeft = scrollAmount; // Movendo o carrossel
+                        container.scrollLeft = scrollAmount; // Movendo o carrossel
 
-                            items.forEach(item => item.classList.remove("current-item"));
-                            items[currentItem].classList.add("current-item");
-                        });
+                        items.forEach(item => item.classList.remove("current-item"));
+                        items[currentItem].classList.add("current-item");
                     });
+                });
 
             });    
         });
