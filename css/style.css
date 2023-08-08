@@ -380,6 +380,7 @@ ul li.yout {
     max-width: 250px;
     height: auto;
     border-radius: 10px;
+    transition: all 0.3s;
 }
 
 .info_evento {
@@ -412,7 +413,7 @@ span{
     letter-spacing: 1px;
 }
 
-.evento img:hover{
+.evento:hover  img{
     background-color: #313235;
     opacity: 0.5;
 
@@ -738,9 +739,6 @@ footer{
     font-weight: none;
 }
 
-.culto_img:hover{
-   
-}
 
 @media screen and (max-width:1260px){
 
@@ -852,12 +850,14 @@ figure:hover img{
     filter: contrast(1);
 }
 
-figure:hover::before{
+figure:hover::before
+{
     filter: brightness(.10);
     transform: perspective(500px)rotateX(60deg);
 }
 
-figure:hover figcaption{
+figure:hover figcaption
+{
     transform: perspective(500px)translateY(100%)rotateX(-30deg);
 }
 
@@ -875,6 +875,8 @@ figure:hover figcaption{
     padding-bottom: 10ch;
     margin-top: 20px;
 }
+
+
 
 .redes img{
     width: 20px;
