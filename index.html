@@ -210,10 +210,8 @@
 
                     controls.forEach(control => {
                         control.addEventListener("click", e => {
-                            e.preventDefault(); // Isso impedirá que a página role
+                            e.preventDefault();
                             e.stopPropagation();
-                           
-                            
 
                             const isLeft = e.target.classList.contains("prev-button");
 
@@ -228,22 +226,19 @@
                                     currentItem = 0;
                                 }
                             }
-                            
+
+                            const container = document.querySelector(".galery");
+                            const itemWidth = items[currentItem].offsetWidth; // Largura do item
+                            const scrollAmount = currentItem * itemWidth; // Quantidade de rolagem necessária
+
+                            container.scrollLeft = scrollAmount; // Movendo o carrossel
 
                             items.forEach(item => item.classList.remove("current-item"));
-                            items[currentItem].scrollIntoView({
-                                behavior: "smooth",
-                                block: "nearest",
-                                inline:"center"
-                            });
                             items[currentItem].classList.add("current-item");
                         });
                     });
-                })
-                .catch(error => {
-                    console.error("Erro ao carregar os dados:", error);
-                });
-            
+
+            });    
         });
 
         let divCultos= document.querySelector
