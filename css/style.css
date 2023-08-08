@@ -354,6 +354,8 @@ ul li.yout {
     overflow-x: auto;
     background-color:#313131;
     white-space: nowrap; 
+    scroll-behavior: smooth;
+
 }
 
 .container{
