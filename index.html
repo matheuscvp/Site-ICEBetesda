@@ -249,9 +249,9 @@
                 dadoscult.culto.map((culto)=>{
                     divCultos.innerHTML += 
                     `<div class="culto"> 
-                        <div class="parte-preta"><div class="culto_img"><a href="${culto.link}"><img src="${culto.img}" class="culto_img"></a></div></div>
+                        <a href="${culto.link}"><div class="parte-preta"><div class="culto_img"><img src="${culto.img}" class="culto_img"></div></div>
                         <div class="info_culto"> ${culto.titulo}<br><h5>${culto.data}</h5></div>
-                        </div>
+                        </div></a>
                         <br> 
                     </div>`
                 })
