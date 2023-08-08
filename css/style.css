@@ -27,8 +27,29 @@
     font-size: 16px;
     font-weight: bold;
     color: aliceblue;
-
 }
+
+.home-text p{
+    position: relative;
+}
+
+@keyframes subir{
+    from{
+        opacity: 0;
+        bottom: 50px;
+    }
+    to{
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+.home-text.ativo p{
+    animation-name: subir;
+    animation-duration: 1.5s;
+}
+
+
 
 .home-text2{
     text-align: center;
@@ -41,6 +62,12 @@
     padding: 20%;
     height: 150px;
     color: orange;
+    position: relative;
+}
+
+.home-text2.ativo p{
+    animation-name: subir;
+    animation-duration: 2s;
 }
 
 .home-text2 p span{
@@ -82,7 +109,6 @@
     width: 30%;
     font-family:'Roboto Condensed';
     z-index: 0;
-
 }
 
 .fundo-eventos{
@@ -107,6 +133,22 @@
     letter-spacing: 0px;
     width: 560px;
 }   
+
+@keyframes lateral{
+    from{
+        left: 5%;
+        color: transparent;
+    }
+    to{
+        left:2.27%; 
+        color: aliceblue;
+    }
+}
+
+.eventos-ima.ativo{
+    animation-name: lateral;
+    animation-duration: 2s;
+}
 
 .subt{
     background-color: #021138;
