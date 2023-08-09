@@ -198,6 +198,8 @@ ul li.nav a{
     position: relative;
     width: 200px;
     height: auto;
+    background-color:transparent;
+    
     padding-left: 9%;
 
 }
@@ -260,6 +262,7 @@ ul li.yout {
 
     .logo img{
         width: 200px;
+   
     }
 
     .red-div{
@@ -299,7 +302,7 @@ ul li.yout {
         transform: translateX(0);
         display: flex;
         position: fixed;
-        top: 8%;   
+        top: 0%;   
 
     }
     
@@ -377,7 +380,7 @@ ul li.yout {
         transform: translateX(0);
         display: flex;
         position: fixed;
-        top: 10%;  
+    
     }
 }
 
