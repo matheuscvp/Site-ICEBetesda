@@ -276,7 +276,7 @@ ul li.yout {
     ul.ativo{
         box-shadow: 0 10px 30px 0 rgb(5, 5, 5);
     }
-    
+
     ul li{
         clear: both;
     }
@@ -334,12 +334,14 @@ ul li.yout {
 
     .mobile_menu.active .line1{
         transform:rotate(-45deg) translate(-8px, 8px);
+        transition: all 0.5s;
     }
     .mobile_menu.active .line2{
         opacity: 0;
     }
     .mobile_menu.active .line3{
         transform:rotate(45deg) translate(-5px, -7px);
+        transition: all 0.5s;
     }
 
     .titulo-nav{
