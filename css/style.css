@@ -182,8 +182,6 @@ ul li.nav a{
     position: relative;
     left: 8%;
     width:90%;
-
-
 }
 
 
@@ -262,23 +260,28 @@ ul li.yout {
 
     .logo img{
         width: 200px;
-   
     }
 
-    .red-div{
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        left: 60%;
-      
-    }
+
 
     ul.ativo{
         box-shadow: 0 10px 30px 0 rgb(5, 5, 5);
     }
 
-    ul li{
+    ul .opc li,
+    ul .red-div li
+    {
         clear: both;
+        width: 100%;
+        margin-left:10px;
+    }
+
+    li.nav a:hover{
+        border-bottom:none;  
+    }
+    
+    ul .nav:hover a{ 
+        color: #6e6e6e;
     }
 
     ul li.nav a{
@@ -290,7 +293,6 @@ ul li.yout {
         position: relative;
         width:30%;
         height:100vh; 
-        background: #021138;
         flex-direction: column;
         align-items: center;
         transform: translateX(100%);
@@ -298,15 +300,30 @@ ul li.yout {
         display: none;
         padding-top: 80px;
         left:70%; 
+        z-index: 1;
     }
 
-    #navegação.active .opc
+    #navegação .red-div{
+        position: relative;
+        flex-direction: row;
+        display: none;
+        width:30%;
+        left:70%; 
+        padding-top: 470px;
+        justify-content: center;
+        z-index: 0;
+        background-color: #021138;
+        z-index:-60;
+
+    }
+
+    #navegação.active .opc,
+    #navegação.active .red-div
     {
         transform: translateX(0);
         display: flex;
         position: fixed;
-        top: 0%;   
-
+        top: 0%;  
     }
     
     .mobile_menu div{
@@ -392,7 +409,7 @@ ul li.yout {
         transform: translateX(0);
         display: flex;
         position: fixed;
-    
+        
     }
 }
 
