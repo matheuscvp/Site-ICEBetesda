@@ -1011,7 +1011,9 @@ figure:hover figcaption
     text-align: center;
     background-color: rgb(32, 32, 32);
     font-family:'Montserrat';
-    font-size: 16px;   
+    font-size: 16px; 
+    animation-name: direita;
+    animation-duration: 2s;  
 }
 
 .contribuir p{
@@ -1019,6 +1021,8 @@ figure:hover figcaption
     height: auto;
     color: rgb(252, 252, 252);
 }
+
+
 
 .contribuir p span{
     text-align: center;
@@ -1028,6 +1032,15 @@ figure:hover figcaption
     font-weight: bold;
     color: #fffafa;
     letter-spacing: 2px;
+}
+
+@keyframes botao{
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom:20px;
+    }
 }
 
 .contribuir button a{
@@ -1040,10 +1053,16 @@ figure:hover figcaption
 }
 
 .contribuir button{
+    position: relative;
     padding:15px 25px;
     border: none;
     border-radius: 10px;
     margin-bottom: 40px;
+}
+
+.contribuir.ativo button{
+    animation-name: botao;
+    animation-duration: 3s;
 }
 
 .contribuir button:hover{
