@@ -49,8 +49,6 @@
     animation-duration: 1.5s;
 }
 
-
-
 .home-text2{
     text-align: center;
     background-color: #D9D9D9;
@@ -680,16 +678,34 @@ footer{
     }
 }
 
+@keyframes descer{
+    from{
+        top:60px;
+    }
+    to{
+        top:0;
+    }
+}
+
+.cultos-i{
+    background-color:#D9D9D9;
+}
+
 .cultos-i h2{
     width: 100%;
-    background-color:  #D9D9D9;;
     text-align: center;
     font-family:'Montserrat';
     font-size: 36px;
     font-weight: bold;
     color: #000;
     letter-spacing: 2px;
+    position: relative;
 
+}
+
+.cultos-i.ativo h2{
+    animation-name: subir;
+    animation-duration: 1s;
 }
 
 .cultos-section{
@@ -720,7 +736,6 @@ footer{
     margin: auto; 
 }
 
-
 .culto{
     display: flex;
     flex-direction: column;
@@ -728,7 +743,14 @@ footer{
     justify-content:center;
     margin: 3ch 2px;
     text-decoration: none; 
+    position: relative;
 }
+
+.culto.ativo{
+    animation-name: descer;
+    animation-duration: 2s;
+}
+
 
 .culto a{
     text-decoration: none; 
@@ -933,6 +955,8 @@ figure:hover figcaption
 .gilvane{
     margin: 0 91.5px;
 }
+
+
 
 
 
