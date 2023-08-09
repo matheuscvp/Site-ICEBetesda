@@ -332,6 +332,16 @@ ul li.yout {
         z-index: 54;
     }
 
+    .mobile_menu.active .line1{
+        transform:rotate(-45deg) translate(-8px, 8px);
+    }
+    .mobile_menu.active .line2{
+        opacity: 0;
+    }
+    .mobile_menu.active .line3{
+        transform:rotate(45deg) translate(-5px, -7px);
+    }
+
     .titulo-nav{
         clear: both;
         color: aliceblue;
