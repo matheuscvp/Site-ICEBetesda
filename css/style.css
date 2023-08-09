@@ -192,20 +192,20 @@ ul li.nav a{
 
 }
 
+
 .logo img{
     position: relative;
     width: 200px;
     height: auto;
     background-color:transparent;
-    
     padding-left: 9%;
-
 }
-
 .logo img.ativo{
     background-color: #021138;
 
 }
+
+
 
 
 li.nav a:hover{
