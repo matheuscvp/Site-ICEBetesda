@@ -1,5 +1,3 @@
-
-
 *{
     margin: 0;
     padding: 0;
@@ -216,6 +214,7 @@ ul li.inst-fcb{
 
 ul.ativo{
     background-color: #021138;
+    z-index: 0;
 }
 
 .inst-fcb img{
@@ -249,20 +248,16 @@ ul li.yout {
 }
 
 /* resposividade nav-bar*/
-
 @media screen and (max-width:1300px){
     body{
         overflow-x: hidden;
     }
-
-   
     .logo img{
         width: 200px;
     }
 
-
-
     ul.ativo{
+        z-index: 60;
         box-shadow: 0 10px 30px 0 rgb(5, 5, 5); 
     }
 
@@ -276,10 +271,12 @@ ul li.yout {
 
     li.nav a:hover{
         border-bottom:none;  
+        
     }
     
     ul .nav:hover a{ 
         color: #6e6e6e;
+        cursor: pointer;
     }
 
     ul li.nav a{
@@ -289,7 +286,7 @@ ul li.yout {
     #navegação .opc
     {
         position: relative;
-        width:30%;
+        width:60%;
         height:100%; 
         flex-direction: column;
         align-items: center;
@@ -297,22 +294,41 @@ ul li.yout {
         transition: transform 0.3s ease-in; 
         display: none;
         padding-top: 80px;
-        left:70%; 
+        left:40%; 
         z-index: 1;
+
     }
 
     #navegação .red-div{
         position: relative;
         flex-direction: row;
         display: none;
-        width:30%;
-        left:70%; 
-        padding-top: 470px;
-        justify-content: center;
-        z-index: 0;
+        width:60%;
+        left:40%; 
+        padding-top:126%;
         background-color: #021138;
+        height: auto;
         z-index:-60;
+    }
 
+    ul .red-div{
+        margin:0;
+    }
+
+    .red-div img{
+        transform: scale(0.8);
+        margin:0;
+    }
+
+    @keyframes deslizar {
+        from{
+            transform: scaleX(0);
+            transform-origin: right;
+        }
+        to{
+            transform: scaleX(1);
+            transform-origin: right; 
+        }
     }
 
     #navegação.active .opc,
@@ -322,6 +338,7 @@ ul li.yout {
         display: flex;
         position: fixed;
         top: 0%;  
+        animation: deslizar 0.3s forwards;
     }
     
     .mobile_menu div{
