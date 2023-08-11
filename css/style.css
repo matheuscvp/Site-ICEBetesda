@@ -290,7 +290,7 @@ ul li.yout {
     {
         position: relative;
         width:30%;
-        height:100vh; 
+        height:100%; 
         flex-direction: column;
         align-items: center;
         transform: translateX(100%);
@@ -387,7 +387,7 @@ ul li.yout {
         letter-spacing: 0;
         font-family:'Roboto Condensed';
         z-index: 0;
-        width: 300px;
+        width: 250px;
 
     }
 
@@ -395,13 +395,13 @@ ul li.yout {
         clear: both;
         color: aliceblue;
         font-size: 250%;
-        font-weight: bold;
+        font-weight: bold;        
         font-weight: 900;
         position: relative;
         top: 400px;
         left:2.27%;
         letter-spacing: 0px;
-        width: 300px;
+        width: 270px;
     } 
     
     #navegação.active{
@@ -611,8 +611,8 @@ footer{
     background-color: #021138;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
+
 
 .logo_b{
     width: 180px;
@@ -620,27 +620,6 @@ footer{
 }
 .icon_local{
     width: 50px;
-}
-.icon_tel{
-    width: 35px;
-}
-.icon_email{
-    width: 35px;
-}
-
-footer{
-    width: 100%;
-    background-color: #021138;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-}
-.logo{
-    width: 180px;
-    height: auto;
-}
-.icon_local{
-    width: 50px;
     height: auto;
 }
 .icon_tel{
@@ -651,7 +630,6 @@ footer{
     width: 35px;
     height: auto;
 }
-
 
 .localizacao{
     align-items: center;
@@ -662,8 +640,6 @@ footer{
     font-weight: 700;
     font-size: 12px;
     line-height: normal;
-
-
 }
 .contato{
     align-items: center;
@@ -698,10 +674,11 @@ footer{
 }
 
 /* rodape responsivo  */
-@media screen and (max-width:750px){
+@media screen and (max-width:820px){
     footer{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .titulo{
         padding-top: 0%;
@@ -846,7 +823,7 @@ footer{
     .cultos-i h2{
         padding: 20%  0;
     }
-    
+
     .info_culto,
     .culto_img{
         width: 100%;
