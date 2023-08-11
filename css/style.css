@@ -846,12 +846,17 @@ footer{
     .cultos-i h2{
         padding: 20%  0;
     }
-
-    .culto_img,
+    
     .info_culto,
+    .culto_img{
+        width: 100%;
+        height: auto;
+
+    }
+    
     .parte-preta{
         margin: auto;
-        width: 350px;
+        width: 98%;
         height: auto;
     }
 }
