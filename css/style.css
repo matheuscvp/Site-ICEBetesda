@@ -135,13 +135,11 @@ ul{
     right: 0px;
     z-index: 1;
     position: fixed;
-
+    justify-content: center;
 }
 
 ul li{
     float:left;
-
-
 }
 
 ul li.nav a{
@@ -285,7 +283,7 @@ ul li.yout {
     }
 
     ul li.instagram{
-        margin-left: 60px;
+        margin-left: 30%;
     }
 
     ul li.yout{
