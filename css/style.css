@@ -730,6 +730,18 @@ footer{
     padding-bottom: 30px;
 }
 
+.barra{
+    position: relative;
+    width:80px;
+    height:2px;
+    top:95px;
+    right: 35%;
+}
+
+.contato .barra{
+    right: 30%;
+}
+
 .numeros_pastores{
     text-align: left;
 }
@@ -770,6 +782,10 @@ footer{
     .icon_email{
         width: 35px;
         height: auto;
+    }
+
+    .barra{
+        display: none;
     }
 
     
