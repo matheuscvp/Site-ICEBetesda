@@ -246,7 +246,8 @@ ul li.yout {
     #navegação .opc
     {
         position:relative;
-        width:60%;    
+        width:60%; 
+        height:100vh;   
         flex-direction: column;
         align-items: center;
         transform: translateX(100%);
@@ -261,7 +262,9 @@ ul li.yout {
         position: relative;
         display: none;
         width:60%;
+        height:100vh;   
         left:40%; 
+        justify-content: center;
         background-color: #021138;
         padding-top: 90vh;
     }
@@ -270,13 +273,7 @@ ul li.yout {
         margin:0;
     }
 
-    ul li.instagram{
-        margin-left: 30%;
-    }
-
-    ul li.yout{
-        margin-right: 50px;
-    }
+   
 
     .red-div img{
         transform: scale(0.8);
@@ -395,6 +392,20 @@ ul li.yout {
     .home-text{
         font-size: 85%;
     }
+}
+@media screen and (max-height:450px){
+    #navegação .opc{
+        height:45vh;
+    }
+
+    ul .opc li{
+        margin: -15px;
+    }
+
+    #navegação .red-div{
+        padding-top:85vh;
+    }
+
 }
 
 /* eventos*/
