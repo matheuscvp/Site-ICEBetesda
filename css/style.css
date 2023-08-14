@@ -130,7 +130,6 @@ ul{
     right: 0px;
     z-index: 1;
     position: fixed;
-    justify-content: center;
 }
 
 ul li{
@@ -159,7 +158,6 @@ ul li.nav a{
 }
 
 .logo img{
-    position: relative;
     width: 200px;
     height: auto;
     background-color:transparent;
@@ -229,6 +227,7 @@ ul li.yout {
     }
 
 
+
     li.nav a:hover{
         border-bottom:none;  
     }
@@ -242,10 +241,7 @@ ul li.yout {
         display: flex;
     }
 
-    .opc,
-    red-div{
-        clear: both;
-    }
+ 
 
     #navegação .opc
     {
