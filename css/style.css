@@ -718,12 +718,10 @@ footer{
 }
 
 .titulo{
-    font-size: xx-large;
     color: #FFF;
     font-family: Montserrat;
-    font-size: 30px;
+    font-size: 20px;
     font-style: normal;
-    font-weight:bolder;
     line-height: normal;
     padding-left: 30px;
     padding-top: 50px;
@@ -732,14 +730,14 @@ footer{
 
 .barra{
     position: relative;
-    width:80px;
+    width:50px;
     height:2px;
-    top:95px;
-    right: 35%;
+    top:85px;
+    right: 32%;
 }
 
 .contato .barra{
-    right: 30%;
+    right: 28%;
 }
 
 .numeros_pastores{
@@ -755,6 +753,18 @@ footer{
     }
     .titulo{
         padding-top: 0%;
+    }
+
+    .titulo{
+        font-size: xx-large;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-style: normal;
+        font-weight:bolder;
+        line-height: normal;
+        padding-left: 30px;
+        padding-bottom: 30px;
     }
     
     .numeros_pastores,
