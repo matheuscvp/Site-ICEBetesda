@@ -16,7 +16,6 @@
     left: 0;
 }
 
-
 .home-text{
     clear: both;
     text-align: center;
@@ -31,7 +30,6 @@
     position: relative;
 }
 
-
 .home-text2{
     text-align: center;
     background-color: #D9D9D9;
@@ -45,7 +43,6 @@
     color: orange;
     position: relative;
 }
-
 
 .home-text2 p span{
     text-align: center;
@@ -62,7 +59,6 @@
     height: 150px;
    
 }
-
 
 .fundo-nav{
     background-color: #021138;
@@ -122,7 +118,6 @@
     }
 }
 
-
 .subt{
     background-color: #021138;
 }
@@ -157,13 +152,11 @@ ul li.nav a{
     width:90%;
 }
 
-
 .red-div{
     position: relative;
     left: 12%;
     width:85%;
 }
-
 
 .logo img{
     position: relative;
@@ -253,7 +246,6 @@ ul li.yout {
     red-div{
         clear: both;
     }
-
 
     #navegação .opc
     {
