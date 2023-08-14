@@ -668,14 +668,16 @@ footer{
     height: auto;
 }
 .icon_tel{
-    width: 20px;
+    width: 15px;
     height: auto;
     margin-right:5px;
 }
 
 .icon_email{
-    width: 20px;
+    width: 15px;
     height: auto;
+    margin-top: 8px;
+
 }
 
 
@@ -694,7 +696,7 @@ footer{
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
-    line-height: normal;
+    line-height:25px;
     flex-grow:1;
 }
 
@@ -713,9 +715,7 @@ footer{
     text-align: left;
 }
 
-.email{
-    padding-top:5px;
-}
+
 
 .titulo{
     color: #FFF;
@@ -737,6 +737,7 @@ footer{
 }
 
 .contato .barra{
+    top:90px;
     right: 28%;
 }
 
