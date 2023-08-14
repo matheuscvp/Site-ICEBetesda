@@ -202,7 +202,6 @@ ul li.yout {
     margin-left: 80px;
 
 }
-
 .mobile_menu div{
     width: 32px;
     height: 2px;
@@ -226,8 +225,6 @@ ul li.yout {
         box-shadow: 0 10px 30px 0 rgb(5, 5, 5); 
     }
 
-
-
     li.nav a:hover{
         border-bottom:none;  
     }
@@ -240,9 +237,6 @@ ul li.yout {
     ul li.nav a{
         display: flex;
     }
-
- 
-
     #navegação .opc
     {
         position:relative;
@@ -272,8 +266,6 @@ ul li.yout {
     ul .red-div{
         margin:0;
     }
-
-   
 
     .red-div img{
         transform: scale(0.8);
@@ -317,8 +309,6 @@ ul li.yout {
         padding-top: 35px;
         left:70%;
     }
-
-   
 
     .mobile_menu.active .line1{
         transform:rotate(-45deg) translate(-8px, 8px);
@@ -392,6 +382,7 @@ ul li.yout {
     .home-text{
         font-size: 85%;
     }
+
 }
 @media screen and (max-height:450px){
     #navegação .opc{
@@ -806,6 +797,7 @@ footer{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        border: none;
     }
 
     .culto{
@@ -966,9 +958,6 @@ figure:hover figcaption
 }
 
 
-
-
-
 @media screen and (max-width:1100px){
 
     .imag-p{
@@ -981,9 +970,6 @@ figure:hover figcaption
     figure{
         margin-bottom: 10%;
     }
-
-  
-
 
     .tiago{
         display: none;
@@ -1010,8 +996,6 @@ figure:hover figcaption
     height: auto;
     color: rgb(252, 252, 252);
 }
-
-
 
 .contribuir p span{
     text-align: center;
