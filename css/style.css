@@ -340,6 +340,60 @@ ul li.yout {
 
 }
 
+@media screen and (min-width:1500px){
+    
+
+    .opc{
+        position: relative;
+        left: 15%;
+        font-size: 105%;
+    }
+
+    .red-div{
+        left:23%;
+    }
+}
+
+@media screen and (min-width:2000px){
+    .opc{
+        position: relative;
+        left: 16%;
+        font-size: 150%;
+    }
+
+    .red-div{
+        left:27%;
+    }
+}
+
+@media screen and (min-width:2500px){
+    .opc{
+        position: relative;
+        left: 20%;
+        font-size: 150%;
+    }
+
+    .home-text2 p{
+        font-size:160%;
+    }
+
+    .home-text{
+        font-size: 150%;
+    }
+
+    .contribuir p{
+        font-size: 150%;
+    }
+
+    .red-div{
+        left:30%;
+    }
+
+    .logo img{
+        width: 300px;
+    }
+}
+
 @media screen and (max-width:800px) {
     
     .titulo-nav{
