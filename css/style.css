@@ -650,51 +650,73 @@ footer{
     width: 100%;
     background-color: #021138;
     display: flex;
-    justify-content: center;
 }
+
+
 
 
 .logo_b{
     width: 180px;
-    height: auto;
+    height: auto;  
+}
+.div_logo{
+    flex-grow:2;
+    margin: 7% 0;
 }
 .icon_local{
-    width: 50px;
+    width: 30px;
     height: auto;
 }
 .icon_tel{
-    width: 35px;
+    width: 20px;
     height: auto;
+    margin-right:5px;
 }
+
 .icon_email{
-    width: 35px;
+    width: 20px;
     height: auto;
 }
 
+
 .localizacao{
-    align-items: center;
-    justify-content: center;
     color: #A8A8A8;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: normal;
+    flex-grow:1;
 }
 .contato{
-    align-items: center;
-    justify-content: center;
     color: #A8A8A8;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: normal;
+    flex-grow:1;
 }
-.div_logo, .localizacao,.contato{
-    padding: 25px;
-    margin-left: 5%;
+
+.numeros_pastores,
+.email
+{
+    margin-top:5%;
+    position: relative;
+    left:25%;
 }
+
+.endereco{
+    margin-top:5%;
+    position: relative;
+    left:15%;
+    text-align: left;
+}
+
+.email{
+    padding-top:5px;
+}
+
 .titulo{
     font-size: xx-large;
     color: #FFF;
@@ -706,11 +728,10 @@ footer{
     padding-left: 30px;
     padding-top: 50px;
     padding-bottom: 30px;
-    
 }
 
 .numeros_pastores{
-    text-align: right;
+    text-align: left;
 }
 
 /* rodape responsivo  */
@@ -723,6 +744,35 @@ footer{
     .titulo{
         padding-top: 0%;
     }
+    
+    .numeros_pastores,
+    .endereco,
+    .email
+    {
+        position: relative;
+        left: 0%;
+    }
+
+    .numeros_pastores,
+    .email
+    {
+        text-align: right;
+    }
+
+    .icon_local{
+        width: 50px;
+        height: auto;
+    }
+    .icon_tel{
+        width: 35px;
+        height: auto;
+    }
+    .icon_email{
+        width: 35px;
+        height: auto;
+    }
+
+    
 }
 
 @keyframes descer{
@@ -792,8 +842,6 @@ footer{
     position: relative;
 
 }
-
-
 
 .culto a{
     text-decoration: none; 
