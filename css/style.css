@@ -1,3 +1,5 @@
+@import url(Geral/animacoes.css);
+
 *{
     margin: 0;
     padding: 0;
@@ -194,17 +196,6 @@ ul li.yout {
         margin:0;
     }
 
-    @keyframes deslizar {
-        from{
-            transform: scaleX(0);
-            transform-origin: right;
-        }
-        to{
-            transform: scaleX(1);
-            transform-origin: right; 
-        }
-    }
-
     #navegação.active .opc,
     #navegação.active .red-div
     {
@@ -316,6 +307,7 @@ ul li.yout {
     }
 }
 
+/*responsividade titulos nav*/
 @media screen and (max-width:800px) {
     
     .titulo-nav{
@@ -391,31 +383,10 @@ ul li.yout {
     position: relative;
 }
 
-@keyframes subir{
-    from{
-        bottom:20px;
-        opacity:0;
-    }
-    to{
-        bottom:0px;
-        opacity:1;
-    }
-}
-
 .home-text.animate p{
     animation-name:subir;
     animation-duration:1.5s;
 }
-
-@keyframes aparecer{
-    from{
-        opacity:0;
-    }
-    to{
-        opacity:1;
-    }
-}
-
 .home-text2{
     text-align: center;
     background-color: #D9D9D9;
@@ -475,17 +446,6 @@ ul li.yout {
     letter-spacing: 0px;
     width: 560px;
 }   
-
-@keyframes lateral{
-    from{
-        left: 5%;
-        color: transparent;
-    }
-    to{
-        left:2.27%; 
-        color: aliceblue;
-    }
-}
 
 .eventos-ima.animate{
 
@@ -873,20 +833,11 @@ footer{
     
 }
 
-@keyframes descer{
-    from{
-        top:60px;
-    }
-    to{
-        top:0;
-    }
-}
-
-
 /*cultos online*/
 .cultos-i{
     background-color:#D9D9D9;
 }
+
 
 .cultos-i h2{
     width: 100%;

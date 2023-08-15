@@ -1,0 +1,42 @@
+@keyframes deslizar {
+    from{
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+    to{
+        transform: scaleX(1);
+        transform-origin: right; 
+    }
+}
+
+@keyframes subir{
+    from{
+        bottom:20px;
+        opacity:0;
+    }
+    to{
+        bottom:0px;
+        opacity:1;
+    }
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes lateral{
+    from{
+        left: 5%;
+        color: transparent;
+    }
+    to{
+        left:2.27%; 
+        color: aliceblue;
+    }
+}
+
