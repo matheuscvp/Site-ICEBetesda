@@ -676,8 +676,6 @@ footer{
 .icon_email{
     width: 15px;
     height: auto;
-    margin-top: 8px;
-
 }
 
 
@@ -706,6 +704,13 @@ footer{
     margin-top:5%;
     position: relative;
     left:25%;
+}
+
+.numeros_pastores p,
+.email p
+{
+    margin-bottom:8px;
+
 }
 
 .endereco{
@@ -789,6 +794,10 @@ footer{
     .icon_tel{
         width: 35px;
         height: auto;
+    }
+    
+    .dois{
+        display: none;
     }
     .icon_email{
         width: 35px;
