@@ -326,29 +326,12 @@ ul li.yout {
 
     }
 
-    .eventos-ima{
-        clear: both;
-        color: aliceblue;
-        font-size: 150%;
-        font-weight: bold;        
-        font-weight: 900;
-        position: relative;
-        top: 400px;
-        left:2.27%;
-        letter-spacing: 0px;
-        width: 270px;
-    } 
-    
     #navegação.active{
         
         transform: translateX(0);
         display: flex;
         position: fixed;
         
-    }
-
-    .home-text{
-        font-size: 85%;
     }
 
 }
@@ -644,6 +627,27 @@ span{
         text-align: center;
         color: orange; 
     }
+}
+@media screen and (max-width:800px) {
+
+    .eventos-ima{
+        color: aliceblue;
+        font-size: 150%;
+        font-weight: bold;        
+        font-weight: 900;
+        position: relative;
+        top: 400px;
+        left:2.27%;
+        letter-spacing: 0px;
+        width: 270px;
+    } 
+    .home-text.animate{
+        animation: none;
+    }
+    .home-text.animate{
+        font-size: 85%;
+    }
+
 }
 
 /* rodape */
