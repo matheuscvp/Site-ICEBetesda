@@ -998,8 +998,13 @@ footer{
     margin: 5ch;
     font-size: 30px;
     font-family:'Montserrat';
+    position: relative;
 }
 
+#pastores.animate h2{
+    animation-name: lateral-d;
+    animation-duration:3s;
+}
 
 figure{
    width: 270px;
@@ -1092,6 +1097,7 @@ figure:hover figcaption
     justify-content: center;
 }
 
+
 /*Redes Socias pastores*/
 .redes{
     display: flex;
@@ -1101,12 +1107,18 @@ figure:hover figcaption
     width: 100%;
     padding-bottom: 10ch;
     margin-top: 20px;
+    position: relative;
 }
+
+.redes.animate{
+    animation-name:lateral-e;
+    animation-duration:2s;
+}
+
 
 .redes img{
     width: 20px;
     margin: 20px;
-
 }
 
 .tiago{

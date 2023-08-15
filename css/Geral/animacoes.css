@@ -62,3 +62,23 @@
     }
 }
 
+@keyframes lateral-e{
+    from{
+        right: 5%;
+    }
+    to{
+        right:0%; 
+    }
+}
+
+@keyframes lateral-d{
+    from{
+        left: 5%;
+        opacity:0;
+    }
+    to{
+        left:0%; 
+        opacity:1;
+    }
+}
+

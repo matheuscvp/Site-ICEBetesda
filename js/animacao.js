@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const hometext2 = document.querySelectorAll(".home-text2");
     const cultos = document.querySelectorAll(".cultos-i");
     const contribuir = document.querySelectorAll(".contribuir");
+    const rede = document.querySelectorAll(".redes");
+    const pastores = document.querySelectorAll("#pastores");
 
     
     function isElementInViewport(el) {
@@ -35,6 +37,16 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
         contribuir.forEach(function(element) {
+            if (isElementInViewport(element)) {
+                element.classList.add("animate");
+            }
+        });
+        rede.forEach(function(element) {
+            if (isElementInViewport(element)) {
+                element.classList.add("animate");
+            }
+        });
+        pastores.forEach(function(element) {
             if (isElementInViewport(element)) {
                 element.classList.add("animate");
             }
