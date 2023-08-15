@@ -965,7 +965,7 @@ footer{
     }
 
     .cultos-i h2{
-        padding: 30%  0;
+        padding: 10%  0;
     }
 
     .info_culto,
@@ -979,6 +979,12 @@ footer{
         margin: auto;
         width: 98%;
         height: auto;
+    }
+}
+
+@media screen and (max-width:800px){
+    .cultos-i h2{
+        padding-top: 35%;
     }
 }
 
