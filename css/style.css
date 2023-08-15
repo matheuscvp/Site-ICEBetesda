@@ -632,7 +632,7 @@ span{
 
     .eventos-ima{
         color: aliceblue;
-        font-size: 150%;
+        font-size: 200%;
         font-weight: bold;        
         font-weight: 900;
         position: relative;
@@ -641,10 +641,8 @@ span{
         letter-spacing: 0px;
         width: 270px;
     } 
-    .home-text.animate{
-        animation: none;
-    }
-    .home-text.animate{
+
+    .home-text{
         font-size: 85%;
     }
 
@@ -967,7 +965,7 @@ footer{
     }
 
     .cultos-i h2{
-        padding: 20%  0;
+        padding: 30%  0;
     }
 
     .info_culto,
