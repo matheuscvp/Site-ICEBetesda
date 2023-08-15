@@ -118,6 +118,13 @@
     }
 }
 
+.eventos-ima.animate{
+
+    animation-name: lateral;
+    animation-duration: 3s;
+
+}
+
 .subt{
     background-color: #021138;
 }
