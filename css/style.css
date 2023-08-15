@@ -728,22 +728,25 @@ footer{
     font-size: 20px;
     font-style: normal;
     line-height: normal;
-    padding-left: 30px;
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 30px;
+}
+
+.contato .titulo{
+    padding-top:35px;
 }
 
 .barra{
     position: relative;
     width:50px;
     height:2px;
-    top:85px;
-    right: 32%;
+    top:78px;
+    right: 35%;
 }
 
 .contato .barra{
-    top:90px;
-    right: 28%;
+    top:78px;
+    right: 32%;
 }
 
 .numeros_pastores{
