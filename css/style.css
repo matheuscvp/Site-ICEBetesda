@@ -385,7 +385,7 @@ ul li.yout {
 
 .home-text.animate p{
     animation-name:subir;
-    animation-duration:1.5s;
+    animation-duration:1.8s;
 }
 .home-text2{
     text-align: center;
@@ -850,6 +850,11 @@ footer{
     position: relative;
 }
 
+.cultos-i.animate h2{
+    animation-name: subir;
+    animation-duration:1.5s;
+}
+
 .cultos-section{
     display: flex;
     flex-direction: row;
@@ -1149,6 +1154,11 @@ figure:hover figcaption
     color: rgb(252, 252, 252);
 }
 
+.contribuir.animate p{
+    animation-name: subir;
+    animation-duration:2.8s;
+}
+
 .contribuir p span{
     text-align: center;
     display:block;
@@ -1157,15 +1167,6 @@ figure:hover figcaption
     font-weight: bold;
     color: #fffafa;
     letter-spacing: 2px;
-}
-
-@keyframes botao{
-    from{
-        bottom: 0;
-    }
-    to{
-        bottom:20px;
-    }
 }
 
 .contribuir button a{
@@ -1177,12 +1178,20 @@ figure:hover figcaption
     font-size: 20px;
 }
 
+.contribuir.animate button{
+    animation-name: descer;
+    animation-duration:1.2s;
+    animation-delay:1.5s;
+    animation-fill-mode: forwards;
+}
+
 .contribuir button{
     position: relative;
     padding:15px 25px;
     border: none;
     border-radius: 10px;
     margin-bottom: 40px;
+    opacity: 0;
 }
 
 .contribuir button:hover{

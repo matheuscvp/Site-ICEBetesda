@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const animationElements = document.querySelectorAll(".eventos-ima");
     const hometext = document.querySelectorAll(".home-text");
     const hometext2 = document.querySelectorAll(".home-text2");
+    const cultos = document.querySelectorAll(".cultos-i");
+    const contribuir = document.querySelectorAll(".contribuir");
 
     function isElementInViewport(el) {
         const rect = el.getBoundingClientRect();
@@ -20,7 +22,18 @@ document.addEventListener("DOMContentLoaded", function() {
             if (isElementInViewport(element)) {
                 element.classList.add("animate");
             }
-        });hometext2.forEach(function(element) {
+        });
+        hometext2.forEach(function(element) {
+            if (isElementInViewport(element)) {
+                element.classList.add("animate");
+            }
+        });
+        cultos.forEach(function(element) {
+            if (isElementInViewport(element)) {
+                element.classList.add("animate");
+            }
+        });
+        contribuir.forEach(function(element) {
             if (isElementInViewport(element)) {
                 element.classList.add("animate");
             }
