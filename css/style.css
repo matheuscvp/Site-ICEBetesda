@@ -753,16 +753,17 @@ footer{
 .direitos{
     color: rgb(190, 190, 190);
     font-family:Montserrat;
+    font-size: 10px;
     background-color: #313131;
     position: absolute;
     width: 100%;
-    height: 9%;
+    height: 40px;
     text-align: center;
     align-self: flex-end;
 }
 
 .direitos p{
-    margin-top:1.5%;
+    margin-top:1%;
     margin-left: 10px;
 }
 
@@ -828,7 +829,7 @@ footer{
     }
 
     .direitos{
-        top:1464%;
+        position: relative;
     }
 
     
