@@ -16,81 +16,6 @@
     left: 0;
 }
 
-@keyframes subir{
-    from{
-        bottom:20px;
-        opacity:0;
-    }
-    to{
-        bottom:0px;
-        opacity:1;
-    }
-}
-
-.home-text{
-    clear: both;
-    text-align: center;
-    background-color: #021138;
-    font-family:'Montserrat';
-    font-size: 16px;
-    font-weight: bold;
-    color: aliceblue;
-    position: relative;
-}
-
-.home-text p{
-    position: relative;
-}
-
-.home-text.animate p{
-    animation-name:subir;
-    animation-duration:1.5s;
-}
-
-@keyframes aparecer{
-    from{
-        opacity:0;
-    }
-    to{
-        opacity:1;
-    }
-}
-
-.home-text2{
-    text-align: center;
-    background-color: #D9D9D9;
-    font-family:'Montserrat';
-    font-size: 16px;     
-}
-
-.home-text2 p{
-    padding: 20%;
-    height: 150px;
-    color: orange;
-    position: relative;
-}
-
-.home-text2.animate p{
-    animation-name: aparecer;
-    animation-duration:2s;
-}
-
-.home-text2 p span{
-    text-align: center;
-    display:block;
-    margin: 10px;
-    font-size: 36px;
-    font-weight: bold;
-    color: #000;
-    letter-spacing: 2px;
-}
-
-.home-text p{
-    padding: 6%;
-    height: 150px;
-   
-}
-
 .fundo-nav{
     background-color: #021138;
     background-image: url(../imagens/Fundo.png);
@@ -113,47 +38,6 @@
     width: 30%;
     font-family:'Roboto Condensed';
     z-index: 0;
-}
-
-.fundo-eventos{
-    background-color: #021138;
-    background-image: url(../imagens/Fundo.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height:700px;
-    font-family:'Roboto Condensed';
-}
-
-.eventos-ima{
-    clear: both;
-    color: aliceblue;
-    font-size: 300%;
-    font-weight: bold;
-    font-weight: 900;
-    position: relative;
-    top: 400px;
-    left:2.27%;
-    letter-spacing: 0px;
-    width: 560px;
-}   
-
-@keyframes lateral{
-    from{
-        left: 5%;
-        color: transparent;
-    }
-    to{
-        left:2.27%; 
-        color: aliceblue;
-    }
-}
-
-.eventos-ima.animate{
-
-    animation-name: lateral;
-    animation-duration: 3s;
-
 }
 
 .subt{
@@ -491,7 +375,125 @@ ul li.yout {
 
 }
 
-/* eventos*/
+/*Textos entre elementos*/
+.home-text{
+    clear: both;
+    text-align: center;
+    background-color: #021138;
+    font-family:'Montserrat';
+    font-size: 16px;
+    font-weight: bold;
+    color: aliceblue;
+    position: relative;
+}
+
+.home-text p{
+    position: relative;
+}
+
+@keyframes subir{
+    from{
+        bottom:20px;
+        opacity:0;
+    }
+    to{
+        bottom:0px;
+        opacity:1;
+    }
+}
+
+.home-text.animate p{
+    animation-name:subir;
+    animation-duration:1.5s;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+.home-text2{
+    text-align: center;
+    background-color: #D9D9D9;
+    font-family:'Montserrat';
+    font-size: 16px;     
+}
+
+.home-text2 p{
+    padding: 20%;
+    height: 150px;
+    color: orange;
+    position: relative;
+}
+
+.home-text2.animate p{
+    animation-name: aparecer;
+    animation-duration:2s;
+}
+
+.home-text2 p span{
+    text-align: center;
+    display:block;
+    margin: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+.home-text p{
+    padding: 6%;
+    height: 150px;
+   
+}
+
+
+/*eventos*/
+.fundo-eventos{
+    background-color: #021138;
+    background-image: url(../imagens/Fundo.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height:700px;
+    font-family:'Roboto Condensed';
+}
+
+.eventos-ima{
+    clear: both;
+    color: aliceblue;
+    font-size: 300%;
+    font-weight: bold;
+    font-weight: 900;
+    position: relative;
+    top: 400px;
+    left:2.27%;
+    letter-spacing: 0px;
+    width: 560px;
+}   
+
+@keyframes lateral{
+    from{
+        left: 5%;
+        color: transparent;
+    }
+    to{
+        left:2.27%; 
+        color: aliceblue;
+    }
+}
+
+.eventos-ima.animate{
+
+    animation-name: lateral;
+    animation-duration: 3s;
+
+}
+
 #carrosel{
     position: relative;
     display: flex;
@@ -616,7 +618,7 @@ span{
     opacity: 1;
 }
 
-
+/*resposividade eventos*/
 @media screen and (max-width:1100px){
     .prev-button{
         display: none;
@@ -690,9 +692,6 @@ footer{
     display: flex;
 }
 
-
-
-
 .logo_b{
     width: 180px;
     height: auto;  
@@ -757,8 +756,6 @@ footer{
     left:15%;
     text-align: left;
 }
-
-
 
 .titulo{
     color: #FFF;
@@ -885,6 +882,8 @@ footer{
     }
 }
 
+
+/*cultos online*/
 .cultos-i{
     background-color:#D9D9D9;
 }
@@ -899,8 +898,6 @@ footer{
     letter-spacing: 2px;
     position: relative;
 }
-
-
 
 .cultos-section{
     display: flex;
@@ -994,7 +991,7 @@ footer{
     font-weight: none;
 }
 
-
+/*cultos online responsivo*/
 @media screen and (max-width:1260px){
 
     .cultos-online{
@@ -1026,6 +1023,7 @@ footer{
     }
 }
 
+/*Pastores*/
 #pastores{
     width:100%;
     background-color: #D9D9D9;
@@ -1135,6 +1133,7 @@ figure:hover figcaption
     justify-content: center;
 }
 
+/*Redes Socias pastores*/
 .redes{
     display: flex;
     align-items: center;
@@ -1144,8 +1143,6 @@ figure:hover figcaption
     padding-bottom: 10ch;
     margin-top: 20px;
 }
-
-
 
 .redes img{
     width: 20px;
@@ -1161,7 +1158,7 @@ figure:hover figcaption
     margin: 0 91.5px;
 }
 
-
+/*Resposividade Pastores*/
 @media screen and (max-width:1100px){
 
     .imag-p{
@@ -1185,7 +1182,7 @@ figure:hover figcaption
 
 }
 
-
+/*contribuir*/
 .contribuir{
     text-align: center;
     background-color: rgb(32, 32, 32);
@@ -1236,8 +1233,6 @@ figure:hover figcaption
     border-radius: 10px;
     margin-bottom: 40px;
 }
-
-
 
 .contribuir button:hover{
     box-shadow: 0px 8px 5px rgb(8, 8, 8);
