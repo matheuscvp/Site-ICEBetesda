@@ -686,15 +686,18 @@ footer{
     width: 100%;
     background-color: #021138;
     display: flex;
+    justify-content: space-around;
 }
 
 .logo_b{
     width: 180px;
-    height: auto;  
+    height: auto; 
 }
+
 .div_logo{
-    flex-grow:2;
     margin: 7% 0;
+    align-self: center;
+    justify-content: center;
 }
 .icon_local{
     width: 30px;
@@ -719,7 +722,7 @@ footer{
     font-weight: 700;
     font-size: 12px;
     line-height: normal;
-    flex-grow:1;
+  
 }
 .contato{
     color: #A8A8A8;
@@ -728,7 +731,6 @@ footer{
     font-weight: 700;
     font-size: 12px;
     line-height:25px;
-    flex-grow:1;
 }
 
 .numeros_pastores,
@@ -736,7 +738,6 @@ footer{
 {
     margin-top:5%;
     position: relative;
-    left:25%;
 }
 
 .numeros_pastores p,
@@ -761,6 +762,8 @@ footer{
     line-height: normal;
     padding-top: 40px;
     padding-bottom: 30px;
+    text-align: left;
+    align-content: start;
 }
 
 .contato .titulo{
@@ -772,12 +775,11 @@ footer{
     width:50px;
     height:2px;
     top:78px;
-    right: 35%;
+
 }
 
 .contato .barra{
     top:76px;
-    right: 32%;
 }
 
 .numeros_pastores{

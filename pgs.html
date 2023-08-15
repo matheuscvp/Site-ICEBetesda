@@ -82,17 +82,20 @@
                         
                     </tr>
                     <tr class="numeros_pastores">
-                        <td><img src="imagens/telefone branco_.png" class="icon_tel"><br><img src="imagens/telefone branco_.png" class="icon_tel"></td>
+                        <td><img src="imagens/telefone branco_.png" class="icon_tel"><br><img src="imagens/telefone branco_.png" class="icon_tel dois"></td>
                         <td><p>Pr.Gilvane - (61)xxxxx-xxxx<br>
                                Pr.Tiago   - (61)xxxxx-xxxx</p></td>
                     </tr>
                     <tr class="email">
                     <td><img src="imagens/o-email branco.png" class="icon_email"></td>
-                    <td>betesdaice@gmail.com</td>
+                    <td><p>betesdaice@gmail.com</p></td>
                 </tr>
-
                 </table>
             </div> 
+
+            <div class="direitos">
+                <p>© 2023 - IGREJA CRISTÃ EVANGÉLICA BETESDA</p>
+            </div>
     </footer>
 
    
@@ -100,85 +103,8 @@
 
 
     
-    <script src="menu_mobile.js"></script>
-    <script src="muda_cor_nav.js"></script>
-    <script> 
+    <script src="js/menu_mobile.js"></script>
+    <script src="js/muda_cor_nav.js"></script>
     
-
-
-        document.addEventListener("DOMContentLoaded", () => {
-            let divEventos = document.querySelector("#eventos");
-
-            fetch("dados.json")
-                .then(response => response.json())
-                .then(dados => {
-                    dados.evento.forEach(evento => {
-                        divEventos.innerHTML +=
-                        `<div class="evento">
-                            <div class="div_img"><img src="${evento.img}" class="evento_img"></div>
-                            <div class="info_evento">
-                                ${evento.nome}<br>
-                                <span>${evento.data}</span>
-                            </div>
-                        </div>`;
-                    });
-
-                    const controls = document.querySelectorAll(".control");
-                    let currentItem = 0;
-                    const items = document.querySelectorAll(".evento");
-                    const maxItems = items.length;
-
-                    controls.forEach(control => {
-                    control.addEventListener("click", e => {
-                        e.preventDefault();
-                        e.stopPropagation();
-
-                        const isLeft = e.target.classList.contains("prev-button");
-
-                        if (isLeft) {
-                            currentItem -= 1;
-                            if (currentItem < 0) {
-                                currentItem = maxItems - 1;
-                            }
-                        } else {
-                            currentItem += 1;
-                            if (currentItem >= maxItems) {
-                                currentItem = 0;
-                            }
-                        }
-
-                        const container = document.querySelector(".galery");
-                        const itemWidth = items[currentItem].offsetWidth; // Largura do item
-                        const scrollAmount = currentItem * itemWidth; // Quantidade de rolagem necessária
-
-                        container.scrollLeft = scrollAmount; // Movendo o carrossel
-
-                        items.forEach(item => item.classList.remove("current-item"));
-                        items[currentItem].classList.add("current-item");
-                    });
-                });
-
-            });    
-        });
-
-        let divCultos= document.querySelector
-        ("#cultos")
-    
-        fetch("dadoscult.json").then((response)=>{
-            response.json().then((dadoscult)=>{
-                dadoscult.culto.map((culto)=>{
-                    divCultos.innerHTML += 
-                    `<div class="culto"> 
-                        <a href="${culto.link}"><div class="parte-preta"><div class="culto_img"><img src="${culto.img}" class="culto_img"></div></div>
-                        <div class="info_culto"> ${culto.titulo}<br><h5>${culto.data}</h5></div>
-                        </div></a>
-                        <br> 
-                    </div>`
-                })
-            })
-        })
-
-    </script>
-    </script>
 </body>
 </html>
