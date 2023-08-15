@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const animationElements = document.querySelectorAll(".eventos-ima");
     const hometext = document.querySelectorAll(".home-text");
+    const hometext2 = document.querySelectorAll(".home-text2");
 
     function isElementInViewport(el) {
         const rect = el.getBoundingClientRect();
@@ -16,6 +17,10 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
         hometext.forEach(function(element) {
+            if (isElementInViewport(element)) {
+                element.classList.add("animate");
+            }
+        });hometext2.forEach(function(element) {
             if (isElementInViewport(element)) {
                 element.classList.add("animate");
             }

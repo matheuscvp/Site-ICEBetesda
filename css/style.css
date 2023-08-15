@@ -44,7 +44,16 @@
 
 .home-text.animate p{
     animation-name:subir;
-    animation-duration:1s;
+    animation-duration:1.5s;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
 }
 
 .home-text2{
@@ -59,6 +68,11 @@
     height: 150px;
     color: orange;
     position: relative;
+}
+
+.home-text2.animate p{
+    animation-name: aparecer;
+    animation-duration:2s;
 }
 
 .home-text2 p span{
