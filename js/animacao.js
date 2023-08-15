@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const cultos = document.querySelectorAll(".cultos-i");
     const contribuir = document.querySelectorAll(".contribuir");
 
+    
     function isElementInViewport(el) {
         const rect = el.getBoundingClientRect();
         return (

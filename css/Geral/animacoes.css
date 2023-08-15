@@ -9,6 +9,17 @@
     }
 }
 
+@-webkit-keyframes subir{
+    from{
+        bottom:20px;
+        opacity:0;
+    }
+    to{
+        bottom:0px;
+        opacity:1;
+    }
+}
+
 @keyframes subir{
     from{
         bottom:20px;

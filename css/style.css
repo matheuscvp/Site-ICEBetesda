@@ -351,18 +351,8 @@ ul li.yout {
         font-size: 85%;
     }
 
-    .home-text.animate p{
-        font-size: 85%;
-    }
-
-    .eventos-ima.animate{
-        animation-name:aparecer;
-        animation-duration: 3s;
-        width: 270px;
-    }
-
-
 }
+
 @media screen and (max-height:450px){
     #navegação .opc{
         height:45vh;
@@ -455,7 +445,7 @@ ul li.yout {
     top: 400px;
     left:2.27%;
     letter-spacing: 0px;
-    width: 560px;
+    width: 250px;
 }   
 
 .eventos-ima.animate{
