@@ -1,0 +1,139 @@
+.quem{
+    display: flex;
+    background-color:  #021138;
+    flex-direction: row;
+    width:100%;
+    height:auto;
+    overflow: hidden;
+}
+
+
+.esquerda{
+    display: flex;
+    flex-direction: row;
+    width:30.5%;
+    height: 100%;
+    font-family:'Montserrat';
+    color: white;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    margin:30px 0;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.esquerda.active span{
+    transform: translateY(-100%);
+}
+
+.esquerda.active p{
+    display:none;
+}
+.canto{
+    height: 100%;
+    float: left;
+    display:flex;
+    align-items: center;
+    padding-left:20px;
+}
+
+.mobile_menu2 div{
+    width: 32px;
+    height: 2px;
+    margin: 8px;
+    background:white;
+}
+
+.mobile_menu2.active .line1{
+    transform:rotate(-45deg) translate(-8px, 8px);
+    transition: all 0.5s;
+}
+
+.mobile_menu2.active .line2{
+    opacity: 0;
+}
+
+.mobile_menu2.active .line3{
+    transform:rotate(45deg) translate(-5px, -7px);
+    transition: all 0.5s;
+}
+
+.esquerda span{
+    display: block;
+    text-align: center;
+    font-size:40px;
+    font-weight: bold;
+    width:40px;
+    height:100%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    margin-top:30px;
+    margin-left:180px;
+    transition: transform 0.5s;
+}
+
+.esquerda span.dois{
+    opacity:0;
+    position: absolute;
+    bottom:-100;
+    transition: transform 1s;
+}
+.esquerda span.tres{
+    opacity:0;
+    position: absolute;
+    bottom:-100;
+    transition: transform 1s;
+    padding-top:250px;
+}
+
+.esquerda.active span.dois{
+    opacity:1;
+    transform: translateY(150%);
+}
+
+.esquerda.active span.tres{
+    opacity:1;
+    transform: translateY(-5%);
+    color: orange;
+}
+
+.esquerda.active span.dois{
+    display:block;
+}
+
+.esquerda p{
+    display:flex;
+    transform: rotate(-90deg);
+    display: flex;
+    align-self: flex-start;
+    margin-top:90px;
+    margin-left:-40px;
+}
+
+.direita{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    width:59%;
+    height:100%;
+    margin:30px 0;
+    border-left: 1px solid gray;
+    transition: transform 0.5s;
+
+}
+
+.direita.active{
+    transform: translateX(99%);
+}
+
+.direita p{
+    display: flex;
+    align-self: center;
+    text-align: center;
+    font-family:'Montserrat';
+    font-size:25px;
+    color: rgb(90, 90, 90);
+    margin:50px  220px;
+
+}
