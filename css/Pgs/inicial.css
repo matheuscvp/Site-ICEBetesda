@@ -27,7 +27,7 @@
 .interior{
     display: flex;
     flex-direction: row;
-    margin:3%;
+    margin:3.5%;
 }
 
 .foto{
@@ -39,7 +39,7 @@
     height: 120px;
     max-width: 500px;
     height: auto;
-    border-radius:25px;
+    border-radius:30px;
 }
 
 .descricao{
@@ -54,18 +54,18 @@
 }
 
 .descricao button{
-    background-color: rgb(190, 28, 28); 
+    background-color: rgb(221, 21, 21); 
     font-family:'Montserrat';
     color: white;
     font-size:16px;
     font-weight: bolder;
-    padding:15px 30px;
+    padding:15px 40px;
     border: none;
     border-radius: 30px;
     margin-bottom: 40px;
     margin-top:20px;
     position: relative;
-    top:150px;
+    top:170px;
 }
 
 
