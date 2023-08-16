@@ -1,0 +1,80 @@
+@import url(../Geral/animacoes.css);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Textos entre elementos*/
+.home-text{
+    clear: both;
+    text-align: center;
+    background-color: #021138;
+    font-family:'Montserrat';
+    font-size: 16px;
+    font-weight: bold;
+    color: aliceblue;
+    position: relative;
+}
+
+.home-text p{
+    position: relative;
+}
+
+.home-text.animate p{
+    animation-name:subir;
+    animation-duration:1.8s;
+}
+.home-text2{
+    text-align: center;
+    background-color: #D9D9D9;
+    font-family:'Montserrat';
+    font-size: 16px;     
+}
+
+.home-text2 p{
+    padding: 20%;
+    height: 150px;
+    color: orange;
+    position: relative;
+}
+
+.home-text2.animate p{
+    animation-name: aparecer;
+    animation-duration:2s;
+}
+
+.home-text2 p span{
+    text-align: center;
+    display:block;
+    margin: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+.home-text p{
+    padding: 6%;
+    height: 150px;
+   
+}
+
+@media screen and (max-width:800px) {
+
+    .home-text{
+        font-size: 85%;
+    }
+
+}
+
+@media screen and (min-width:2500px){
+    .home-text2 p{
+        font-size:160%;
+    }
+
+    .home-text{
+        font-size: 150%;
+    }
+
+}

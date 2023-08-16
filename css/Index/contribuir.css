@@ -1,0 +1,75 @@
+@import url(../Geral/animacoes.css);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*contribuir*/
+.contribuir{
+    text-align: center;
+    background-color: rgb(32, 32, 32);
+    font-family:'Montserrat';
+    font-size: 16px; 
+    animation-name: direita;
+    animation-duration: 2s;  
+}
+
+.contribuir p{
+    padding: 6%;
+    height: auto;
+    color: rgb(252, 252, 252);
+}
+
+.contribuir.animate p{
+    animation-name: subir;
+    animation-duration:2.8s;
+}
+
+.contribuir p span{
+    text-align: center;
+    display:block;
+    margin: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fffafa;
+    letter-spacing: 2px;
+}
+
+.contribuir button a{
+    text-decoration: none;
+    text-align: center;
+    font-family:'Montserrat';
+    font-weight: bold;
+    color: #000;
+    font-size: 20px;
+}
+
+.contribuir.animate button{
+    animation-name: descer;
+    animation-duration:1.2s;
+    animation-delay:1.5s;
+    animation-fill-mode: forwards;
+}
+
+.contribuir button{
+    position: relative;
+    padding:15px 25px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    opacity: 0;
+}
+
+.contribuir button:hover{
+    box-shadow: 0px 8px 5px rgb(8, 8, 8);
+    transform: translateY(-3px);
+    transition: 200ms;
+}
+
+@media screen and (min-width:2500px){
+    .contribuir p{
+        font-size: 150%;
+    }
+
+}

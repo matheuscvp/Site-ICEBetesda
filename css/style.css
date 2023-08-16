@@ -251,8 +251,6 @@ ul li.yout {
         font-family:'Roboto Condensed';
         z-index: 0;
     }
-    
-
 }
 
 @media screen and (min-width:1500px){
@@ -288,18 +286,6 @@ ul li.yout {
         font-size: 150%;
     }
 
-    .home-text2 p{
-        font-size:160%;
-    }
-
-    .home-text{
-        font-size: 150%;
-    }
-
-    .contribuir p{
-        font-size: 150%;
-    }
-
     .red-div{
         left:30%;
     }
@@ -307,7 +293,9 @@ ul li.yout {
     .logo img{
         width: 300px;
     }
+
 }
+
 
 /*responsividade titulos nav*/
 @media screen and (max-width:800px) {
@@ -437,6 +425,25 @@ ul li.yout {
     padding: 6%;
     height: 150px;
    
+}
+
+@media screen and (max-width:800px) {
+
+    .home-text{
+        font-size: 85%;
+    }
+
+}
+
+@media screen and (min-width:2500px){
+    .home-text2 p{
+        font-size:160%;
+    }
+
+    .home-text{
+        font-size: 150%;
+    }
+
 }
 
 
@@ -673,13 +680,8 @@ span{
         left:2.27%;
         letter-spacing: 0px;
         width: 270px;
-    } 
-
-    .home-text{
-        font-size: 85%;
     }
-
-}
+} 
 
 /* rodape */
 footer{
@@ -1255,6 +1257,12 @@ figure:hover figcaption
     transition: 200ms;
 }
 
+@media screen and (min-width:2500px){
+    .contribuir p{
+        font-size: 150%;
+    }
+
+}
 
 
 
