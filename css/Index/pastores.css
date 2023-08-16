@@ -80,11 +80,11 @@ figcaption span{
 }
 
 figure:before{
-    background-image:url(../../imagens/IMG_2308\ \(1\).jpg);
+    background-image:url(../../imagens/Fotos/pastores/pastor_gil.jpg);
 }
 
 figure + figure::before{
-    background-image: url(../../imagens/pastor_tiago.jpg);
+    background-image: url(../../imagens/Fotos/pastores/pastor_tiago.jpg);
 }
 
 img{

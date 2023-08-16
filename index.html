@@ -20,7 +20,7 @@
             <div class="fundo-nav" id="nav-bar">
             <div class="nav_cor">
                 <ul id="navegação">
-                    <li><a class="logo" href="index.html"><img  src="imagens/BRANCA_Betesda-Logotipo.png" ></a></li>
+                    <li><a class="logo" href="index.html"><img  src="imagens/Logos/ICE/BRANCA_Betesda-Logotipo.png" ></a></li>
                     <div class="opc">
                         <li class="inicio nav" id="nav_sumindo"><a href="index.html">Ínicio</a></li>
                         <li class="sobre nos nav" id="nav_sumindo"><a href="">Sobre nós</a></li>
@@ -30,9 +30,9 @@
                         <li class="colabore nav" id="nav_sumindo"><a href="">Colabore</a></li>
                     </div>
                     <div class="red-div">
-                        <li class="inst-fcb  instagram"  id="nav_sumindo"><a href="https://www.instagram.com/icebetesda/"><img src="imagens/logo_insta.png"></a></li>
-                        <li class="inst-fcb" id="nav_sumindo"><a href="https://www.facebook.com/icebetesda/"><img src="imagens/logo_face.png"></a></li>
-                        <li class="yout" id="nav_sumindo"><a href="https://www.youtube.com/@ICEBetesda/about"><img src="imagens/logo_yout.png"></a></li>
+                        <li class="inst-fcb  instagram"  id="nav_sumindo"><a href="https://www.instagram.com/icebetesda/"><img src="imagens/Logos/Gerais/logo_insta.png"></a></li>
+                        <li class="inst-fcb" id="nav_sumindo"><a href="https://www.facebook.com/icebetesda/"><img src="imagens/Logos/Gerais/logo_face.png"></a></li>
+                        <li class="yout" id="nav_sumindo"><a href="https://www.youtube.com/@ICEBetesda/about"><img src="imagens/Logos/Gerais/logo_yout.png"></a></li>
                     </div>
                 </ul>
 
@@ -117,22 +117,22 @@
             <h2>Pastores da Betesda</h2>
             <div class="imag-p">
                 <figure>
-                    <img src="imagens/IMG_2308 (1)-PhotoRoom.png-PhotoRoom (2).png" alt="tiago">
+                    <img src="imagens/Fotos/pastores/pastor_gil.png" alt="gil">
                     <figcaption>Gilvane de Abreu <br> <span>Pastor</span></figcaption>
                 </figure>
                 <figure>
-                    <img src="imagens/pastor_tiago-transformed.png" alt="tiago">
+                    <img src="imagens/Fotos/pastores/pastor_tiago-transformed.png" alt="tiago">
                     <figcaption>Tiago dos Santos <br> <span>Pastor</span></figcaption>
                 </figure>
             </div>
             <div class="redes">
                 <div class="gilvane">
-                    <a href=""><img src="imagens/logo_insta.png"></a>
-                    <a href=""><img src="imagens/logo_face.png"></a>
+                    <a href=""><img src="imagens/Logos/Gerais/logo_insta.png"></a>
+                    <a href=""><img src="imagens/Logos/Gerais/logo_face.png"></a>
                 </div>
                 <div class="tiago">
-                    <a href=""><img src="imagens/logo_insta.png"></a>
-                    <a href=""><img src="imagens/logo_face.png"></a>
+                    <a href=""><img src="imagens/Logos/Gerais/logo_insta.png"></a>
+                    <a href=""><img src="imagens/Logos/Gerais/logo_face.png"></a>
                 <div>
 
                 </div>
@@ -141,16 +141,16 @@
        
         <footer>
             <div class="div_logo">
-                <h1><img src="imagens/BRANCA_Vertical Betesda Logotipo.png" class="logo_b"></h1>
+                <h1><img src="imagens/Logos/ICE/BRANCA_Vertical Betesda Logotipo.png" class="logo_b"></h1>
             </div>
                 <div class="localizacao">
                     <table>
                         <tr>
                             <td colspan="2" class="titulo">Localização</td>
-                            <img src="imagens/barra.png" class="barra">
+                            <img src="imagens/Icones/barra.png" class="barra">
                         </tr>
                         <tr class="endereco">
-                            <td><img src="imagens/localizacao branca.png" class="icon_local"></td>
+                            <td><img src="imagens/Icones/localizacao branca.png" class="icon_local"></td>
                             <td><p>
                                 QS 122 Conjunto 9<br>
                                 Samambaia Sul, Brasília/DF</p>
@@ -167,16 +167,16 @@
                     <table  >
                         <tr>
                             <td colspan="2" class="titulo">Contato</td>
-                            <img src="imagens/barra.png" class="barra">
+                            <img src="imagens/Icones/barra.png" class="barra">
                             
                         </tr>
                         <tr class="numeros_pastores">
-                            <td><img src="imagens/telefone branco_.png" class="icon_tel"><br><img src="imagens/telefone branco_.png" class="icon_tel dois"></td>
+                            <td><img src="imagens/Icones/telefone branco_.png" class="icon_tel"><br><img src="imagens/Icones/telefone branco_.png" class="icon_tel dois"></td>
                             <td><p>Pr.Gilvane - (61)xxxxx-xxxx<br>
                                    Pr.Tiago   - (61)xxxxx-xxxx</p></td>
                         </tr>
                         <tr class="email">
-                        <td><img src="imagens/o-email branco.png" class="icon_email"></td>
+                        <td><img src="imagens/Icones/o-email branco.png" class="icon_email"></td>
                         <td><p>betesdaice@gmail.com</p></td>
                     </tr>
                     </table>
@@ -196,7 +196,7 @@
         document.addEventListener("DOMContentLoaded", () => {
             let divEventos = document.querySelector("#eventos");
 
-            fetch("dados.json")
+            fetch("json/dados.json")
                 .then(response => response.json())
                 .then(dados => {
                     dados.evento.forEach(evento => {
@@ -251,7 +251,7 @@
         let divCultos= document.querySelector
         ("#cultos")
     
-        fetch("dadoscult.json").then((response)=>{
+        fetch("json/dadoscult.json").then((response)=>{
             response.json().then((dadoscult)=>{
                 dadoscult.culto.map((culto)=>{
                     divCultos.innerHTML += 
