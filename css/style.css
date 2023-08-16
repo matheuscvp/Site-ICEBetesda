@@ -711,8 +711,11 @@ footer{
 }
 
 .icon_email{
+    display: flex;
     width: 15px;
     height: auto;
+    align-items: unset;
+    margin-top:-10px;
 }
 
 
@@ -734,18 +737,17 @@ footer{
     
 }
 
-.numeros_pastores,
-.email
-{
-    margin-top:5%;
-    position: relative;
+.email P{
+    text-align: left;
+    margin-top:-5px;
 }
+
 
 .numeros_pastores p,
 .email p
 {
-    margin-bottom:8px;
-
+    margin-bottom:6px;
+    
 }
 
 .endereco{
