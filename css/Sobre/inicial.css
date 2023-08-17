@@ -100,12 +100,13 @@
     font-size:50px;
 }
 
+
 .palavra1{
     word-wrap:normal;
     width:93%;
     overflow: hidden;
     transition: width 1s;
-    margin-left:40px;
+    padding-left:2px;
 }
 
 .palavra2{
@@ -139,8 +140,10 @@
 .esquerda.active .palavra3,
 .esquerda.active .palavra2,
 .esquerda.active .palavra1{
-    width:995%;
+    width:1050%;
     text-align: left;
+    z-index:5;
+
 }
 
 
