@@ -1,6 +1,39 @@
+.titulo-quem{
+    clear: both;
+    color: aliceblue;
+    font-size: 300%;
+    font-weight: bold;
+    font-weight: 900;
+    position: relative;
+    top:50vh;    
+    left: 80vh;
+    letter-spacing: 2px;
+    width: 500px;
+    font-family:'Roboto Condensed';
+}
+
+
+
+.titulo-quem .sub{
+    top:60vh;
+    font-size: 30%;
+    font-weight:none;
+    color: orange;
+    left: 100vh;
+}
+
+.fundo-nav3{
+    
+    background-image: url(../../imagens/Fundos/Fundo_ceia.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
 .quem{
     display: flex;
-    background-color:  #021138;
+    background-color:  #313131;
     flex-direction: row;
     width:100%;
     height:auto;
@@ -101,12 +134,14 @@
 }
 
 
+
+
 .palavra1{
     word-wrap:normal;
     width:93%;
     overflow: hidden;
     transition: width 1s;
-    padding-left:2px;
+    margin-left:40px;
 }
 
 .palavra2{
