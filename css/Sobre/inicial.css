@@ -78,6 +78,7 @@
     height: 2px;
     margin: 8px;
     background:white;
+    z-index:  5;
 }
 
 .mobile_menu2.active .line1{
@@ -131,9 +132,6 @@
     font-size:50px;
 }
 
-
-
-
 .palavra1{
     word-wrap:normal;
     width:93%;
@@ -178,9 +176,6 @@
     z-index:5;
 
 }
-
-
-
 
 .palavra1{
     font-size:50px;
@@ -230,4 +225,88 @@
     color: rgb(90, 90, 90);
     margin:50px  220px;
 
+}
+
+@media screen and (max-width:1000px) {
+
+    .quem{
+        display: flex;
+        background-color:  #313131;
+        flex-direction: column;
+        width:100%;
+        height:auto;
+        overflow: hidden;
+    }
+
+    .esquerda.active span{
+        transform: translateY(-150%);
+    }
+
+    .esquerda{
+        width:100%;
+    }
+
+    .direita{
+        width:100%;
+        border-top: 1px solid gray;
+        border-left:none;
+    }
+
+    .esquerda span{
+        margin-left:80px;
+    }
+
+    .direita p{
+        margin:20px 50px;
+    
+    }
+
+    .esquerda.active span.dois{
+        display: none;
+    }
+
+    .esquerda span.tres{
+        height:70%;
+    }
+
+    .direita.active{
+        transform: translateX(100%);
+    }
+    
+    .esquerda.active h1{
+        font-size:40px;
+
+    }
+
+    
+    .palavra1{
+        margin-left:36px;
+
+    }
+    .palavra2
+    {
+        margin-top:50px;
+        margin-left:36px;
+
+
+    }
+    .palavra3
+    {
+        margin-top:98px;
+        margin-left:36px;
+
+    }
+    .palavra4
+    {
+        margin-top:146px;
+        margin-left:38px;
+
+    }
+
+
+
+    .esquerda span.tres{
+        margin-left: -290px;
+
+    }
 }
