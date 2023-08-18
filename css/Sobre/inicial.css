@@ -227,6 +227,10 @@
 
 }
 
+.direita img{
+    width:200px;
+    display: none;
+}
 @media screen and (max-width:1000px) {
 
     .quem{
@@ -276,6 +280,12 @@
     .esquerda.active h1{
         font-size:40px;
 
+    }
+
+    .direita.active img{
+        display: flex;
+        position: fixed;
+        transform: translatex(-100%);
     }
 
     
