@@ -21,6 +21,7 @@
     display:flex;
     flex-flow: column;
     height:560px;
+    position: relative;
 }
 
 .principal{
@@ -74,9 +75,9 @@
 }
 
 .page-indicators {
-    position: fixed;
-    top: 50%;
-    right: 20px;
+    position: absolute;
+    top: 50%; 
+    right: 10px; 
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;

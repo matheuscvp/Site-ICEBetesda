@@ -39,6 +39,7 @@
 .fundo-nav3{
     
     background-image: url(../../imagens/Fundos/Fundo_ceia.jpg);
+    background-color: #313131;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -132,6 +133,10 @@
     position: absolute;
     bottom:-100;
     transition: transform 1s;
+}
+
+.encont{
+    font-family: 'Lato';
 }
 
 .esquerda span.tres{
@@ -234,6 +239,7 @@
     align-self: flex-start;
     margin-top:90px;
     margin-left:-40px;
+
 }
 
 .direita{

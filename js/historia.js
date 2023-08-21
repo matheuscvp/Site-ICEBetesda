@@ -1,6 +1,7 @@
 const galery = document.querySelector('.galery');
 const images = document.querySelectorAll('.principal img');
 const pageIndicators = document.querySelector('.page-indicators');
+const container = document.querySelector('.container');
 let isGoingLeft = true;
 let currentPageIndex = 0;
 
@@ -82,7 +83,20 @@ updateGalleryPosition(0);
 
 
 
+/// Calcule a posição dos indicadores de página com base na posição da galeria
+function updatePageIndicatorPosition() {
+    const galeryRect = galery.getBoundingClientRect();
+    const containerRect = container.getBoundingClientRect();
+    const topOffset = 10; // Ajuste conforme necessário
 
+    pageIndicators.style.top = galeryRect.top - containerRect.top + topOffset + 'px';
+}
+
+// Atualize a posição inicial dos indicadores
+updatePageIndicatorPosition();
+
+// Atualize a posição dos indicadores quando a galeria for rolada
+galery.addEventListener('scroll', updatePageIndicatorPosition);
 
 
 
