@@ -67,7 +67,6 @@ galery.addEventListener('scroll', () => {
 
 // Evento de rolagem da galeria
 galery.addEventListener('scroll', () => {
-    const scrollY = galery.scrollTop;
     const pageIndex = calculateCurrentPage();
 
     if (pageIndex !== currentPageIndex) {
@@ -75,11 +74,9 @@ galery.addEventListener('scroll', () => {
         updatePageIndicators();
     }
 
-    updateGalleryPosition(scrollY);
 });
 
 updatePageIndicators();
-updateGalleryPosition(0);
 
 
 
@@ -87,7 +84,7 @@ updateGalleryPosition(0);
 function updatePageIndicatorPosition() {
     const galeryRect = galery.getBoundingClientRect();
     const containerRect = container.getBoundingClientRect();
-    const topOffset = 10; // Ajuste conforme necessário
+    const topOffset = 300; // Ajuste conforme necessário
 
     pageIndicators.style.top = galeryRect.top - containerRect.top + topOffset + 'px';
 }
