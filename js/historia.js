@@ -10,6 +10,17 @@ let lastScrollTop = 0;
 // Calcula o número de páginas com base no número de imagens
 const numPages = 4;
 
+const imageUrls = [
+    'imagens/Icones/Novo Projeto (5) (1) (2).png',
+    'imagens/Icones/pomba.png',
+    'imagens/Icones/pomba_azul.png',
+    'imagens/Icones/pomba.png',
+    // Adicione mais URLs conforme necessário
+];
+
+let currentImageIndex = 0; // Índice da imagem atual
+
+
 // Cria os indicadores de página
 for (let i = 0; i < numPages; i++) {
     const indicator = document.createElement('div');
@@ -102,6 +113,11 @@ galery.addEventListener('scroll', () => {
                 image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
 
             }
+
+            images.forEach(image => {
+                // Atualize a imagem da div correspondente com base no índice atual
+                image.src = imageUrls[pageIndex];
+            });
         }
 
         
@@ -112,6 +128,9 @@ galery.addEventListener('scroll', () => {
         updatePageIndicators();
     }
 });
+
+currentImageIndex = Math.max(0, Math.min(currentImageIndex, numPages - 1));
+
 
 updatePageIndicators();
 

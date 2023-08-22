@@ -1,4 +1,50 @@
 
+.fundo-nav4{
+    
+    background-image: url(../../../imagens/Fundos/fundo_ket.jpg);
+    background-color: #313131;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.titulo-quem{
+    clear: both;
+    color: aliceblue;
+    font-size: 300%;
+    font-weight: bold;
+    font-weight: 900;
+    position: relative;
+    display: flex;
+    text-align: center;
+    top:50vh;    
+    letter-spacing: 2px;
+    width: 100%;
+    font-family:'Roboto Condensed';
+}
+
+.titulo-quem h1{
+    padding-left:40%;
+}
+
+.line4{
+    width: 80px;
+    height: 2px;
+    background-color: orange;
+    display: flex;
+    align-self: flex-end;
+    margin-top:10%;
+    position: relative;
+    right:12%;
+}
+
+.titulo-quem .sub{
+    top:60vh;
+    font-size: 30%;
+    font-weight:none;
+    color: orange;
+    left: 100vh;
+}
 
 .galery{
     clear: both;
@@ -20,7 +66,7 @@
 .container{
     display:flex;
     flex-flow: column;
-    height:560px;
+    height:580px;
     position: relative;
 }
 
