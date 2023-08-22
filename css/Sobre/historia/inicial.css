@@ -42,7 +42,7 @@
     z-index: 60;
     max-height: 100%;
     position: sticky;
-    right:20%;
+    right:10%;
 }
 
 .principal .texto{
@@ -71,8 +71,19 @@
 
 .parte2 .texto{
     align-items: flex-end;
-    margin-right:40px;
+    margin-right:30px;
+    
 }
+
+.parte3{
+    margin-top: 10px;
+    
+}
+
+.parte3 .texto{
+    width:60%;
+}
+
 
 
 .texto p{

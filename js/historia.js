@@ -2,12 +2,13 @@ const galery = document.querySelector('.galery');
 const images = document.querySelectorAll('.principal img');
 const pageIndicators = document.querySelector('.page-indicators');
 const container = document.querySelector('.container');
+const div = document.querySelector('.principal');
 let isGoingLeft = true;
 let currentPageIndex = 0;
-
+let lastScrollTop = 0;
 
 // Calcula o número de páginas com base no número de imagens
-const numPages = 3;
+const numPages = 4;
 
 // Cria os indicadores de página
 for (let i = 0; i < numPages; i++) {
@@ -37,50 +38,84 @@ function calculateCurrentPage() {
 }
 
 
+
 galery.addEventListener('scroll', () => {
     const scrollY = galery.scrollTop;
-    
+    const pageIndex = calculateCurrentPage();
+    const alt = div.offsetHeight;
+    const divTop = div.getBoundingClientRect().top;
+    const divBottom = div.getBoundingClientRect().bottom;
+    const pi = (calculateCurrentPage()%2);
+    const meio = (alt/2);
+    var h = alt*pageIndex;
 
-    if (isGoingLeft) {
-        images.forEach(image => {
-            const angle = scrollY * 1; // Ajuste a velocidade de rotação
-            const translateY = scrollY * 1; // Ajuste a velocidade de descida
-            const translateX = scrollY * -1.5; // Ajuste a velocidade de mudança de posição para a direita após passar de 300
-            image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
-        });
-    } else {
-        const angle = scrollY * 1; // Ajuste a velocidade de rotação
-        const translateY = scrollY * 1; // Ajuste a velocidade de descida
-        const translateX = (scrollY - 1000) * 1; // Ajuste a velocidade de mudança de posição para a direita após passar de 300
-        images.forEach(image => {
-            image.style.transform = `translate(${translateX}px, ${translateY}px) rotateX(${angle}deg)`;
-        });
-    }
+    const altm1 = alt;
+    const altm2 = 2*alt;
 
-    if (scrollY >= 400) {
+    if ((pageIndex !=0 || pageIndex !=3) && (scrollY >= altm1 && scrollY <= altm2)) {
         isGoingLeft = false;
+
     } else {
         isGoingLeft = true;
     }
-});
+
+    lastScrollTop = scrollY;
+    
+
+    images.forEach(image => {
+        
+        if (scrollY >= 2.78*alt) {
+        }else{
+            if(isGoingLeft){
+                
+                
+                
+                if(scrollY<=(altm2)){
+                    const angle = scrollY * 1; // Ajuste a velocidade de rotação
+                    const translateY = scrollY * 1; // Ajuste a velocidade de descida
+                    const translateX = scrollY*-1.1; 
+
+                    image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
+
+                }else{
+
+                    const angle = scrollY * 1; // Ajuste a velocidade de rotação
+                    const translateY = scrollY * 1; // Ajuste a velocidade de descida
+                    const translateX = (scrollY-1181)*-1.1; 
+
+                    console.log(scrollY)
+
+                    image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
+    
+                }
 
 
-// Evento de rolagem da galeria
-galery.addEventListener('scroll', () => {
-    const pageIndex = calculateCurrentPage();
 
-    if (pageIndex !== currentPageIndex) {
+            }else{
+                const angle = scrollY * 1; // Ajuste a velocidade de rotação
+                const translateY = scrollY * 1; // Ajuste a velocidade de descida
+                const translateX = (scrollY-(2*alt)) * 1; 
+
+                
+                
+
+                image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
+
+            }
+        }
+
+        
+    });
+
+    if (scrollY >= pageIndex * galery.clientHeight) {
         currentPageIndex = pageIndex;
         updatePageIndicators();
     }
-
 });
 
 updatePageIndicators();
 
-
-
-/// Calcule a posição dos indicadores de página com base na posição da galeria
+// Calcule a posição dos indicadores de página com base na posição da galeria
 function updatePageIndicatorPosition() {
     const galeryRect = galery.getBoundingClientRect();
     const containerRect = container.getBoundingClientRect();
@@ -94,6 +129,3 @@ updatePageIndicatorPosition();
 
 // Atualize a posição dos indicadores quando a galeria for rolada
 galery.addEventListener('scroll', updatePageIndicatorPosition);
-
-
-
