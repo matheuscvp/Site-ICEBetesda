@@ -235,5 +235,14 @@ button a{
    
 }
 
+@media screen and (max-width:500px){
+
+    .principal img{
+        width:200px;
+        right:0%;
+    }
+   
+}
+
 
 
