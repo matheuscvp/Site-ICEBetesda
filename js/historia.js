@@ -7,6 +7,8 @@ let isGoingLeft = true;
 let currentPageIndex = 0;
 let lastScrollTop = 0;
 const mediaQuery = window.matchMedia("(max-width: 880px)");
+const mediaQuery1 = window.matchMedia("(max-width: 780px)");
+
 
 
 // Calcula o número de páginas com base no número de imagens
@@ -105,7 +107,7 @@ galery.addEventListener('scroll', () => {
                     if (mediaQuery.matches) {
                         const angle = scrollY * 1; // Ajuste a velocidade de rotação
                         const translateY = scrollY * 1; // Ajuste a velocidade de descida
-                        const translateX = (scrollY-1150)*-0.8; 
+                        const translateX = (scrollY-1080)*-0.9; 
                         image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
                     }else{
                         const angle = scrollY * 1; // Ajuste a velocidade de rotação
@@ -114,13 +116,6 @@ galery.addEventListener('scroll', () => {
                         image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
                     }
                     
-                   
-                   
-
-                    
-
-                    console.log(scrollY)
-
     
                 }
 
@@ -130,7 +125,7 @@ galery.addEventListener('scroll', () => {
                 if (mediaQuery.matches) {
                     const angle = scrollY * 1; // Ajuste a velocidade de rotação
                     const translateY = scrollY * 1; // Ajuste a velocidade de descida
-                    const translateX = (scrollY-(1050)) * 1; 
+                    const translateX = (scrollY-(1150)) * 0.8; 
                     image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
     
 
