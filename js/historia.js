@@ -6,8 +6,8 @@ const div1 = document.querySelector('.principal');
 let isGoingLeft = true;
 let currentPageIndex = 0;
 let lastScrollTop = 0;
-const mediaQuery = window.matchMedia("(max-width: 880px)");
-const mediaQuery1 = window.matchMedia("(max-width: 780px)");
+const mediaQuery = window.matchMedia("(max-width: 889px)");
+const mediaQuery1 = window.matchMedia("(max-width: 775px)");
 
 
 
@@ -88,7 +88,12 @@ galery.addEventListener('scroll', () => {
             if(isGoingLeft){
                 if(scrollY<=(altm2)){
 
-                    if (mediaQuery.matches) {
+                    if (mediaQuery1.matches) {
+                        const angle = scrollY * 1; // Ajuste a velocidade de rotação
+                        const translateY = scrollY * 1; // Ajuste a velocidade de descida
+                        const translateX = scrollY*-0.7; 
+                        image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
+                    }else if(mediaQuery.matches) {
                         const angle = scrollY * 1; // Ajuste a velocidade de rotação
                         const translateY = scrollY * 1; // Ajuste a velocidade de descida
                         const translateX = scrollY*-0.9; 
@@ -103,8 +108,12 @@ galery.addEventListener('scroll', () => {
                     
 
                 }else{
-
-                    if (mediaQuery.matches) {
+                    if (mediaQuery1.matches) {
+                        const angle = scrollY * 1; // Ajuste a velocidade de rotação
+                        const translateY = scrollY * 1; // Ajuste a velocidade de descida
+                        const translateX = (scrollY-1120)*-0.76; 
+                        image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
+                    }else if (mediaQuery.matches) {
                         const angle = scrollY * 1; // Ajuste a velocidade de rotação
                         const translateY = scrollY * 1; // Ajuste a velocidade de descida
                         const translateX = (scrollY-1080)*-0.9; 
@@ -122,7 +131,13 @@ galery.addEventListener('scroll', () => {
 
 
             }else{
-                if (mediaQuery.matches) {
+                if (mediaQuery1.matches) {
+                    const angle = scrollY * 1; // Ajuste a velocidade de rotação
+                    const translateY = scrollY * 1; // Ajuste a velocidade de descida
+                    const translateX = (scrollY-(1050)) * 0.7; 
+                    image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
+
+                }else if (mediaQuery.matches) {
                     const angle = scrollY * 1; // Ajuste a velocidade de rotação
                     const translateY = scrollY * 1; // Ajuste a velocidade de descida
                     const translateX = (scrollY-(1150)) * 0.8; 
