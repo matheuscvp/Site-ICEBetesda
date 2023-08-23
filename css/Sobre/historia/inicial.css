@@ -226,7 +226,7 @@ button a{
     background-color: blue;
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:880px){
 
     .principal img{
         width:300px;
