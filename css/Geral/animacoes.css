@@ -9,6 +9,15 @@
     }
 }
 
+@keyframes cor {
+    from{
+        color: antiquewhite;
+    }
+    to{
+        color: black;
+    }
+}
+
 @-webkit-keyframes subir{
     from{
         bottom:20px;

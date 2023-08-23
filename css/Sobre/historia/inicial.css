@@ -1,3 +1,4 @@
+@import url(../../Geral/animacoes.css);
 
 .fundo-nav4{
     
@@ -17,25 +18,25 @@
     position: relative;
     display: flex;
     text-align: center;
-    top:50vh;    
+    flex-direction: column;
+    align-self: center;
     letter-spacing: 2px;
     width: 100%;
     font-family:'Roboto Condensed';
+    margin-top:50vh;
 }
 
-.titulo-quem h1{
-    padding-left:40%;
-}
+
+
 
 .line4{
     width: 80px;
     height: 2px;
     background-color: orange;
     display: flex;
-    align-self: flex-end;
-    margin-top:10%;
+    align-self: center;
+    margin-top:3%;
     position: relative;
-    right:12%;
 }
 
 .titulo-quem .sub{
@@ -115,6 +116,12 @@
     color: gray;
 }
 
+.parte2{
+    position: relative;
+}
+
+
+
 .parte2 .texto{
     align-items: flex-end;
     margin-right:30px;
@@ -128,6 +135,11 @@
 
 .parte3 .texto{
     width:60%;
+}
+
+.parte4 .texto{
+    align-items: flex-end;
+    margin-right:30px;
 }
 
 
@@ -167,6 +179,10 @@ button a{
  
 }
 
+.parte4{
+    height:550px; 
+
+}
 
 .parte3{
     height:550px; 

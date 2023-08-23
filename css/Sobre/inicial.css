@@ -7,25 +7,31 @@
     position: relative;
     display: flex;
     text-align: center;
-    top:50vh;    
+    flex-direction: column;
+    align-self: center;
     letter-spacing: 2px;
     width: 100%;
     font-family:'Roboto Condensed';
+    margin-top:50vh;
 }
 
-.titulo-quem h1{
-    padding-left:35%;
+@media screen and (min-width:2000px){
+    .titulo-quem{
+        margin-top:20vh;
+
+    }
+
 }
+
 
 .line4{
     width: 80px;
     height: 2px;
     background-color: orange;
     display: flex;
-    align-self: flex-end;
-    margin-top:10%;
+    align-self: center;
+    margin-top:3%;
     position: relative;
-    right:19%;
 }
 
 .titulo-quem .sub{
