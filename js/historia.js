@@ -44,7 +44,6 @@ function calculateCurrentPage() {
     const galeryRect = galery.getBoundingClientRect();
     const scrollY = galery.scrollTop - galeryRect.top;
     const pageHeight = galery.clientHeight;
-    console.log(scrollY)
     const alt = div1.offsetHeight;
     const pageIndex = Math.floor((scrollY + pageHeight / 2) / pageHeight);
     return pageIndex;
@@ -93,7 +92,7 @@ galery.addEventListener('scroll', () => {
 
                     const angle = scrollY * 1; // Ajuste a velocidade de rotação
                     const translateY = scrollY * 1; // Ajuste a velocidade de descida
-                    const translateX = (scrollY-1181)*-1.1; 
+                    const translateX = (scrollY-1050)*-1.1; 
 
                     console.log(scrollY)
 
@@ -106,11 +105,7 @@ galery.addEventListener('scroll', () => {
             }else{
                 const angle = scrollY * 1; // Ajuste a velocidade de rotação
                 const translateY = scrollY * 1; // Ajuste a velocidade de descida
-                const translateX = (scrollY-(2*alt)) * 1; 
-
-                
-                
-
+                const translateX = (scrollY-(1150)) * 1; 
                 image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
 
             }

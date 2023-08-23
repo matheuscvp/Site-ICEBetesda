@@ -228,10 +228,12 @@ button a{
 
 @media screen and (max-width:800px){
 
-    .galery img{
+    .principal img{
         width:300px;
+        right:0%;
     }
-
-
+   
 }
+
+
 
