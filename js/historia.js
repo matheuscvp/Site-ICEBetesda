@@ -2,7 +2,7 @@ const galery = document.querySelector('.galery');
 const images = document.querySelectorAll('.principal img');
 const pageIndicators = document.querySelector('.page-indicators');
 const container = document.querySelector('.container');
-const div = document.querySelector('.principal');
+const div1 = document.querySelector('.principal');
 let isGoingLeft = true;
 let currentPageIndex = 0;
 let lastScrollTop = 0;
@@ -15,7 +15,6 @@ const imageUrls = [
     'imagens/Icones/pomba.png',
     'imagens/Icones/pomba_azul.png',
     'imagens/Icones/pomba.png',
-    // Adicione mais URLs conforme necessário
 ];
 
 let currentImageIndex = 0; // Índice da imagem atual
@@ -42,23 +41,29 @@ function updatePageIndicators() {
 }
 
 function calculateCurrentPage() {
-    const scrollY = galery.scrollTop;
+    const galeryRect = galery.getBoundingClientRect();
+    const scrollY = galery.scrollTop - galeryRect.top;
     const pageHeight = galery.clientHeight;
+    console.log(scrollY)
+    const alt = div1.offsetHeight;
     const pageIndex = Math.floor((scrollY + pageHeight / 2) / pageHeight);
     return pageIndex;
 }
 
 
 
+
 galery.addEventListener('scroll', () => {
     const scrollY = galery.scrollTop;
     const pageIndex = calculateCurrentPage();
-    const alt = div.offsetHeight;
-    const divTop = div.getBoundingClientRect().top;
-    const divBottom = div.getBoundingClientRect().bottom;
+    const alt = div1.offsetHeight;
+    const divTop = div1.getBoundingClientRect().top;
+    const divBottom = div1.getBoundingClientRect().bottom;
     const pi = (calculateCurrentPage()%2);
     const meio = (alt/2);
     var h = alt*pageIndex;
+
+    console.log(pageIndex);
 
     const altm1 = alt;
     const altm2 = 2*alt;
@@ -75,17 +80,13 @@ galery.addEventListener('scroll', () => {
 
     images.forEach(image => {
         
-        if (scrollY >= 2.78*alt) {
+        if(scrollY>=2.95*alt){
         }else{
             if(isGoingLeft){
-                
-                
-                
                 if(scrollY<=(altm2)){
                     const angle = scrollY * 1; // Ajuste a velocidade de rotação
                     const translateY = scrollY * 1; // Ajuste a velocidade de descida
                     const translateX = scrollY*-1.1; 
-
                     image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
 
                 }else{
@@ -119,6 +120,7 @@ galery.addEventListener('scroll', () => {
                 image.src = imageUrls[pageIndex];
             });
         }
+        
 
         
     });
