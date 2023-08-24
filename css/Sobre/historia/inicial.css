@@ -492,7 +492,7 @@ span.bottom{
 }
 
 .templos img{
-    width:380px;
+    width: 90%;
 }
 
 .fotost h3{
@@ -543,4 +543,49 @@ span.bottom{
         margin-bottom: 10px;
 
     }
+
+    .templos .titulo{
+        margin-top:100px;
+    }
+
+    
+}
+
+@media screen and (max-width:450px){
+    .linnhat
+    {
+        transform:rotateZ(90deg)
+    }
+
+    .infop,
+    .infop1,
+    .infop2,
+    .infop3
+    {
+        width:400px;
+    }
+
+    .info h5{
+        margin-top:10px;
+        justify-self: start;
+    }
+    .info span{
+        transform:rotateZ(-90deg);
+        display: none;
+    }
+
+    .info h5{
+        transform:rotateZ(-90deg);
+        align-self:center;
+        margin-top:100px;
+    }
+
+    .anos h3{
+        transform:rotateZ(-180deg)
+    }
+
+    .past .titulo{
+        margin-bottom:20px;
+    }
+
 }
