@@ -458,6 +458,13 @@ span.bottom{
     z-index: 60;
 }
 
+.info span{
+    margin:6px;
+    color: aliceblue;
+    font-size:14px;
+    font-family:'Montserrat';
+}
+
 .templos{
     background-color: #313131;
     font-family:'Montserrat';
@@ -505,9 +512,9 @@ span.bottom{
 }
 
 .past .line4{
-    margin-top:5px;
+    margin-top:10px;
 }
 
 .templos .line4{
-    margin-top:5px;
+    margin-top:10px;
 }
