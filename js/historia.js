@@ -8,6 +8,8 @@ let currentPageIndex = 0;
 let lastScrollTop = 0;
 const mediaQuery = window.matchMedia("(max-width: 889px)");
 const mediaQuery1 = window.matchMedia("(max-width: 775px)");
+const mediaQuery2 = window.matchMedia("(max-width: 540px)");
+
 
 
 
@@ -57,117 +59,125 @@ function calculateCurrentPage() {
 
 
 galery.addEventListener('scroll', () => {
-    const scrollY = galery.scrollTop;
-    const pageIndex = calculateCurrentPage();
-    const alt = div1.offsetHeight;
-    const divTop = div1.getBoundingClientRect().top;
-    const divBottom = div1.getBoundingClientRect().bottom;
-    const pi = (calculateCurrentPage()%2);
-    const meio = (alt/2);
-    var h = alt*pageIndex;
 
-    console.log(pageIndex);
+    if (mediaQuery2.matches) {
+    }else{
+        const scrollY = galery.scrollTop;
+        const pageIndex = calculateCurrentPage();
+        const alt = div1.offsetHeight;
+        const divTop = div1.getBoundingClientRect().top;
+        const divBottom = div1.getBoundingClientRect().bottom;
+        const pi = (calculateCurrentPage()%2);
+        const meio = (alt/2);
+        var h = alt*pageIndex;
 
-    const altm1 = alt;
-    const altm2 = 2*alt;
+        console.log(pageIndex);
 
-    if ((pageIndex !=0 || pageIndex !=3) && (scrollY >= altm1 && scrollY <= altm2)) {
-        isGoingLeft = false;
+        const altm1 = alt;
+        const altm2 = 2*alt;
 
-    } else {
-        isGoingLeft = true;
-    }
+        if ((pageIndex !=0 || pageIndex !=3) && (scrollY >= altm1 && scrollY <= altm2)) {
+            isGoingLeft = false;
 
-    lastScrollTop = scrollY;
-    
+        } else {
+            isGoingLeft = true;
+        }
 
-    images.forEach(image => {
+        lastScrollTop = scrollY;
         
-        if(scrollY>=2.95*alt){
-        }else{
-            if(isGoingLeft){
-                if(scrollY<=(altm2)){
 
-                    if (mediaQuery1.matches) {
-                        const angle = scrollY * 1; // Ajuste a velocidade de rotação
-                        const translateY = scrollY * 1; // Ajuste a velocidade de descida
-                        const translateX = scrollY*-0.7; 
-                        image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
-                    }else if(mediaQuery.matches) {
-                        const angle = scrollY * 1; // Ajuste a velocidade de rotação
-                        const translateY = scrollY * 1; // Ajuste a velocidade de descida
-                        const translateX = scrollY*-0.9; 
-                        image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
+        images.forEach(image => {
+            
+            if(scrollY>=2.95*alt){
+            }else{
+                if(isGoingLeft){
+                    if(scrollY<=(altm2)){
+
+                        if (mediaQuery1.matches) {
+                            const angle = scrollY * 1; // Ajuste a velocidade de rotação
+                            const translateY = scrollY * 1; // Ajuste a velocidade de descida
+                            const translateX = scrollY*-0.7; 
+                            image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
+                        }else if(mediaQuery.matches) {
+                            const angle = scrollY * 1; // Ajuste a velocidade de rotação
+                            const translateY = scrollY * 1; // Ajuste a velocidade de descida
+                            const translateX = scrollY*-0.9; 
+                            image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
+                        }else{
+                            const angle = scrollY * 1; // Ajuste a velocidade de rotação
+                            const translateY = scrollY * 1; // Ajuste a velocidade de descida
+                            const translateX = scrollY*-1.1; 
+                            image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
+                        }
+
+                        
+
                     }else{
-                        const angle = scrollY * 1; // Ajuste a velocidade de rotação
-                        const translateY = scrollY * 1; // Ajuste a velocidade de descida
-                        const translateX = scrollY*-1.1; 
-                        image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
+                        if (mediaQuery1.matches) {
+                            const angle = scrollY * 1; // Ajuste a velocidade de rotação
+                            const translateY = scrollY * 1; // Ajuste a velocidade de descida
+                            const translateX = (scrollY-1120)*-0.76; 
+                            image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
+                        }else if (mediaQuery.matches) {
+                            const angle = scrollY * 1; // Ajuste a velocidade de rotação
+                            const translateY = scrollY * 1; // Ajuste a velocidade de descida
+                            const translateX = (scrollY-1080)*-0.9; 
+                            image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
+                        }else{
+                            const angle = scrollY * 1; // Ajuste a velocidade de rotação
+                            const translateY = scrollY * 1; // Ajuste a velocidade de descida
+                            const translateX = (scrollY-1050)*-1.1; 
+                            image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
+                        }
+                        
+        
                     }
 
-                    
+
 
                 }else{
                     if (mediaQuery1.matches) {
                         const angle = scrollY * 1; // Ajuste a velocidade de rotação
                         const translateY = scrollY * 1; // Ajuste a velocidade de descida
-                        const translateX = (scrollY-1120)*-0.76; 
+                        const translateX = (scrollY-(1050)) * 0.7; 
                         image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
+
                     }else if (mediaQuery.matches) {
                         const angle = scrollY * 1; // Ajuste a velocidade de rotação
                         const translateY = scrollY * 1; // Ajuste a velocidade de descida
-                        const translateX = (scrollY-1080)*-0.9; 
+                        const translateX = (scrollY-(1150)) * 0.8; 
                         image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
+        
+
                     }else{
                         const angle = scrollY * 1; // Ajuste a velocidade de rotação
                         const translateY = scrollY * 1; // Ajuste a velocidade de descida
-                        const translateX = (scrollY-1050)*-1.1; 
+                        const translateX = (scrollY-(1150)) * 1; 
                         image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
+        
                     }
-                    
-    
+                
                 }
 
-
-
-            }else{
-                if (mediaQuery1.matches) {
-                    const angle = scrollY * 1; // Ajuste a velocidade de rotação
-                    const translateY = scrollY * 1; // Ajuste a velocidade de descida
-                    const translateX = (scrollY-(1050)) * 0.7; 
-                    image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
-
-                }else if (mediaQuery.matches) {
-                    const angle = scrollY * 1; // Ajuste a velocidade de rotação
-                    const translateY = scrollY * 1; // Ajuste a velocidade de descida
-                    const translateX = (scrollY-(1150)) * 0.8; 
-                    image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
-    
-
-                }else{
-                    const angle = scrollY * 1; // Ajuste a velocidade de rotação
-                    const translateY = scrollY * 1; // Ajuste a velocidade de descida
-                    const translateX = (scrollY-(1150)) * 1; 
-                    image.style.transform = `translate(${translateX}px, ${translateY}px) rotateY(${angle}deg)`;
-    
-                }
-               
+                images.forEach(image => {
+                    // Atualize a imagem da div correspondente com base no índice atual
+                    image.src = imageUrls[pageIndex];
+                });
             }
+            
 
-            images.forEach(image => {
-                // Atualize a imagem da div correspondente com base no índice atual
-                image.src = imageUrls[pageIndex];
-            });
-        }
-        
+            
+        });
+    }
 
-        
-    });
+    const scrollY = galery.scrollTop;
+    const pageIndex = calculateCurrentPage();
 
     if (scrollY >= pageIndex * galery.clientHeight) {
         currentPageIndex = pageIndex;
         updatePageIndicators();
     }
+    
 });
 
 currentImageIndex = Math.max(0, Math.min(currentImageIndex, numPages - 1));

@@ -243,18 +243,33 @@ button a{
         display: none;
     }
 
-    .parte1 .texto{
-        padding-left:15%;
+    .texto p{
+        width:60%;
+
     }
    
 }
 
 @media screen and (max-width:300px){
 
-    .texto{
-        padding-left:20%;
-
+    .galery{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
     }
+
+    .texto{
+        padding:0;
+    }
+}
+
+@media screen and (max-height:450px){
+
+    .principal img{
+        padding-top:0;
+    
+    }
+
 }
 
 
