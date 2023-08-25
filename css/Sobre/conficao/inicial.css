@@ -81,7 +81,6 @@
 .texto 
 {
     display:none;
-    height: 0;
     transition: all 3s;
 }
 
