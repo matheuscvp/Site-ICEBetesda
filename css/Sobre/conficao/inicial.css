@@ -82,10 +82,13 @@
 {
     display:none;
     transition: all 3s;
+    position: relative;
+
 }
 
 .texto.animada{
     display:flex;
+    animation: slideDown 0.2s;
 }
 
 
