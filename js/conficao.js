@@ -12,7 +12,10 @@ todosOsMais.forEach((mais, index) => {
             todosOsTextos[index].classList.remove('animada');
             todosOsLine7[index].classList.remove('animada');
         }
-        
+
         clicado = !clicado;
     });
 });
+
+
+

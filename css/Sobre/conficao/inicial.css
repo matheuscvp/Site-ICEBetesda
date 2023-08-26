@@ -10,7 +10,7 @@
 .titulo-quem{
     clear: both;
     color: aliceblue;
-    font-size: 300%;
+    font-size: 250%;
     font-weight: bold;
     font-weight: 900;
     position: relative;
@@ -22,6 +22,41 @@
     width: 100%;
     font-family:'Roboto Condensed';
     margin-top:50vh;
+}
+
+.meio{
+    font-size:30%;
+    font-family:'Dancing Script';
+    
+}
+
+.titulo-conf h2{
+    font-family: 'Montserrat';
+    color: rgb(255, 255, 255);
+    width:100%;
+    text-align: center;
+    background-color: #021138;
+    margin-top:30px;
+    padding-top:20px;
+    padding-bottom:20px;
+
+}
+
+.titulo-conf p{
+    text-align: center;
+    color: orange;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size:14px;
+    margin-top: 20px;
+
+}
+
+.titulo-conf{
+    width:100%;
+    height: auto;
+    margin: 0;
+    padding:0;
 }
 
 .line4{
@@ -48,8 +83,9 @@
     display: flex;
     text-align: left;
     color: aliceblue;
-    margin:10%;
+    margin: 0 10% 10% 10%;
     font-family: 'Montserrat';
+    margin-left:30%;
 }
 
 
@@ -68,7 +104,7 @@
 .mais
 {
     margin-bottom:8px;
-    width:50px;
+    width:60px;
     height: auto;
     transition: all 1.5s;
 }
@@ -83,6 +119,7 @@
     display:none;
     transition: all 3s;
     position: relative;
+    margin-right:20px;
 
 }
 
@@ -109,5 +146,17 @@
 
 .line6{
     transform: translateY(13px);
+}
+
+@media screen and (max-width:450px){
+
+    .t{
+        margin-left:0;
+    }
+
+    .titulo h2{
+        font-size:30px;
+    }
+
 }
 
