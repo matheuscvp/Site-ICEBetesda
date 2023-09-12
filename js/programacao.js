@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const imagens = [
         {
-            front: 'imagens/Fundos/Raw Photo.jpg',
+            front: 'imagens/Fotos/calendario/Domingo.png',
             back: 'imagens/Fundos/Raw Photo.jpg'
         },
         {
