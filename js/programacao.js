@@ -2,25 +2,42 @@ document.addEventListener('DOMContentLoaded', function () {
     const card = document.querySelector('.card');
     const anteriorBotao = document.getElementById('anterior');
     const proximoBotao = document.getElementById('proximo');
-    let virarCartao = false;
+    let virarCartao = true;
 
     const imagens = [
+        
+        {
+            front: 'imagens/Fotos/calendario/Segunda.png',
+            back: 'imagens/Fotos/calendario/Segunda.png'
+        },
+        {
+            front: 'imagens/Fotos/calendario/Terca.png',
+            back: 'imagens/Fotos/calendario/Terca.png'
+        },
+        {
+            front: 'imagens/Fotos/calendario/Quarta.png',
+            back: 'imagens/Fotos/calendario/Quarta.png'
+        },
+        {
+            front: 'imagens/Fotos/calendario/Quinta.png',
+            back: 'imagens/Fotos/calendario/Quinta.png'
+        },
+        {
+            front: 'imagens/Fotos/calendario/Sexta.png',
+            back: 'imagens/Fotos/calendario/Sexta.png'
+        },
+        {
+            front: 'imagens/Fotos/calendario/Sabado.png',
+            back: 'imagens/Fotos/calendario/Sabado.png'
+        },
         {
             front: 'imagens/Fotos/calendario/Domingo.png',
-            back: 'imagens/Fundos/Raw Photo.jpg'
+            back: 'imagens/Fotos/calendario/Domingo.png'
         },
-        {
-            front: 'imagens/Fundos/fundo_ket.jpg',
-            back: 'imagens/Fundos/fotoPGS.jpg'
-        },
-        {
-            front: 'imagens/Fundos/fotoPGS.jpg',
-            back: 'imagens/Fundos/fundo_ket.jpg'
-        }
         // Adicione mais imagens conforme necessário
     ];
 
-    let currentImageIndex = 0;
+    let currentImageIndex = -1;
 
     function trocarImagens() {
         const currentImage = imagens[currentImageIndex];
@@ -29,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
             card.querySelector('.card-front img').src = currentImage.back;
         } else {
             card.style.transform = 'rotateY(0deg)';
-            card.querySelector('.card-front img').src = currentImage.front;
+            card.querySelector('.card-back img').src = currentImage.front;
         }
         virarCartao = !virarCartao;
     }
@@ -45,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function proximoSlide() {
         currentImageIndex++;
         if (currentImageIndex >= imagens.length) {
-            currentImageIndex = 0;
+            currentImageIndex =0;
         }
         trocarImagens();
     }
