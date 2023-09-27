@@ -117,10 +117,16 @@ body{
     .dizimo,
     .oferta{
         margin-top:50px;
-    }
-
-
-
-    
+    }   
 }
+
+@media screen and (max-width:350px){
+    .dizimo img,
+    .oferta img{
+        margin-top:10px;
+        width:150px;
+        height:auto;
+    }
+}
+
 
