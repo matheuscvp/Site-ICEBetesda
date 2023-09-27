@@ -101,4 +101,26 @@ body{
     font-weight: bolder;
 }
 
+.dizimo img,
+.oferta img{
+    margin-top:10px;
+    width:250px;
+    height:auto;
+}
+
+
+@media screen and (max-width:540px){
+    .colab{
+        flex-direction: column;
+        margin-top:50px;
+    }
+    .dizimo,
+    .oferta{
+        margin-top:50px;
+    }
+
+
+
+    
+}
 
