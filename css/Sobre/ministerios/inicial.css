@@ -1,6 +1,6 @@
 .fundo-nav4 {
 
-    background-image: url(../../imagens/Fundos/fundo_ket.jpg);
+    background-image: url(../../../imagens/Fundos/fundo_ket.jpg);
     background-color: #313131;
     background-size: cover;
     background-position: center;
@@ -125,7 +125,7 @@ body {
 }
 
 .imag5{
-    background-image: url("../../imagens/Logos/Gerais/WhatsApp\ Image\ 2023-09-01\ at\ 13.28.45.png");
+    background-image: url("../../../imagens/Logos/Gerais/WhatsApp\ Image\ 2023-09-01\ at\ 13.28.45.png");
     background-size: contain;
     background-repeat: no-repeat;
     margin-top:30px;
@@ -153,7 +153,7 @@ body {
 }
 
 .ret-m:hover .imag5{
-    background-image: url("../../imagens/Logos/Gerais/BRANCA_Logo\ \(1\).png");
+    background-image: url("../../../imagens/Logos/Gerais/BRANCA_Logo\ \(1\).png");
 }
 
 @media screen and (max-width:450px){
