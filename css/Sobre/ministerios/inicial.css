@@ -160,5 +160,17 @@ body {
     .min{
         flex-direction: column;
     }
+
+    .info{
+        top:-20px;
+    }
+
+    .ret-m:hover .info{
+        z-index: 2;
+    }
+
+    .ret-m{
+        margin-bottom:150px;
+    }
     
 }
