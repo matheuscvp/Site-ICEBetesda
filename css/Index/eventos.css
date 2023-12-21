@@ -8,11 +8,11 @@
 /*eventos*/
 .fundo-eventos{
     background-color: #021138;
-    background-image: url(../../imagens/Fundos/Fundo.png);
+    background-image: url(../../imagens/Fundos/Fundo.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height:700px;
+    height:650px;
     font-family:'Roboto Condensed';
 }
 
@@ -27,7 +27,18 @@
     left:2.27%;
     letter-spacing: 0px;
     width: 250px;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+
 }   
+
+.eventos-ima span{
+    font-size: 50%;
+    color: aliceblue;
+    font-weight: 200;
+
+
+
+}
 
 .eventos-ima.animate{
 

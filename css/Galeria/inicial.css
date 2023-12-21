@@ -71,15 +71,25 @@ body{
     overflow: hidden;
 }
 
+
+.iframe-center{
+    display: flex;
+    justify-content: center;
+}
+
 iframe{
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
+    flex-direction: row;
+
+
 }
 
 .iframe-container{
     width: 100%;
-    height:auto;
     display: flex;
-    justify-content:center;
-    align-content: center;
-    overflow: hidden;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

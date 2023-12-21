@@ -1,54 +1,24 @@
 {
     "evento": [
         {
-            "nome": "Culto de Celebração", 
+            "nome": "Culto de Santa Ceia", 
             "data": "todo Domingo às 19:00hrs", 
-            "img": "imagens/Fotos/culto_de_celebracao 1.1-1.JPG"
+            "img": "imagens/Eventos/Imagem do WhatsApp de 2023-12-21 à(s) 13.07.36_43337fe7.jpg"
         }, 
         {
-            "nome": "Culto de Jovens", 
+            "nome": "Cantata de Natal", 
             "data": "Sabado às 19:00hrs", 
-            "img": "imagens/Fotos/culto_de_celebracao 1.1-1.JPG"
+            "img": "imagens/Eventos/Imagem do WhatsApp de 2023-12-21 à(s) 13.07.37_32c071a3.jpg"
         },
         {
-            "nome": "Conferencia Missionaria", 
-            "data": "todo Domingo às 19:00hrs", 
-            "img": "imagens/Fotos/culto_de_celebracao 1.1-1.JPG"
+            "nome": "Escola Bíblica Dominical", 
+            "data": "todo Domingo às 9:30hrs", 
+            "img": "imagens/Eventos/Imagem do WhatsApp de 2023-12-21 à(s) 13.07.37_a8dfc65b.jpg"
         },
         {
-            "nome": "Culto de Celebração", 
-            "data": "todo Domingo às 19:00hrs", 
-            "img": "imagens/Fotos/culto_de_celebracao 1.1-1.JPG"
-        }, 
-        {
-            "nome": "Culto de Jovens", 
-            "data": "Sabado às 19:00hrs", 
-            "img": "imagens/Fotos/culto_de_celebracao 1.1-1.JPG"
-        }, 
-        {
-            "nome": "Culto de Jovens", 
-            "data": "Sabado às 19:00hrs", 
-            "img": "imagens/Fotos/culto_de_celebracao 1.1-1.JPG"
-        },
-        {
-            "nome": "Culto de Celebração", 
-            "data": "todo Domingo às 19:00hrs", 
-            "img": "imagens/Fotos/culto_de_celebracao 1.1-1.JPG"
-        }, 
-        {
-            "nome": "Culto de Jovens", 
-            "data": "Sabado às 19:00hrs", 
-            "img": "imagens/Fotos/culto_de_celebracao 1.1-1.JPG"
-        },
-        {
-            "nome": "Culto de Celebração", 
-            "data": "todo Domingo às 19:00hrs", 
-            "img": "imagens/Fotos/culto_de_celebracao 1.1-1.JPG"
-        },
-        {
-            "nome": "Culto de Celebração", 
-            "data": "todo Domingo às 19:00hrs", 
-            "img": "imagens/Fotos/culto_de_celebracao 1.1-1.JPG"
+            "nome": "Muay Thai", 
+            "data": "Terça e Quinta às 20:00hrs", 
+            "img": "imagens/Eventos/Imagem do WhatsApp de 2023-12-21 à(s) 13.18.37_f8b3a782.jpg"
         }, 
         {
             "nome": "Culto de Jovens", 

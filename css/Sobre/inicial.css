@@ -134,6 +134,12 @@
     transition: transform 0.5s;
 }
 
+.esquerda span.encont{
+    -webkit-text-stroke: 0.5px rgb(228, 228, 228); /* Contorno preto */
+  color: transparent; /* Torna o preenchimento interno transparente */
+  font-size: 50px;
+}
+
 .esquerda span.dois{
     opacity:0;
     position: absolute;

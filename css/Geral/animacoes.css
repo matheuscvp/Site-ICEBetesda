@@ -69,6 +69,67 @@
     }
 }
 
+@keyframes lateralret1{
+    from{
+        left: 0%;
+        background-color: #071f5c;
+    }
+    to{
+        left: 20%;
+        background-color: transparent;
+    }
+}
+@keyframes lateralret2{
+    from{
+        left: 0%;
+        background-color:  aliceblue;
+    }
+    to{
+        left: 10%;
+        background-color: transparent;
+    }
+}
+@keyframes lateralret3{
+    from{
+        left: 0%;
+        background-color: #071f5c;
+    }
+    to{
+        left: 5%;
+        background-color: transparent;
+    }
+}
+@keyframes lateralret4{
+    from{
+        left: 0%;
+        background-color:  aliceblue;
+    }
+    to{
+        left: 10%;
+        background-color: transparent;
+    }
+}
+@keyframes lateralret5{
+    from{
+        left: 0%;
+        background-color: #071f5c;
+    }
+    to{
+        left: 15%;
+        background-color: transparent;
+    }
+}
+@keyframes lateraltit{
+    from{
+        left: 15%;
+        color: transparent;
+    }
+    to{
+        left: 38%;
+        color: aliceblue;
+    }
+}
+
 @keyframes descer{
     from{
         top:20px;

@@ -20,11 +20,10 @@
 
 .fundo-nav{
     background-color: #021138;
-    background-image: url(../imagens/Fundo.png);
+    background-image: url(../imagens/Fundos/bemvindo.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
 }
 
 
