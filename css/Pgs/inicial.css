@@ -59,13 +59,13 @@
     color: white;
     font-size: 16px;
     font-weight: bolder;
-    padding: 15px 40px;
+    padding: 15px 20px;
     border: none;
     border-radius: 30px;
     margin-bottom: 40px;
     margin-top: 20px;
     position: relative;
-    top: 170px;
+    top: 10px;
 }
 
 .pgList {
@@ -73,6 +73,7 @@
     border-collapse: collapse;
     width: 100%;
     height: auto;
+    border: 1px;
 }
 
 .pgList tr, .pgList td {
