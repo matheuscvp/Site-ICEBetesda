@@ -16,6 +16,35 @@
     border-radius: 50px;
 }
 
+.btPg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(221, 21, 21);
+    font-family: 'Montserrat';
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    position: relative;
+    top: 10px;
+    text-align: center;
+}
+
+.btPg a {
+    text-decoration: none;
+    color: white;
+    margin-right: 5px; /* Espaçamento entre o texto e o ícone */
+}
+
+.material-symbols-outlined {
+    font-size: 20px;
+}
+
 .fundo-nav2 {
 
     background-image: url(../../imagens/Fundos/fotoPGS.JPG);
@@ -53,20 +82,6 @@
     align-items: center;
 }
 
-.descricao button {
-    background-color: rgb(221, 21, 21);
-    font-family: 'Montserrat';
-    color: white;
-    font-size: 16px;
-    font-weight: bolder;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 30px;
-    margin-bottom: 40px;
-    margin-top: 20px;
-    position: relative;
-    top: 10px;
-}
 
 .pglist {
     text-align: center;
@@ -76,17 +91,18 @@
     border-collapse: collapse;
     width: 65%;
     height: auto;
-    border-radius: 50px; 
+    border-radius: 50px;
     background-color: rgb(221, 21, 21);
 }
 
-.pglist tr, .pglist td {
-    color:#D9D9D9;
+.pglist tr,
+.pglist td {
+    color: #D9D9D9;
     text-align: center;
     padding: 2%;
     font-family: 'Montserrat';
     font-weight: bolder;
-    
+
 }
 
 .PGS {
@@ -100,6 +116,8 @@
     background-color: #D9D9D9;
     font-family: 'Montserrat';
 }
-.PGS tr, .PGS td{
+
+.PGS tr,
+.PGS td {
     padding: 3%;
 }
