@@ -41,15 +41,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function trocarImagens() {
         const currentImage = imagens[currentImageIndex];
-        if (!virarCartao) {
-            card.style.transform = 'rotateY(180deg)';
-            card.querySelector('.card-front img').src = currentImage.back;
-        } else {
+        card.style.transition = 'transform 0.5s ease-in-out'; // Adiciona uma transição suave
+    
+        card.style.transform = 'rotateY(90deg)';
+        card.addEventListener('transitionend', function rotateBack() {
+            card.querySelector('.card-front img').src = currentImage.front;
+            card.querySelector('.card-back img').src = currentImage.back;
+    
             card.style.transform = 'rotateY(0deg)';
-            card.querySelector('.card-back img').src = currentImage.front;
-        }
-        virarCartao = !virarCartao;
+            card.removeEventListener('transitionend', rotateBack);
+        });
     }
+    
+    
+    
+    
 
     function slideAnterior() {
         currentImageIndex--;
