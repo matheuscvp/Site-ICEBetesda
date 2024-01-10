@@ -203,12 +203,13 @@
 }
 
 .palavra3{
-    word-wrap:normal;
+    white-space: nowrap;
     margin-top:-61px;
     margin-left:38px;
     overflow: hidden;
-    transition: width 3s;
+    transition: width 2s;
     width:93%;
+    height: 10%;
 }
 
 .palavra4{
