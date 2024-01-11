@@ -42,8 +42,7 @@
     left: 100vh;
 }
 
-.fundo-nav3{
-    
+.fundo-nav3{ 
     background-image: url(../../imagens/Fundos/Fundo_ceia.jpg);
     background-color: #313131;
     background-size: cover;
@@ -135,9 +134,8 @@
 }
 
 .esquerda span.encont{
-    -webkit-text-stroke: 0.5px rgb(228, 228, 228); /* Contorno preto */
-  color: transparent; /* Torna o preenchimento interno transparente */
   font-size: 50px;
+  color: orange;
 }
 
 .esquerda span.dois{
@@ -414,4 +412,53 @@ span.cit{
 .top{
     display: flex;
     align-self: flex-end;
+}
+
+.vision{
+    background-color:#D9D9D9;
+    font-family:'Montserrat';
+    font-size:25px;
+    font-weight: bolder;
+    width:50%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+}
+.mision{
+    background-color:#D9D9D9;
+    font-family:'Montserrat';
+    font-size:25px;
+    font-weight: bolder;
+    width:50%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+    margin-left: 50%;
+}
+
+.tituloVision{
+    color: rgb(255, 177, 33);
+    font-size: 20;
+}
+
+.mision p,
+.vision p{
+    width:80%;
+    height:auto;
+    margin:40px 0;
+    color: #313131;
+    font-size: 20px;
+}
+
+.visionP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:auto;
 }
