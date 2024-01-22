@@ -465,24 +465,37 @@ span.cit {
 }
 
 
-.item:hover, .item:focus-within, .item:target {
+
+.item:hover,
+.item:focus-within,
+.item:target {
     _flex-grow: 2;
     width: 100%;
     background-color: transparent;
-  }
-  .item:hover .titulo_aside, .item:focus-within .titulo_aside, .item:target .titulo_aside {
+}
+
+.item:hover .titulo_aside,
+.item:focus-within .titulo_aside,
+.item:target .titulo_aside {
     max-height: 0;
     opacity: 0;
-  }
-  .item:hover .titutulo_content, .item:focus-within .titutulo_content, .item:target .titutulo_content {
+}
+
+.item:hover .titutulo_content,
+.item:focus-within .titutulo_content,
+.item:target .titutulo_content {
     opacity: 1;
-  }
-  .item:hover .description, .item:focus-within .description, .item:target .description {
+}
+
+.item:hover .description,
+.item:focus-within .description,
+.item:target .description {
     opacity: 1;
-  }
-  .item:hover {
+}
+
+.item:hover {
     cursor: pointer;
-  }
+}
 
 .action {
     position: absolute;
@@ -507,7 +520,7 @@ span.cit {
     overflow: hidden;
 }
 
-.titutulo_content{
+.titutulo_content {
     opacity: 0;
     width: 100%;
     height: auto;
@@ -553,7 +566,7 @@ span.cit {
 }
 
 .content {
-    padding: 24rem 4.5rem 0rem 8rem;
+    padding: 15rem 4.5rem 0rem 8rem;
     width: 55%;
     text-align: left;
     line-height: 4px;
@@ -565,11 +578,11 @@ span.cit {
     color: white;
     font-weight: 500;
     line-height: 120%;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow-y: none;
+    overflow-x: none;
     height: 100%;
     opacity: 0;
     transition: all 0.3s ease-in-out;
     margin-left: -145px;
-    width: 85%;
+    width: 95%;
 }
