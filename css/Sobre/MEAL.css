@@ -1,0 +1,38 @@
+.pglist {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    clear: both;
+    border-collapse: collapse;
+    width: 65%;
+    height: auto;
+    border-radius: 50px;
+    background-color: rgb(221, 21, 21);
+}
+
+.pglist tr,
+.pglist td {
+    color: #D9D9D9;
+    text-align: center;
+    padding: 2%;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+
+}
+
+.PGS {
+    text-align: center;
+    margin-left: 17%;
+    margin-right: 17%;
+    clear: both;
+    border-collapse: collapse;
+    width: 60%;
+    height: auto;
+    background-color: #D9D9D9;
+    font-family: 'Montserrat';
+}
+
+.PGS tr,
+.PGS td {
+    padding: 3%;
+}
