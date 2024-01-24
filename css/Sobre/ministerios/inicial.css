@@ -144,8 +144,8 @@ body {
 
 
 
-.imag5 {
-    background-image: url("../../../imagens/Logos/Gerais/WhatsApp\ Image\ 2023-09-01\ at\ 13.28.45.png");
+.imag5,
+.imag6 {
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 30px;
@@ -153,6 +153,15 @@ body {
     height: 80px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.imag5{
+    background-image: url("../../../imagens/Logos/Gerais/WhatsApp\ Image\ 2023-09-01\ at\ 13.28.45.png");
+}
+
+.imag6{
+    background-image: url("../../../imagens/Logos/Gerais/Recepcao.png");
+    scale: 1.5;
 }
 
 
@@ -179,6 +188,10 @@ body {
 
 .ret-m:hover .imag5 {
     background-image: url("../../../imagens/Logos/Gerais/BRANCA_Logo\ \(1\).png");
+}
+
+.ret-m:hover .imag6 {
+    background-image: url("../../../imagens/Logos/Gerais/RecepcaoB.png");
 }
 
 @media screen and (max-width:450px) {
