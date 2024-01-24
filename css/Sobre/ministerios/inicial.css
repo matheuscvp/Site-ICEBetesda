@@ -58,25 +58,26 @@
     letter-spacing: 2px;
 }
 
-.espaco{
+.espaco {
     width: 100%;
-    height:200px;
+    height: 200px;
 }
+
 .Min2,
-.Min{
+.Min {
     clear: both;
     background-color: #313131;
     display: flex;
     flex-direction: row;
     width: 100%;
-    height:auto;
+    height: auto;
     flex-wrap: wrap;
     height: auto;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
-.Min2{
-    margin-top:150px;
+.Min2 {
+    margin-top: 150px;
 }
 
 .ret-m {
@@ -95,7 +96,6 @@
     position: relative;
     transition: transform 0.3s, background-color 0.3s;
     box-shadow: 2px 2px 15px 1px black;
-
 }
 
 body {
@@ -119,25 +119,44 @@ body {
     background-color: #fff;
 }
 
+.info2 {
+    width: 250px;
+    height: 160px;
+    border-radius: 10px;
+    position: relative;
+    top: -147px;
+    text-align: center;
+    z-index: -1;
+    background-color: #fff;
+}
+
 .info p {
     width: 250px;
     height: 160px;
-    margin-top:50px;
+    margin-top: 50px;
 }
 
-.imag5{
+.info2 p {
+    width: 250px;
+    height: 160px;
+    margin-top: 50px;
+}
+
+
+
+.imag5 {
     background-image: url("../../../imagens/Logos/Gerais/WhatsApp\ Image\ 2023-09-01\ at\ 13.28.45.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top:30px;
+    margin-top: 30px;
     width: 70px;
-    height:80px;
+    height: 80px;
     margin-left: auto;
     margin-right: auto;
 }
 
 
-.ret-m:hover{
+.ret-m:hover {
     background-color: #000658;
     border-radius: 10px 10px 0px 0px;
     box-shadow: 0px 0px 40px rgb(47, 47, 187), 0px 0px 15px rgb(46, 46, 170);
@@ -145,41 +164,59 @@ body {
     color: #fff;
 }
 
-.ret-m:hover .info{
+.ret-m:hover .info {
     top: -5px;
     color: #000000;
-    text-shadow:none;
+    text-shadow: none;
 }
 
-.ret-m:hover .imag5{
+.ret-m:hover .info2 {
+    top: -5px;
+    color: #000000;
+    text-shadow: none;
+
+}
+
+.ret-m:hover .imag5 {
     background-image: url("../../../imagens/Logos/Gerais/BRANCA_Logo\ \(1\).png");
 }
 
-@media screen and (max-width:450px){
-    .min{
+@media screen and (max-width:450px) {
+    .min {
         flex-direction: column;
     }
-
-    .home-text2{
-        margin-bottom:50px;
+    .Min2{
+        margin-top: 0px;
     }
 
-    .info{
-        top:-20px;
+    .home-text2 {
+        margin-bottom: 50px;
     }
 
-    .ret-m:hover .info{
+    .info,
+    .info2 {
+        top: -20px;
+    }
+
+    
+
+    .ret-m:hover .info {
         z-index: 2;
         border-radius: 0px 0px 10px 10px;
-        margin-top:20px;
+        margin-top: 20px;
+    }
+    .ret-m:hover .info2 {
+        z-index: 2;
+        border-radius: 0px 0px 10px 10px;
+        margin-top: 20px;
     }
 
-    .ret-m{
-        margin-bottom:200px;
+    .ret-m {
+        margin-bottom: 200px;
     }
 
-    .espaco{
+    .espaco {
         display: none;
     }
-    
+
 }
