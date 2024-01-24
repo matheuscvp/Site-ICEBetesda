@@ -36,3 +36,34 @@
 .PGS td {
     padding: 3%;
 }
+
+.home-text2 {
+    text-align: center;
+    background-color: #313131;
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+.home-text2 p {
+    padding: 15%;
+    height: 150px;
+    color: orange;
+    position: relative;
+}
+
+.home-text2 p span {
+    text-align: center;
+    display: block;
+    margin: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width:450px){  
+    
+    .home-text2{
+        margin-bottom:50px;
+    }
+}
