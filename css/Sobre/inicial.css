@@ -469,7 +469,7 @@ span.cit {
 .item:hover,
 .item:focus-within,
 .item:target {
-    _flex-grow: 2;
+    flex-grow: 2;
     width: 100%;
     background-color: transparent;
 }
@@ -585,4 +585,131 @@ span.cit {
     transition: all 0.3s ease-in-out;
     margin-left: -145px;
     width: 95%;
+}
+
+.ig {
+    background-color: #D9D9D9;
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-weight: bolder;
+    width: 100%;
+    height: 500px;
+    color: black;
+    display: flex;
+    flex-direction: wrap;
+    overflow-x: hidden;
+}
+
+.ig a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+.visao {
+    background-color: #D9D9D9;
+    background-image: url(../../imagens/Fundos/Fundo_ceia.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-width: 2.05rem;
+    transition: all 0.3s ease-in-out;
+    flex-grow: 1;
+    height: 100%;
+    width: 100px;
+  
+}
+
+.valores {
+    background-color: #D9D9D9;
+    background-image: url(../../imagens/Fundos/fundo_ket.jpg);
+    height: 100%;
+    width: 100px;
+    background-position: center center;
+    background-size: cover;
+    min-width: 2.05rem;
+    transition: all 0.3s ease-in-out;
+    flex-grow: 1;
+
+}
+
+.missao {
+    background-color: #D9D9D9;
+    background-image: url(../../imagens/Fundos/bemvindo.jpg);
+    height: 100%;
+    width: 100px;
+    background-position: center center;
+    background-size: cover;
+    min-width: 2.05rem;
+    transition: all 0.3s ease-in-out;
+    flex-grow: 1;
+}
+
+.visao:target,
+.visao:focus-within,
+.visao:hover{
+    flex-grow: 2;
+    width: 100%;
+}
+
+.missao:target,
+.missao:focus-within,
+.missao:hover{
+    
+    flex-grow: 2;
+    width: 100%;
+}
+
+.valores:target,
+.valores:focus-within,
+.valores:hover{
+    
+    flex-grow: 2;
+    width: 100%;
+}
+
+.text_ig{
+    opacity: 0;
+    display: none;
+}
+
+.lateral{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.vertical_text{
+    height: 100%;
+    width: 100px;
+    position: relative;
+    top: -320px;
+}
+
+.titulo_ig{
+    font-size: 50px;
+    color: orange;
+}
+
+.descricao_ig{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.visao:hover .lateral,
+.missao:hover .lateral,
+.valores:hover .lateral{
+    display: none;
+}
+
+.missao:hover .text_ig,
+.valores:hover .text_ig,
+.visao:hover .text_ig{
+    opacity: 1;
+    width: 70%;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
 }
