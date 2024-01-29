@@ -209,7 +209,7 @@
     overflow: hidden;
     transition: width 2s;
     width: 93%;
-    height: 10%;
+    height: 14%;
 }
 
 .palavra4 {
@@ -419,173 +419,7 @@ span.cit {
     align-self: flex-end;
 }
 
-.uteis {
-    clear: both;
-    background-color: #D9D9D9;
-    font-family: 'Montserrat';
-    font-size: 25px;
-    font-weight: bolder;
-    width: 100%;
-    height: 500px;
-    color: black;
-}
 
-
-.uteis ul {
-    width: 100%;
-    float: none;
-    z-index: 1;
-    position: static;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    display: flex;
-    flex: 1 1 auto;
-    overflow: hidden;
-}
-
-.uteis ul li {
-    float: none;
-}
-
-.item {
-    --cover: var(--cover-placeholder);
-    background: var(--cover);
-    background-position: center center;
-    background-size: cover;
-    background-color: var(--cover-placeholder);
-    background-blend-mode: linear-gradient(180deg, rgba(15, 15, 15, 0) 0%, #111111 100%);
-    position: relative;
-    flex-grow: 1;
-    height: 100%;
-    width: 100px;
-    min-width: 2.05rem;
-    transition: all 0.3s ease-in-out;
-}
-
-
-
-.item:hover,
-.item:focus-within,
-.item:target {
-    flex-grow: 2;
-    width: 100%;
-    background-color: transparent;
-}
-
-.item:hover .titulo_aside,
-.item:focus-within .titulo_aside,
-.item:target .titulo_aside {
-    max-height: 0;
-    opacity: 0;
-}
-
-.item:hover .titutulo_content,
-.item:focus-within .titutulo_content,
-.item:target .titutulo_content {
-    opacity: 1;
-}
-
-.item:hover .description,
-.item:focus-within .description,
-.item:target .description {
-    opacity: 1;
-}
-
-.item:hover {
-    cursor: pointer;
-}
-
-.action {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(15, 15, 15, 0.75);
-    background: linear-gradient(180deg, rgba(15, 15, 15, 0) 0%, #111111 100%);
-    text-decoration: none;
-}
-
-.titutulo_content,
-.titulo_aside {
-    color: white;
-    font-family: "Roboto Condensed";
-    margin: 0;
-    max-height: 200%;
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;
-}
-
-.titutulo_content {
-    opacity: 0;
-    width: 100%;
-    height: auto;
-}
-
-.titutulo_content {
-    font-size: 4rem;
-    line-height: 100%;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-left: -145px;
-}
-
-.aside {
-    padding: 1rem;
-    position: absolute;
-    height: 100%;
-    right: 1rem;
-    bottom: 0;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-}
-
-.aside:before {
-    content: "+";
-    color: #fff;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    display: inline-block;
-}
-
-.aside:after {
-    content: "";
-    flex-grow: 1;
-    width: 1px;
-    display: block;
-    margin-top: 1rem;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.content {
-    padding: 15rem 4.5rem 0rem 8rem;
-    width: 55%;
-    text-align: left;
-    line-height: 4px;
-    font-size: 16px;
-    left: -50rem;
-}
-
-.description {
-    color: white;
-    font-weight: 500;
-    line-height: 120%;
-    overflow-y: none;
-    overflow-x: none;
-    height: 100%;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-    margin-left: -145px;
-    width: 95%;
-}
 
 .ig {
     background-color: #D9D9D9;
@@ -718,4 +552,12 @@ span.cit {
     margin-right: auto;
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width:450px) {
+
+    .descricao_ig{
+        font-size: 12px;
+    }
+
 }
