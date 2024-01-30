@@ -1,34 +1,48 @@
 @import url(../animacoes.css);
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 /*nav-bar*/
-#nav-bar{
+#nav-bar {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 700px;
-    font-family:'Montserrat';
+    font-family: 'Montserrat';
     font-size: 16px;
     font-weight: bold;
     top: 0;
     left: 0;
-}
-
-.fundo-nav{
-    background-color: #021138;
-    background-image: url(../../../imagens/Fundos/bemvindo.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    overflow: hidden;
 
 }
 
+.fundo-nav {
+    overflow: hidden;
+    position: relative;
 
-.titulo-nav{
+}
+
+
+
+.fundo-nav video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 700px;
+    z-index: -1;
+    max-width: 1000px;
+
+
+}
+
+
+.titulo-nav {
     clear: both;
     display: flex;
     justify-content: center;
@@ -43,14 +57,14 @@
     left: 38%;
     letter-spacing: -1px;
     width: 30%;
-    font-family:'Roboto Condensed';
+    font-family: 'Roboto Condensed';
     z-index: 0;
     text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
     animation-name: lateraltit;
     animation-duration: 2s;
 }
 
-.ret1{
+.ret1 {
     background-color: #071f5c;
     position: relative;
     top: 270px;
@@ -60,12 +74,12 @@
     border-radius: 5px;
     animation-name: lateralret1;
     animation-duration: 5s;
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
 
 }
 
-.ret2{
-    background-color:  aliceblue;
+.ret2 {
+    background-color: aliceblue;
     position: relative;
     top: 300px;
     left: 10%;
@@ -74,10 +88,10 @@
     border-radius: 5px;
     animation-name: lateralret2;
     animation-duration: 3s;
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
 }
 
-.ret3{
+.ret3 {
     background-color: #071f5c;
     position: relative;
     top: 330px;
@@ -87,11 +101,11 @@
     border-radius: 5px;
     animation-name: lateralret3;
     animation-duration: 3s;
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
 }
 
-.ret4{
-    background-color:  aliceblue;
+.ret4 {
+    background-color: aliceblue;
     position: relative;
     top: 360px;
     left: 10%;
@@ -100,10 +114,10 @@
     border-radius: 5px;
     animation-name: lateralret4;
     animation-duration: 3s;
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
 }
 
-.ret5{
+.ret5 {
     background-color: #071f5c;
     position: relative;
     top: 380px;
@@ -113,89 +127,89 @@
     border-radius: 5px;
     animation-name: lateralret5;
     animation-duration: 4s;
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
 }
 
-.titulo-nav span{
+.titulo-nav span {
     color: aliceblue;
     font-size: 50%;
-    font-weight:200;
+    font-weight: 200;
 }
 
 
-.subt{
+.subt {
     background-color: #021138;
 }
 
-ul{
+ul {
     list-style-type: none;
     width: 100%;
     padding-top: 25px;
-    float:left; 
+    float: left;
     right: 0px;
     z-index: 1;
     position: fixed;
 }
 
-ul li{
-    float:left;
+ul li {
+    float: left;
 }
 
-ul li.nav a{
+ul li.nav a {
     display: block;
     margin: 20px 2em;
     line-height: 2em;
     text-decoration: none;
-    color:antiquewhite;
+    color: antiquewhite;
 
 }
 
 
-.opc{
+.opc {
     position: relative;
     left: 5%;
-    width:90%;
+    width: 90%;
 }
 
-.red-div{
+.red-div {
     position: relative;
     left: 8%;
-    width:100%;
+    width: 100%;
 }
 
-.logo img{
+.logo img {
     width: 200px;
     height: auto;
-    background-color:transparent;
+    background-color: transparent;
     padding-left: 9%;
 }
 
-.logo img.ativo{
+.logo img.ativo {
     background-color: #021138;
 }
 
-li.nav a:hover{
-    background-position: right bottom ;
-    border-bottom: 2px  solid white;  
+li.nav a:hover {
+    background-position: right bottom;
+    border-bottom: 2px solid white;
 }
 
-ul li.inst-fcb{
+ul li.inst-fcb {
     margin: 30px 10px;
 }
 
-ul.ativo{
+ul.ativo {
     background-color: #021138;
 }
 
-.inst-fcb img{
+.inst-fcb img {
     width: 20px;
-    height:20px;
+    height: 20px;
 
 }
 
-.yout img{
+.yout img {
     width: 30px;
-    height: 30px; 
+    height: 30px;
 
 }
 
@@ -204,96 +218,96 @@ ul li.yout {
 
 }
 
-#insta{
+#insta {
     margin-left: 80px;
 
 }
-.mobile_menu div{
+
+.mobile_menu div {
     width: 32px;
     height: 2px;
     margin: 8px;
-    background:white;
+    background: white;
     display: none;
 }
 
 /* resposividade nav-bar*/
-@media screen and (max-width:1300px){
-    body{
+@media screen and (max-width:1300px) {
+    body {
         overflow-x: hidden;
     }
 
-    .logo img{
+    .logo img {
         width: 200px;
     }
 
-    ul{
+    ul {
         background-color: #021138;
-        box-shadow: 0 10px 30px 0 rgb(5, 5, 5); 
+        box-shadow: 0 10px 30px 0 rgb(5, 5, 5);
     }
 
 
-    li.nav a:hover{
-        border-bottom:none;  
+    li.nav a:hover {
+        border-bottom: none;
     }
-    
-    ul .nav:hover a{ 
+
+    ul .nav:hover a {
         color: #6e6e6e;
         cursor: pointer;
     }
 
-    ul li.nav a{
+    ul li.nav a {
         display: flex;
     }
-    #navegação .opc
-    {
-        position:relative;
-        width:60%; 
-        height:100vh;   
+
+    #navegação .opc {
+        position: relative;
+        width: 60%;
+        height: 100vh;
         flex-direction: column;
         align-items: center;
         transform: translateX(100%);
-        transition: transform 0.3s ease-in; 
+        transition: transform 0.3s ease-in;
         display: none;
         padding-top: 80px;
-        left:40%; 
+        left: 40%;
         z-index: 1;
     }
 
-    #navegação .red-div{
+    #navegação .red-div {
         position: relative;
         display: none;
-        width:60%;
-        height:100vh;   
-        left:40%; 
+        width: 60%;
+        height: 100vh;
+        left: 40%;
         justify-content: center;
         background-color: #021138;
         padding-top: 90vh;
     }
 
-    ul .red-div{
-        margin:0;
+    ul .red-div {
+        margin: 0;
     }
 
-    .red-div img{
+    .red-div img {
         transform: scale(0.8);
-        margin:0;
+        margin: 0;
     }
 
     #navegação.active .opc,
-    #navegação.active .red-div
-    {
+    #navegação.active .red-div {
         transform: translateX(0);
         display: flex;
         position: fixed;
-        top: 0%;  
+        top: 0%;
         animation: deslizar 0.3s forwards;
     }
-    
-    .mobile_menu div{
+
+    .mobile_menu div {
         display: block;
     }
 
-    .mobile_menu{
+    .mobile_menu {
         cursor: pointer;
         z-index: 60;
         position: fixed;
@@ -303,22 +317,24 @@ ul li.yout {
         padding-left: 13%;
         padding-right: auto;
         padding-top: 35px;
-        left:70%;
+        left: 70%;
     }
 
-    .mobile_menu.active .line1{
-        transform:rotate(-45deg) translate(-8px, 8px);
+    .mobile_menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
         transition: all 0.5s;
     }
-    .mobile_menu.active .line2{
+
+    .mobile_menu.active .line2 {
         opacity: 0;
     }
-    .mobile_menu.active .line3{
-        transform:rotate(45deg) translate(-5px, -7px);
+
+    .mobile_menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
         transition: all 0.5s;
     }
 
-    .titulo-nav{
+    .titulo-nav {
         clear: both;
         color: aliceblue;
         font-size: 250%;
@@ -329,49 +345,49 @@ ul li.yout {
         left: 38%;
         letter-spacing: -5px;
         width: 30%;
-        font-family:'Roboto Condensed';
+        font-family: 'Roboto Condensed';
         z-index: 0;
     }
 }
 
-@media screen and (min-width:1500px){
-    
+@media screen and (min-width:1500px) {
 
-    .opc{
+
+    .opc {
         position: relative;
         left: 15%;
         font-size: 105%;
     }
 
-    .red-div{
-        left:23%;
+    .red-div {
+        left: 23%;
     }
 }
 
-@media screen and (min-width:2000px){
-    .opc{
+@media screen and (min-width:2000px) {
+    .opc {
         position: relative;
         left: 16%;
         font-size: 150%;
     }
 
-    .red-div{
-        left:27%;
+    .red-div {
+        left: 27%;
     }
 }
 
-@media screen and (min-width:2500px){
-    .opc{
+@media screen and (min-width:2500px) {
+    .opc {
         position: relative;
         left: 20%;
         font-size: 150%;
     }
 
-    .red-div{
-        left:30%;
+    .red-div {
+        left: 30%;
     }
 
-    .logo img{
+    .logo img {
         width: 300px;
     }
 
@@ -380,8 +396,8 @@ ul li.yout {
 
 /*responsividade titulos nav*/
 @media screen and (max-width:800px) {
-    
-    .titulo-nav{
+
+    .titulo-nav {
         clear: both;
         color: aliceblue;
         font-size: 200%;
@@ -389,42 +405,42 @@ ul li.yout {
         font-weight: 600;
         position: relative;
         top: 50%;
-        left:34%;
+        left: 34%;
         letter-spacing: 0;
-        font-family:'Roboto Condensed';
+        font-family: 'Roboto Condensed';
         z-index: 0;
         width: 250px;
 
     }
 
-    #navegação.active{
-        
+    #navegação.active {
+
         transform: translateX(0);
         display: flex;
         position: fixed;
-        
+
     }
 
 }
 
-@media screen and (max-height:450px){
-    #navegação .opc{
-        height:45vh;
+@media screen and (max-height:450px) {
+    #navegação .opc {
+        height: 45vh;
     }
 
-    ul .opc li{
+    ul .opc li {
         margin: -15px;
     }
 
-    #navegação .red-div{
-        padding-top:85vh;
+    #navegação .red-div {
+        padding-top: 85vh;
     }
 
 }
 
 @media screen and (max-width:375px) {
 
-    .titulo-nav{
+    .titulo-nav {
         clear: both;
         color: aliceblue;
         font-size: 200%;
@@ -432,9 +448,9 @@ ul li.yout {
         font-weight: 600;
         position: relative;
         top: 50%;
-        left:20%;
+        left: 20%;
         letter-spacing: 0;
-        font-family:'Roboto Condensed';
+        font-family: 'Roboto Condensed';
         z-index: 0;
         width: 250px;
 
