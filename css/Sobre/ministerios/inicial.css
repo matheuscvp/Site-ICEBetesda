@@ -147,7 +147,9 @@ body {
 .imag5,
 .imag6,
 .imag7,
-.imag8 {
+.imag8,
+.imag10{
+    
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 30px;
@@ -173,6 +175,12 @@ body {
 .imag8 {
     background-image: url("../../../imagens/Logos/Gerais/Betesda_Kids.png");
     scale: 1.6;
+}
+
+.imag10{
+    background-image: url("../../../imagens/Logos/Gerais/logo_Mulheres_em_Ação_b.png");
+    scale: 1.6;
+
 }
 
 
@@ -211,6 +219,10 @@ body {
 
 .ret-m:hover .imag8{
     background-image: url("../../../imagens/Logos/Gerais/Betesda_Kids_b.png");
+}
+
+.ret-m:hover .imag10{
+    background-image: url("../../../imagens/Logos/Gerais/logo_Mulheres_em_Ação_transparente\ \(1\).png");
 }
 
 @media screen and (max-width:1020px) {
