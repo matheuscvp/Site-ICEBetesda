@@ -150,6 +150,7 @@
     font-size:14px;
     font-style: none;
     color: gray;
+    text-align: justify;
 
 }
 
@@ -244,7 +245,7 @@ button a{
     }
 
     .texto p{
-        width:60%;
+        width:68%;
 
     }
    
@@ -412,7 +413,7 @@ span.bottom{
 .infop2,
 .infop3
 {
-    width:200px;
+    width:320px;
     height:200px;
     background-color:rgb(80, 80, 80);
     opacity:0;
@@ -421,6 +422,7 @@ span.bottom{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: left;
 }
 
 .info h5{
@@ -428,6 +430,17 @@ span.bottom{
     font-weight:bolder;
     margin-top:10px;
     color: orange;
+}
+
+.infog{
+    margin: 10px!important;
+}
+
+.subp{
+    font-size:16px;
+    color: orange!important;
+    margin-left: 0px!important;
+    margin-right: 0px!important;
 }
 
 .infop.animada,
