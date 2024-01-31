@@ -148,7 +148,9 @@ body {
 .imag6,
 .imag7,
 .imag8,
-.imag10{
+.imag10,
+.imag13,
+.imag14{
     
     background-size: contain;
     background-repeat: no-repeat;
@@ -181,6 +183,16 @@ body {
     background-image: url("../../../imagens/Logos/Gerais/logo_Mulheres_em_Ação_b.png");
     scale: 1.6;
 
+}
+
+.imag13{
+    background-image: url("../../../imagens/Logos/Gerais/Philos.png");
+    scale: 1.5;
+}
+
+.imag14{
+    background-image: url("../../../imagens/Logos/Gerais/Philos_C.png");
+    scale: 1.5;
 }
 
 
@@ -223,6 +235,12 @@ body {
 
 .ret-m:hover .imag10{
     background-image: url("../../../imagens/Logos/Gerais/logo_Mulheres_em_Ação_transparente\ \(1\).png");
+}
+
+.ret-m:hover .imag13,
+.ret-m:hover .imag14{
+    
+    background-image: url("../../../imagens/Logos/Gerais/Philos_b.png");
 }
 
 @media screen and (max-width:1020px) {
