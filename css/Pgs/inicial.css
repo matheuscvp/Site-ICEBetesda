@@ -87,8 +87,8 @@
 
 .pglist {
     text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: auto;
+    margin-right: auto;
     clear: both;
     border-collapse: collapse;
     width: 65%;
@@ -109,8 +109,8 @@
 
 .PGS {
     text-align: center;
-    margin-left: 17%;
-    margin-right: 17%;
+    margin-left: auto;
+    margin-right:auto;
     clear: both;
     border-collapse: collapse;
     width: 60%;

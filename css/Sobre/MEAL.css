@@ -1,13 +1,14 @@
 .pglist {
     text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: auto;
+    margin-right: auto;
     clear: both;
     border-collapse: collapse;
     width: 65%;
     height: auto;
     border-radius: 50px;
-    background-color: rgb(221, 21, 21);
+    color: #ffffff;
+    background-color: rgb(230, 149, 0);
 }
 
 .pglist tr,
@@ -22,8 +23,8 @@
 
 .PGS {
     text-align: center;
-    margin-left: 17%;
-    margin-right: 17%;
+    margin-left: auto;
+    margin-right: auto;
     clear: both;
     border-collapse: collapse;
     width: 60%;
@@ -65,5 +66,9 @@
     
     .home-text2{
         margin-bottom:50px;
+    }
+
+    .bottom{
+        margin-bottom: 50px;
     }
 }
