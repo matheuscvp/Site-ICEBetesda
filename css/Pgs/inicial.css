@@ -25,7 +25,7 @@
     color: white;
     font-size: 16px;
     font-weight: bolder;
-    padding: 15px 20px;
+    padding: 30px 40px;
     border: none;
     border-radius: 30px;
     margin-bottom: 40px;
@@ -71,15 +71,17 @@
     border-radius: 30px;
 }
 
+
 .descricao {
     width: 50%;
     height: auto;
     font-family: 'Montserrat';
-    font-size: 12px;
+    font-size: 20px;
     font-weight: bold;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: left;
 }
 
 
@@ -120,4 +122,49 @@
 .PGS tr,
 .PGS td {
     padding: 3%;
+}
+
+@media screen and (max-width: 900px) {
+    .temPG {
+        width: 50%;
+        height: auto;
+        background-color: #D9D9D9;
+        margin: -75ch auto 20px auto; 
+        display: flex;
+        border-radius: 50px;
+    }
+
+    .interior {
+        flex-direction: column;
+    }
+
+    .foto {
+        width: 90%;
+        margin: 5% 10% ;
+    }
+
+    .descricao {
+        width: 100%;
+        margin-top: 20px;
+        text-align:center;
+        font-size: 14px;
+    }
+
+    .btPg {
+        font-size: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .pglist {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+
+    .PGS {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
 }
