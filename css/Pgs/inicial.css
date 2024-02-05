@@ -25,7 +25,7 @@
     color: white;
     font-size: 16px;
     font-weight: bolder;
-    padding: 30px 40px;
+    padding: 20px 40px;
     border: none;
     border-radius: 30px;
     margin-bottom: 40px;
@@ -76,7 +76,7 @@
     width: 50%;
     height: auto;
     font-family: 'Montserrat';
-    font-size: 20px;
+    font-size: 11px;
     font-weight: bold;
     display: flex;
     flex-direction: column;
@@ -126,7 +126,7 @@
 
 @media screen and (max-width: 900px) {
     .temPG {
-        width: 50%;
+        width: 70%;
         height: auto;
         background-color: #D9D9D9;
         margin: -75ch auto 20px auto; 
@@ -136,6 +136,7 @@
 
     .interior {
         flex-direction: column;
+        width: 100%;
     }
 
     .foto {
@@ -157,14 +158,17 @@
     }
 
     .pglist {
-        margin-left: 5%;
-        margin-right: 5%;
-        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
     }
 
     .PGS {
         margin-left: 5%;
         margin-right: 5%;
         width: 90%;
+        font-size: 12px;
     }
 }
+
+
