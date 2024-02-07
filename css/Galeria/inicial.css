@@ -42,8 +42,8 @@
 }
 
 .home-text2 p {
-    padding: 15% 15% 0 15%;
-    height: 150px;
+    padding-top: 50px ;
+    height: 75px;
     color: orange;
     position: relative;
 }
@@ -77,12 +77,6 @@ body{
     justify-content: center;
 }
 
-.iframe-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .google {
     width: 460px; /* Largura do iframe */
     height: 300px; /* Altura do iframe */
@@ -107,14 +101,33 @@ iframe{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content:left;
+    align-items:center;
+    flex-wrap: wrap;
+    padding: 40px;
 }
+
+.foto_drive{ 
+    width: 90%;
+}
+
+.foto_drive_link{ 
+    padding-bottom: 25px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    width: 25%;
+}
+
+
 
 @media screen and (max-width:540px){
 
     .google {
         width: 100%; /* Largura do iframe */
         height: 500px; /* Altura do iframe */
+    }
+
+    .foto_drive_link{
+        width: 50%;
     }
 }
