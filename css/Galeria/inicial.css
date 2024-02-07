@@ -77,14 +77,32 @@ body{
     justify-content: center;
 }
 
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google {
+    width: 460px; /* Largura do iframe */
+    height: 300px; /* Altura do iframe */
+    border: 1px solid red;
+}
+
 iframe{
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
     flex-direction: row;
-
-
+    width: 100%;
 }
+
+.flip-embedded::-webkit-scrollbar{
+    display: none !important;
+}
+
+
+
 
 .iframe-container{
     width: 100%;
@@ -92,4 +110,12 @@ iframe{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width:540px){
+
+    .google {
+        width: 100%; /* Largura do iframe */
+        height: 500px; /* Altura do iframe */
+    }
 }
