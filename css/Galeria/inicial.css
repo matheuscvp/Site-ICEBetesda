@@ -86,7 +86,6 @@ body{
 .google {
     width: 460px; /* Largura do iframe */
     height: 300px; /* Altura do iframe */
-    border: 1px solid red;
 }
 
 iframe{
