@@ -233,12 +233,17 @@ button a{
         width:300px;
         right:0%;
     }
+
+    .parte1 p{
+        width:68%;
+
+    }
    
 }
 
 
 
-@media screen and (max-width:540px){
+@media screen and (max-width:700px){
 
     .principal img{
         display: none;
