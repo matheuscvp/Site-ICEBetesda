@@ -17,7 +17,6 @@
     top: 0;
     left: 0;
     overflow: hidden;
-
 }
 
 .fundo-nav {
@@ -148,7 +147,6 @@ ul {
     right: 0px;
     z-index: 1;
     position: fixed;
-    background-color: #021138;
 }
 
 ul li {

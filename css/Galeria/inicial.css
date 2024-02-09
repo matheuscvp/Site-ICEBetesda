@@ -127,6 +127,11 @@ iframe {
 
 }
 
+.foto_drive_link:hover {
+    background-color: #313131;
+    opacity: 0.5;
+}
+
 .foto_drive_link{
     text-decoration: none;
 }
