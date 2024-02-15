@@ -150,7 +150,8 @@ body {
 .imag8,
 .imag10,
 .imag13,
-.imag14{
+.imag14,
+.imagS{
     
     background-size: contain;
     background-repeat: no-repeat;
@@ -160,6 +161,8 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+
 
 .imag5 {
     background-image: url("../../../imagens/Logos/Gerais/WhatsApp\ Image\ 2023-09-01\ at\ 13.28.45.png");

@@ -477,23 +477,19 @@ span.cit {
     flex-grow: 1;
 }
 
-.visao:target,
-.visao:focus-within,
+
 .visao:hover{
     flex-grow: 2;
     width: 100%;
 }
 
-.missao:target,
-.missao:focus-within,
+
 .missao:hover{
     
     flex-grow: 2;
     width: 100%;
 }
 
-.valores:target,
-.valores:focus-within,
 .valores:hover{
     
     flex-grow: 2;
@@ -537,13 +533,7 @@ span.cit {
 }
 
 .missao:hover .text_ig,
-.missao:focus-within .text_ig,
-.missao:target .text_ig,
-.valores:target .text_ig,
-.valores:focus-within .text_ig,
 .valores:hover .text_ig,
-.visao:target .text_ig,
-.visao:focus-within .text_ig,
 .visao:hover .text_ig{
     opacity: 1;
     width: 70%;
