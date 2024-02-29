@@ -205,7 +205,7 @@
 .palavra3 {
     white-space: nowrap;
     margin-top: -61px;
-    margin-left: 38px;
+    margin-left: 36px;
     overflow: hidden;
     transition: width 2s;
     width: 93%;
@@ -228,6 +228,11 @@
     width: 1050%;
     text-align: left;
     z-index: 5;
+
+}
+
+.esquerda.active .palavra3{
+    width: 1080%;
 
 }
 

@@ -191,5 +191,9 @@ footer{
         position: relative;
     }
 
+    .numeros_pastores td{
+        text-decoration: none;
+    }
+
     
 }
