@@ -550,4 +550,9 @@ span.cit {
         font-size: 12px;
     }
 
+    .fundo-nav3{
+        max-width: 100%; 
+        height: auto;   
+     }
+
 }
