@@ -556,8 +556,7 @@ span.cit {
     }
 
     .fundo-nav3{
-        max-width: 100%; 
-        height: auto;   
+       background-size:cover; 
      }
 
 }
