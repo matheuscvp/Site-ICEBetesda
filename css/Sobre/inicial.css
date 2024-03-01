@@ -556,7 +556,7 @@ span.cit {
     }
 
     .fundo-nav3{
-       background-size:cover; 
+       background-size:cover !important; 
      }
 
 }
