@@ -48,6 +48,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    height: 100vh;
 }
 
 
@@ -556,11 +557,7 @@ span.cit {
     }
 
     .fundo-nav3{
-       background-size:cover;
-       background-position: center;
-       scale: 0.5;
-
-
+        background-attachment: scroll; 
     }
 
 }
