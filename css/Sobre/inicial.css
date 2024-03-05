@@ -558,9 +558,9 @@ span.cit {
     .fundo-nav3{
        background-size:cover;
        background-position: center;
-       scale: 1;
+       scale: 0.5;
 
 
-     }
+    }
 
 }
