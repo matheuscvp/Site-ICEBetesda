@@ -556,7 +556,10 @@ span.cit {
     }
 
     .fundo-nav3{
-       background-size:cover !important; 
+       background-size:contain;
+       background-position: center;
+
+
      }
 
 }
