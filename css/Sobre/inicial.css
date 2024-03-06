@@ -562,7 +562,7 @@ span.cit {
 
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:800px) {
     .fundo-nav3 {
         background-attachment: scroll;
     }
