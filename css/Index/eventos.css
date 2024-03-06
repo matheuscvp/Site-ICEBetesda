@@ -250,4 +250,8 @@ span{
         letter-spacing: 0px;
         width: 270px;
     }
+
+    .fundo-eventos{
+        background-attachment: scroll;
+    }
 } 
