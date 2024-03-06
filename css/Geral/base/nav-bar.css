@@ -427,6 +427,10 @@ ul li.yout {
         left: 20%;
         animation-name: lateraltit2;
     }
+
+    .fundo-nav{
+        background-attachment: scroll;
+    }
 }
 
 @media screen and (max-height:450px) {
