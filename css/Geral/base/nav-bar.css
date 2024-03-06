@@ -421,6 +421,13 @@ ul li.yout {
 
 }
 
+@media screen and (max-width:450px) {
+
+    .titulo-nav{
+        left: 20%;
+    }
+}
+
 @media screen and (max-height:450px) {
     #navegação .opc {
         height: 45vh;
@@ -433,6 +440,8 @@ ul li.yout {
     #navegação .red-div {
         padding-top: 85vh;
     }
+
+   
 
 }
 

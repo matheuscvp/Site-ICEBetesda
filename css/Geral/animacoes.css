@@ -129,6 +129,16 @@
         color: aliceblue;
     }
 }
+@keyframes lateraltitmobile{
+    from{
+        left: 15%;
+        color: transparent;
+    }
+    to{
+        left: 38%;
+        color: aliceblue;
+    }
+}
 
 @keyframes descer{
     from{
