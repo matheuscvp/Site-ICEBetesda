@@ -129,6 +129,17 @@
         color: aliceblue;
     }
 }
+@keyframes lateraltit2{
+    from{
+        left: 0%;
+        color: transparent;
+    }
+    to{
+        left: 20%;
+        color: aliceblue;
+    }
+}
+
 @keyframes lateraltitmobile{
     from{
         left: 15%;

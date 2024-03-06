@@ -425,6 +425,7 @@ ul li.yout {
 
     .titulo-nav{
         left: 20%;
+        animation-name: lateraltit2;
     }
 }
 
