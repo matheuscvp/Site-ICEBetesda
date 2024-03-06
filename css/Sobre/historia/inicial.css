@@ -454,8 +454,7 @@ span.bottom{
 .infop3.animada
 {
     opacity: 1; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Sombra preta ao redor */
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); 
 }
 
 .info{

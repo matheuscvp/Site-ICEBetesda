@@ -21,6 +21,19 @@ bola3.addEventListener("mouseenter", () => {
     infop3.classList.add('animada');
 });
 
+bola.addEventListener("touchstart", () => {
+    infop.classList.add('animada');
+});
+bola1.addEventListener("touchstart", () => {
+    infop1.classList.add('animada');
+});
+bola2.addEventListener("touchstart", () => {
+    infop2.classList.add('animada');
+});
+bola3.addEventListener("touchstart", () => {
+    infop3.classList.add('animada');
+});
+
 bola.addEventListener("mouseleave", () => {
     infop.classList.remove('animada');
 });
