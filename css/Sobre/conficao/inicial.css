@@ -1,6 +1,6 @@
 .fundo-nav4{
     
-    background-image: url(../../../imagens/Fundos/photo\ \(1\).jpg);
+    background-image: url(../../../imagens/Fundos/Confissao.jpg);
     background-color: #313131;
     background-size: cover;
     background-position: center;
@@ -157,6 +157,12 @@
     .titulo h2{
         font-size:30px;
     }
+
+    .t h2{
+        font-size: 15px;
+    }
+
+    
 
 }
 
