@@ -232,7 +232,7 @@
 
 }
 
-.esquerda.active .palavra3{
+.esquerda.active .palavra3 {
     width: 1080%;
 
 }
@@ -455,7 +455,7 @@ span.cit {
     flex-grow: 1;
     height: 100%;
     width: 100px;
-  
+
 }
 
 .valores {
@@ -484,30 +484,30 @@ span.cit {
 }
 
 
-.visao:hover{
+.visao:hover {
     flex-grow: 2;
     width: 100%;
 }
 
 
-.missao:hover{
-    
+.missao:hover {
+
     flex-grow: 2;
     width: 100%;
 }
 
-.valores:hover{
-    
+.valores:hover {
+
     flex-grow: 2;
     width: 100%;
 }
 
-.text_ig{
+.text_ig {
     opacity: 0;
     display: none;
 }
 
-.lateral{
+.lateral {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     display: flex;
@@ -515,32 +515,32 @@ span.cit {
     background-color: transparent;
 }
 
-.vertical_text{
+.vertical_text {
     height: 100%;
     width: 100px;
     position: relative;
     top: -320px;
 }
 
-.titulo_ig{
+.titulo_ig {
     font-size: 50px;
     color: orange;
 }
 
-.descricao_ig{
+.descricao_ig {
     font-size: 20px;
     font-weight: normal;
 }
 
 .visao:hover .lateral,
 .missao:hover .lateral,
-.valores:hover .lateral{
+.valores:hover .lateral {
     display: none;
 }
 
 .missao:hover .text_ig,
 .valores:hover .text_ig,
-.visao:hover .text_ig{
+.visao:hover .text_ig {
     opacity: 1;
     width: 70%;
     margin-top: 20%;
@@ -552,12 +552,19 @@ span.cit {
 
 @media screen and (max-width:450px) {
 
-    .descricao_ig{
+    .descricao_ig {
         font-size: 12px;
     }
 
-    .fundo-nav3{
-        background-attachment: scroll; 
+    .fundo-nav3 {
+        background-attachment: scroll;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    .fundo-nav3 {
+        background-attachment: scroll;
     }
 
 }
