@@ -560,6 +560,38 @@ span.cit {
         background-attachment: scroll;
     }
 
+    .esquerda.active h1 {
+        font-size: 38px;
+    }
+
+    .tres{
+        font-size: 38px;
+    }
+
+    .palavra1 {
+        top: 14px;
+        margin-left: 34px;
+    }
+
+    .palavra2 {
+        margin-top: -46px;
+        margin-left: 36px;
+
+
+    }
+
+    .palavra3 {
+        margin-top: -46px;
+        margin-left: 36px;
+
+    }
+
+    .palavra4 {
+        margin-top: -48px;
+        margin-left: 38px;
+
+    }
+
 }
 
 @media screen and (max-width:800px) {
