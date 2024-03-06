@@ -447,7 +447,7 @@ span.cit {
 
 .visao {
     background-color: #D9D9D9;
-    background-image: url(../../imagens/Fundos/Fundo_ceia.jpg);
+    background-image: url(../../imagens/Fundos/Visao.jpg);
     background-position: center center;
     background-size: cover;
     min-width: 2.05rem;
@@ -473,7 +473,7 @@ span.cit {
 
 .missao {
     background-color: #D9D9D9;
-    background-image: url(../../imagens/Fundos/bemvindo.jpg);
+    background-image: url(../../imagens/Fundos/Missao.jpg);
     height: 100%;
     width: 100px;
     background-position: center center;
