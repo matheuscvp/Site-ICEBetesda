@@ -186,3 +186,9 @@ iframe {
         width: 85%;
     }
 }
+
+@media screen and (max-width:800px) {
+    .fundo-nav4{
+        background-attachment: scroll;
+    }
+}

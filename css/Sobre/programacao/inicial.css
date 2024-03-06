@@ -172,3 +172,9 @@ button {
     color: #ffffff;
     letter-spacing: 2px;
 }
+
+@media screen and (max-width:800px) {
+    .fundo-nav4{
+        background-attachment: scroll;
+    }
+}
