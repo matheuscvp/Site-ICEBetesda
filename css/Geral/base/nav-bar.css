@@ -411,6 +411,10 @@ ul li.yout {
 
     }
 
+    .fundo-nav{
+        background-attachment: scroll;
+    }
+
     #navegação.active {
 
         transform: translateX(0);
