@@ -124,6 +124,19 @@
     padding: 3%;
 }
 
+@media screen and (min-width: 1500px) {
+    .descricao{
+        font-size: 100%;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .descricao{
+        font-size: 120%;
+    }
+}
+
+
 @media screen and (max-width: 900px) {
     .temPG {
         width: 70%;
