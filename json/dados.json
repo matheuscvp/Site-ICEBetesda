@@ -1,24 +1,19 @@
 {
     "evento": [
         {
-            "nome": "Culto de Santa Ceia", 
-            "data": "todo Domingo às 19:00hrs", 
-            "img": "imagens/Eventos/Imagem do WhatsApp de 2023-12-21 à(s) 13.07.36_43337fe7.jpg"
-        }, 
-        {
-            "nome": "Cantata de Natal", 
-            "data": "Sabado às 19:00hrs", 
-            "img": "imagens/Eventos/Imagem do WhatsApp de 2023-12-21 à(s) 13.07.37_32c071a3.jpg"
+            "nome": "Talk Show", 
+            "data": "Sábado às 19:30hrs", 
+            "img": "imagens/Eventos/TalkShow.jpg"
         },
         {
-            "nome": "Escola Bíblica", 
-            "data": "todo Domingo às 9:30hrs", 
-            "img": "imagens/Eventos/Imagem do WhatsApp de 2023-12-21 à(s) 13.07.37_a8dfc65b.jpg"
+            "nome": "Pescaria", 
+            "data": "22 a 24 de Março", 
+            "img": "imagens/Eventos/Pescaria.jpg"
         },
         {
-            "nome": "Muay Thai", 
-            "data": "Terça e Quinta às 20:00hrs", 
-            "img": "imagens/Eventos/Imagem do WhatsApp de 2023-12-21 à(s) 13.18.37_f8b3a782.jpg"
+            "nome": "Retiro de Casais", 
+            "data": "Abril", 
+            "img": "imagens/Eventos/Retiro_Casais.jpg"
         }, 
         {
             "nome": "CTI - 2024", 
@@ -26,9 +21,14 @@
             "img": "imagens/Eventos/CTI-SANTIDADE.jpg"
         }, 
         {
-            "nome": "Culto de Jovens", 
-            "data": "Sabado às 19:00hrs", 
-            "img": "imagens/Fotos/culto_de_celebracao 1.1-1.JPG"
+            "nome": "The Voice", 
+            "data": "Abril e Maio", 
+            "img": "imagens/Eventos/THE_VOICE.jpg"
+        },
+        {
+            "nome": "Escola Bíblica", 
+            "data": "todo Domingo às 9:30hrs", 
+            "img": "imagens/Eventos/Imagem do WhatsApp de 2023-12-21 à(s) 13.07.37_a8dfc65b.jpg"
         }
     ]
 }
