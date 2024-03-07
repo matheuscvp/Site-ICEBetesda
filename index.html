@@ -29,9 +29,10 @@
 <body id="home">
     <nav>
         <div class="fundo-nav" id="nav-bar">
-            <video muted autoplay loop playsinline>
+            <video  id="video"  muted autoplay loop playsinline>
                 <source src="imagens/videos/video_comp.mp4" type="video/mp4">
             </video>
+
 
             <div class="nav_cor">
                 <ul id="navegação">
@@ -298,6 +299,19 @@
     })
 
 </script>
+
+<script>
+    var video = document.getElementById('video');
+  
+    video.addEventListener('play', function() {
+      console.log('Vídeo rodou com sucesso.');
+    });
+  
+    video.addEventListener('error', function() {
+      console.log('Ocorreu um erro ao carregar ou reproduzir o vídeo.');
+      video.style.display = 'none';
+    });
+  </script>
 
 
 </body>
