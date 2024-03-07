@@ -304,26 +304,7 @@
 
 </script>
 
-<script>
-    var video = document.getElementById('video');
-    var videoLoaded = false;
 
-    video.addEventListener('play', function () {
-        console.log('Vídeo rodou com sucesso.');
-    });
-
-    video.addEventListener('loadedmetadata', function () {
-        console.log('Metadados do vídeo carregados com sucesso.');
-        videoLoaded = true;
-    });
-
-    video.addEventListener('error', function () {
-        console.log('Ocorreu um erro ao carregar ou reproduzir o vídeo.');
-        if (!videoLoaded) {
-            video.style.display = 'none'; // Esconde o vídeo se não tiver sido carregado corretamente
-        }
-    });
-</script>
 
 
 </body>
