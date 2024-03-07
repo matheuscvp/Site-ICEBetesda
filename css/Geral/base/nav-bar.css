@@ -24,10 +24,6 @@
 .fundo-nav {
     overflow: hidden;
     position: relative;
-    background-image: url(../../imagens/Fundos/Sobre.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 
