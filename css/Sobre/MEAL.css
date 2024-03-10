@@ -62,6 +62,15 @@
     letter-spacing: 2px;
 }
 
+.fundo-nav4 {
+
+    background-image: url(../../imagens/Fundos/meal.jpg);
+    background-color: #313131;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 @media screen and (max-width:450px){  
     
     .home-text2{
