@@ -1,18 +1,13 @@
 {
     "evento": [
         {
-            "nome": "Talk Show", 
-            "data": "Sábado às 19:30hrs", 
-            "img": "imagens/Eventos/talk_show.jpg"
-        },
-        {
             "nome": "Pescaria", 
             "data": "22 a 24 de Março", 
             "img": "imagens/Eventos/Pescaria.jpg"
         },
         {
             "nome": "Retiro de Casais", 
-            "data": "Abril", 
+            "data": "Maio", 
             "img": "imagens/Eventos/Retiro_Casais.jpg"
         }, 
         {
