@@ -190,5 +190,7 @@ iframe {
 @media screen and (max-width:800px) {
     .fundo-nav4{
         background-attachment: scroll;
+        background-image: url(../../imagens/Fundos/Galeriac.jpg);
+
     }
 }
