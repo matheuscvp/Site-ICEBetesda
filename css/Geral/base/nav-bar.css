@@ -262,7 +262,7 @@ ul li.yout {
     #navegação .opc {
         position: relative;
         width: 60%;
-        height: 100vh;
+        height: 60vh; /* se der erro no nav  */
         flex-direction: column;
         align-items: center;
         transform: translateX(100%);
@@ -283,6 +283,9 @@ ul li.yout {
         background-color: #021138;
         padding-top: 90vh;
     }
+
+  
+
 
     ul .red-div {
         margin: 0;
