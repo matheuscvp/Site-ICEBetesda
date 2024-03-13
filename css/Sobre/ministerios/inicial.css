@@ -342,13 +342,13 @@ body {
 
 
     .ret-m:hover .info {
-        z-index: 2;
+        z-index: 1;
         border-radius: 0px 0px 10px 10px;
         margin-top: 20px;
     }
 
     .ret-m:hover .info2 {
-        z-index: 2;
+        z-index: 1;
         border-radius: 0px 0px 10px 10px;
         margin-top: 20px;
     }
