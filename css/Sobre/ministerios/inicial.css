@@ -155,6 +155,12 @@ body {
 .imag10,
 .imag13,
 .imag14,
+.imag15,
+.imag16,
+.imag17,
+.imag18,
+.imag19,
+.imag20,
 .imagS{
     
     background-size: contain;
@@ -201,6 +207,42 @@ body {
     background-image: url("../../../imagens/Logos/Gerais/Philos_C.png");
     scale: 1.5;
 }
+
+.imag15{
+    background-image: url("../../../imagens/Logos/Gerais/homens.png");
+    scale: 1.5;
+
+}
+
+.imag16{
+    background-image: url("../../../imagens/Logos/Gerais/Segurança.png");
+    scale: 1.5;
+}
+
+.imag17{
+    background-image: url("../../../imagens/Logos/Gerais/Musica.png");
+    scale: 1.7;
+
+}
+
+.imag18{
+    background-image: url("../../../imagens/Logos/Gerais/missoes.png");
+    scale: 1.8;
+
+}
+
+.imag19{
+    background-image: url("../../../imagens/Logos/Gerais/Casais.png");
+    scale: 2.3;
+
+}
+
+.imag20{
+    background-image: url("../../../imagens/Logos/Gerais/Maturidade.png");
+    scale: 2;
+
+}
+
 
 
 .ret-m:hover {
@@ -249,7 +291,35 @@ body {
 .ret-m:hover .imag14{
     
     background-image: url("../../../imagens/Logos/Gerais/Philos_b.png");
+
 }
+
+.ret-m:hover .imag15{
+    background-image: url("../../../imagens/Logos/Gerais/homens_b.png");
+
+}
+
+.ret-m:hover .imag16{
+    background-image: url("../../../imagens/Logos/Gerais/Segurança_b.png");
+
+}
+
+.ret-m:hover .imag17{
+    background-image: url("../../../imagens/Logos/Gerais/Musica_b.png");
+
+}
+
+.ret-m:hover .imag18{
+    background-image: url("../../../imagens/Logos/Gerais/missoes_b.png");
+
+}
+
+.ret-m:hover .imag19{
+    background-image: url("../../../imagens/Logos/Gerais/Casais_b.png");
+
+}
+
+
 
 @media screen and (max-width:1020px) {
     .min {
