@@ -2,21 +2,21 @@
     "culto": [
         {
             "titulo": "Culto de Celebração", 
+            "info": "Sinais de uma igreja viva <br> Pr. Tiago - 24/03/2024 ", 
+            "img": "imagens/Fotos/tumb/igreja_viva_you.jpg",
+            "link":"https://www.youtube.com/live/X4S8Z2m4g90?si=bLj0TeaNZRT7irYq"
+        }, 
+        {
+            "titulo": "Culto de Celebração", 
+            "info": "Sinais de uma igreja viva <br> Pr. Gilvane - 17/03/2024 ", 
+            "img": "imagens/Fotos/tumb/igreja_viva_you.jpg",
+            "link":"https://www.youtube.com/live/Nl0UX9k9NZ4?si=b66axfrV0_b-33wQ"
+        }, 
+        {
+            "titulo": "Culto de Celebração", 
             "info": "Sinais de uma igreja viva <br> Pr. Tiago - 10/03/2024 ", 
             "img": "imagens/Fotos/tumb/igreja_viva_you.jpg",
             "link":"https://www.youtube.com/live/JHF6d998ufw?si=GPblnOl_AVjOMQ_a"
-        }, 
-        {
-            "titulo": "Culto de Celebração", 
-            "info": "Sinais de uma igreja viva <br> Pr. Gilvane - 03/03/2024 ", 
-            "img": "imagens/Fotos/tumb/igreja_viva_you.jpg",
-            "link":"https://www.youtube.com/live/9IRmzv2XlsA?si=oRvgVStvXzTO0K-N"
-        }, 
-        {
-            "titulo": "Culto de Celebração", 
-            "info": "O Que Queres Que Eu Te Faça <br> Pr. Gilvane - 25/02/2024 ", 
-            "img": "imagens/Fotos/tumb/oq_queres_tumb.jpg",
-            "link":"https://www.youtube.com/live/3tb9eEtKInU?si=QWN1HD_gXamyn-od"
         } 
     ]
 }
