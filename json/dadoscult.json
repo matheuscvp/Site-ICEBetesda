@@ -2,6 +2,12 @@
     "culto": [
         {
             "titulo": "Culto de Celebração", 
+            "info": "Culto especial de páscoa <br> ICE Betesda - 31/03/2024 ", 
+            "img": "imagens/Fotos/tumb/igreja_viva_you.jpg",
+            "link":"https://www.youtube.com/live/4XBXeUYpCTo?si=0Pypnuf97JPljP1b"
+        },
+        {
+            "titulo": "Culto de Celebração", 
             "info": "Sinais de uma igreja viva <br> Pr. Tiago - 24/03/2024 ", 
             "img": "imagens/Fotos/tumb/igreja_viva_you.jpg",
             "link":"https://www.youtube.com/live/X4S8Z2m4g90?si=bLj0TeaNZRT7irYq"
@@ -11,12 +17,6 @@
             "info": "Sinais de uma igreja viva <br> Pr. Gilvane - 17/03/2024 ", 
             "img": "imagens/Fotos/tumb/igreja_viva_you.jpg",
             "link":"https://www.youtube.com/live/Nl0UX9k9NZ4?si=b66axfrV0_b-33wQ"
-        }, 
-        {
-            "titulo": "Culto de Celebração", 
-            "info": "Sinais de uma igreja viva <br> Pr. Tiago - 10/03/2024 ", 
-            "img": "imagens/Fotos/tumb/igreja_viva_you.jpg",
-            "link":"https://www.youtube.com/live/JHF6d998ufw?si=GPblnOl_AVjOMQ_a"
-        } 
+        }
     ]
 }
