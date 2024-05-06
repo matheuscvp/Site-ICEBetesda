@@ -558,6 +558,11 @@ span.cit {
         font-size: 12px;
     }
 
+    .esquerda{
+        margin: 0px 0;
+
+    }
+
     .fundo-nav3 {
         background-attachment: scroll;
     }
