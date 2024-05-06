@@ -184,7 +184,7 @@
     overflow: hidden;
     transition: width 1s;
     margin-left: 37.5px;
-    margin-top: -61px;
+    margin-top: -159px;
 
 }
 
@@ -196,7 +196,7 @@
 .palavra2 {
     word-wrap: normal;
     margin-left: 40px;
-    margin-top: -61px;
+    margin-top: -159px;
     overflow: hidden;
     transition: width 2s;
     width: 93%;
@@ -205,7 +205,7 @@
 
 .palavra3 {
     white-space: nowrap;
-    margin-top: -61px;
+    margin-top: -159px;
     margin-left: 36px;
     overflow: hidden;
     transition: width 2s;
@@ -215,7 +215,7 @@
 
 .palavra4 {
     word-wrap: normal;
-    margin-top: -61px;
+    margin-top: -159px;
     margin-left: 45px;
     overflow: hidden;
     transition: width 2s;
