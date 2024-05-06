@@ -288,6 +288,8 @@
 
 }
 
+
+
 .direita img {
     width: 200px;
     display: none;
@@ -358,20 +360,20 @@
     }
 
     .palavra2 {
-        margin-top: -50px;
+        margin-top: -147px;
         margin-left: 36px;
 
 
     }
 
     .palavra3 {
-        margin-top: -50px;
+        margin-top: -147px;
         margin-left: 36px;
 
     }
 
     .palavra4 {
-        margin-top: -50px;
+        margin-top: -147px;
         margin-left: 38px;
 
     }
@@ -593,6 +595,9 @@ span.cit {
     }
 
 }
+
+
+
 
 @media screen and (max-width:800px) {
     .fundo-nav3 {
