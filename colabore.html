@@ -30,15 +30,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-            // Inicia um temporizador quando a página começa a carregar
-            var loadingTimer = setTimeout(function() {
-                $('#loading-screen').show(); // Mostra a tela de carregamento se a página ainda estiver carregando após 2 segundos
-            }, 2000);
-
-            $(window).on('load', function() {
-                clearTimeout(loadingTimer); // Cancela o temporizador quando a página termina de carregar
-                $('#loading-screen').hide(); // Esconde a tela de carregamento
-            });
+            setTimeout(function() {
+                window.location.href = "main.html"; // Substitua "main.html" pelo caminho para a sua página principal
+            }, 5000); // A página de carregamento será exibida por 5 segundos
         });
     </script>
 
