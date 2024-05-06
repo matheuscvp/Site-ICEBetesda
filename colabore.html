@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="css/Geral/base/nav-bar.css">
     <link rel="stylesheet" type="text/css" href="css/Geral/base/rodape.css">
     <link rel="stylesheet" type="text/css" href="css/Colabore/inicial.css">
+    <link rel="stylesheet" type="text/css" href="css/Geral/loading.css">
+
 
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
@@ -25,9 +27,27 @@
     <meta property="og:image:type" content="image/jpg">
     <meta name="robots" content="index, follow">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Inicia um temporizador quando a página começa a carregar
+            var loadingTimer = setTimeout(function() {
+                $('#loading-screen').show(); // Mostra a tela de carregamento se a página ainda estiver carregando após 2 segundos
+            }, 2000);
+
+            $(window).on('load', function() {
+                clearTimeout(loadingTimer); // Cancela o temporizador quando a página termina de carregar
+                $('#loading-screen').hide(); // Esconde a tela de carregamento
+            });
+        });
+    </script>
+
 </head>
 
 <body>
+    <div id="loading-screen" style="display: none;">
+        <img src="loading.gif" alt="Loading..." />
+    </div>
     <nav>
         <div class="fundo-nav4" id="nav-bar">
             <div class="nav_cor">
