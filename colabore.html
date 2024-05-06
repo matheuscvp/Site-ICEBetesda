@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <div id="loading-screen" style="display: none;">
+    <div id="loading-screen">
         <img src="imagens/gif/loading.gif" alt="Loading..." />
     </div>
     <div id="content">
@@ -198,13 +198,17 @@
         <script src="js/muda_cor_nav.js"></script>
     </div>
 
+    <script>
+        window.addEventListener('load', function () {
+            // Oculta o loader e mostra o conteúdo quando todas as imagens estiverem carregadas
+            document.querySelector("#loading-screen").style.display = "none";
+            document.querySelector("#content").style.display = "block";
+        });
+
+    </script>
+
 </body>
 
-<script>
-   document.addEventListener("DOMContentLoaded", function() {
-        document.getElementById("loading-screen").style.display = "none";
-        document.getElementById("content").style.display = "block";
-    });
-</script>
+
 
 </html>
