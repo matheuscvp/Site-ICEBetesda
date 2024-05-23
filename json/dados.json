@@ -1,9 +1,16 @@
 {
     "evento": [
+
         {
-            "nome": "Pescaria", 
-            "data": "22 a 24 de Março", 
-            "img": "imagens/Eventos/Pescaria.jpg"
+            "nome": "Culto de Celebração", 
+            "data": "todo Domingo às 19:00hrs", 
+            "img": "imagens/Eventos/E4542B09-5588-4ABE-A40D-6B4D261D3BBC.png"
+        },
+        
+        {
+            "nome": "Escola Bíblica", 
+            "data": "todo Domingo às 9:30hrs", 
+            "img": "imagens/Eventos/Imagem do WhatsApp de 2023-12-21 à(s) 13.07.37_a8dfc65b.jpg"
         },
         {
             "nome": "Retiro de Casais", 
@@ -19,11 +26,7 @@
             "nome": "The Voice", 
             "data": "Abril e Maio", 
             "img": "imagens/Eventos/THE_VOICE.jpg"
-        },
-        {
-            "nome": "Escola Bíblica", 
-            "data": "todo Domingo às 9:30hrs", 
-            "img": "imagens/Eventos/Imagem do WhatsApp de 2023-12-21 à(s) 13.07.37_a8dfc65b.jpg"
         }
+        
     ]
 }
