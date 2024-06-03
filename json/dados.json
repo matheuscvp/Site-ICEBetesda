@@ -13,19 +13,24 @@
             "img": "imagens/Eventos/Imagem do WhatsApp de 2023-12-21 à(s) 13.07.37_a8dfc65b.jpg"
         },
         {
-            "nome": "Retiro de Casais", 
-            "data": "Maio", 
-            "img": "imagens/Eventos/Retiro_Casais.jpg"
-        }, 
+            "nome": "Vigília", 
+            "data": "15 de Junho", 
+            "img": "imagens/Eventos/VIGÍLIA  SANTIDADE (1).png"
+        },
+        {
+            "nome": "Dias dos Namorados", 
+            "data": "15 de Junho", 
+            "img": "imagens/Eventos/FEED CAFÉ DIA DOS NAMORADOS.png"
+        },
+        {
+            "nome": "Culto do Amigo", 
+            "data": "22 de Junho", 
+            "img": "imagens/Eventos/FEED - culto do amigo - rede philos.png"
+        },
         {
             "nome": "CTI - 2024", 
             "data": "27 a 29 de Setembro", 
             "img": "imagens/Eventos/CTI-SANTIDADE.jpg"
-        }, 
-        {
-            "nome": "The Voice", 
-            "data": "Abril e Maio", 
-            "img": "imagens/Eventos/THE_VOICE.jpg"
         }
         
     ]
